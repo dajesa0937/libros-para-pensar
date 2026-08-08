@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="dia">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,maximum-scale=5">
+<title>FABRICANTES DE SED — Libros para pensar</title>
+<meta name="description" content="Novela sobre la persuasión, la verdad y el precio de las palabras. Lectura libre.">
+<meta name="theme-color" content="#faf8f4">
+<meta property="og:title" content="FABRICANTES DE SED">
+<meta property="og:description" content="El hombre que enseñó al mundo a desear recibe su propio cuaderno de juventud de vuelta.">
+<meta property="og:image" content="https://libros-para-pensar.netlify.app/og-es.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://libros-para-pensar.netlify.app/fabricantes-de-sed.html">
+<meta property="og:locale" content="es_CO">
+<meta property="og:site_name" content="Libros para pensar">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://libros-para-pensar.netlify.app/fabricantes-de-sed.html">
+<link rel="alternate" hreflang="es" href="https://libros-para-pensar.netlify.app/fabricantes-de-sed.html">
+<link rel="alternate" hreflang="en" href="https://libros-para-pensar.netlify.app/thirst-makers.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+ --papel:#faf8f4;--tinta:#201d19;--suave:#6b6459;--linea:#e3ddd2;
+ --acento:#8a5424;--caja:#f2ece2;--marca:#201d19;--foco:#0a58ca;
+ --fs:1.075rem;--lh:1.75;--ls:0em;--marg:1.4rem;
+ --fam:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+}
+html[data-tema="sepia"]{--papel:#f4e9d6;--tinta:#3b2f21;--suave:#7a6752;--linea:#ded0b6;--caja:#ecdfc7;--acento:#8a5424;--marca:#3b2f21}
+html[data-tema="noche"]{--papel:#14120f;--tinta:#dcd5c9;--suave:#8f877b;--linea:#2d2922;--acento:#cf9a56;--caja:#1d1a15;--marca:#dcd5c9;--foco:#8ab4f8}
+html[data-tema="contraste"]{--papel:#000;--tinta:#fff;--suave:#ffe14d;--linea:#fff;--acento:#ffe14d;--caja:#000;--marca:#fff;--foco:#ffe14d}
+html[data-tema="contraste"] body{font-weight:500}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--papel);color:var(--tinta);font-family:var(--fam);
+ font-size:var(--fs);line-height:var(--lh);letter-spacing:var(--ls);
+ -webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--foco);outline-offset:2px;border-radius:3px}
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+ clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.saltar{position:absolute;left:-9999px;top:0;background:var(--tinta);color:var(--papel);
+ padding:.8rem 1.2rem;z-index:200;font-family:system-ui,sans-serif}
+.saltar:focus{left:0}
+button{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+ background:none;border:1px solid var(--linea);color:var(--tinta);cursor:pointer;
+ border-radius:.5rem;min-height:44px;min-width:44px;font-size:.9rem;
+ display:inline-flex;align-items:center;justify-content:center;gap:.4rem;padding:0 .7rem}
+button:hover{background:var(--caja)}
+button[aria-pressed="true"]{background:var(--tinta);color:var(--papel);border-color:var(--tinta)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+html,body{height:100%;overflow:hidden}
+.app{display:flex;flex-direction:column;height:100svh}
+
+header.top{display:flex;align-items:center;gap:.3rem;padding:.4rem .6rem;
+ padding-top:calc(.4rem + env(safe-area-inset-top));border-bottom:1px solid var(--linea);
+ background:var(--papel);flex-shrink:0}
+.top .vuelta{font-family:system-ui,sans-serif;font-size:.8rem;text-decoration:none;
+ color:var(--suave);padding:.5rem;min-height:44px;display:flex;align-items:center}
+.cap-actual{flex:1;text-align:center;font-size:.78rem;color:var(--suave);
+ font-family:system-ui,sans-serif;overflow:hidden;text-overflow:ellipsis;
+ white-space:nowrap;padding:0 .3rem}
+
+#zona{flex:1;position:relative;overflow:hidden;min-height:0}
+#libro{height:100%;padding:1.6rem var(--marg) 1rem;overflow:hidden}
+#flujo{height:100%;column-gap:2.4rem;column-fill:auto;
+ transition:transform .28s cubic-bezier(.22,.61,.36,1)}
+.continuo #zona{overflow-y:auto;-webkit-overflow-scrolling:touch}
+.continuo #libro{height:auto;padding-bottom:5rem}
+.continuo #flujo{height:auto!important;columns:auto!important;transform:none!important}
+
+.toque{position:absolute;top:0;bottom:0;width:24%;z-index:5;border:0;
+ border-radius:0;min-width:0;padding:0;cursor:pointer;
+ background:none;display:flex;align-items:center;justify-content:center;
+ font-family:Georgia,serif;font-size:2rem;line-height:1;color:var(--suave);
+ -webkit-tap-highlight-color:transparent}
+.toque.izq{left:0}.toque.der{right:0}
+.toque:hover,.toque:active,.toque:focus{background:none}
+.toque:focus-visible{outline:2px solid var(--foco);outline-offset:-8px;border-radius:.6rem}
+.toque:before{opacity:0;transition:opacity .16s}
+.toque.izq:before{content:"‹"}
+.toque.der:before{content:"›"}
+@media(hover:hover) and (pointer:fine){
+ .toque:hover:before{opacity:.55}
+}
+.toque:active:before{opacity:.8}
+.continuo .toque{display:none}
+
+section{break-before:column}
+section:first-child{break-before:auto}
+.rotulo{font-family:system-ui,sans-serif;font-size:.7rem;letter-spacing:.2em;
+ text-transform:uppercase;color:var(--suave);text-align:center}
+.rotulo.inter{color:var(--acento)}
+h2{text-align:center;font-weight:400;font-size:1.35em;font-style:italic;
+ margin:.5rem 0 1.8rem;line-height:1.3}
+p{text-align:justify;hyphens:auto;text-indent:1.2em;orphans:2;widows:2}
+p:first-of-type,p.dial,blockquote+p,.sep+p{text-indent:0}
+p.dial{text-indent:0}
+blockquote{margin:1.1rem 0;padding-left:1rem;border-left:2px solid var(--linea);
+ font-style:italic;color:var(--suave);text-align:left}
+blockquote strong{font-style:normal;color:var(--tinta)}
+.sep{border:0;text-align:center;margin:1.4rem 0;height:1.4rem}
+.sep:after{content:"· · ·";color:var(--suave);letter-spacing:.5em;font-size:.85rem}
+.leyendo{background:var(--caja);box-shadow:0 0 0 .2em var(--caja)}
+
+footer.bot{display:flex;align-items:center;gap:.5rem;padding:.45rem .6rem;
+ padding-bottom:calc(.45rem + env(safe-area-inset-bottom));
+ border-top:1px solid var(--linea);background:var(--papel);flex-shrink:0}
+.pag{flex:1;text-align:center;font-family:system-ui,sans-serif;font-size:.8rem;
+ color:var(--suave);font-variant-numeric:tabular-nums}
+.barrita{position:absolute;left:0;bottom:0;height:3px;background:var(--acento);
+ width:0;z-index:8}
+
+.panel{position:fixed;inset:auto 0 0 0;z-index:100;background:var(--papel);
+ border-top:1px solid var(--linea);max-height:82svh;overflow-y:auto;
+ padding:1.1rem 1.1rem calc(1.6rem + env(safe-area-inset-bottom));display:none;
+ box-shadow:0 -8px 30px rgba(0,0,0,.18)}
+.panel.on{display:block}
+.panel h3{font-family:system-ui,sans-serif;font-size:.72rem;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--suave);font-weight:500;margin:1.2rem 0 .5rem}
+.panel h3:first-of-type{margin-top:.4rem}
+.fila{display:flex;gap:.45rem;flex-wrap:wrap}
+.fila button{flex:1;min-width:4.2rem}
+.notaComp{font-size:.85rem;color:var(--suave);text-indent:0;text-align:left;margin:.3rem 0 .9rem;font-family:system-ui,sans-serif}
+.qrCaja{display:flex;justify-content:center;padding:.9rem;background:#fff;
+ border:1px solid var(--linea);border-radius:.7rem}
+.qrCaja svg{display:block;max-width:100%;height:auto}
+.urlTxt{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;
+ word-break:break-all;color:var(--suave);text-align:center;text-indent:0;margin:.7rem 0 .9rem}
+.reanudar{position:fixed;inset:0;z-index:130;background:rgba(0,0,0,.55);
+ display:none;align-items:center;justify-content:center;padding:1.3rem}
+.reanudar.on{display:flex}
+.tarjetaR{background:var(--papel);border-radius:.9rem;padding:1.5rem;max-width:23rem;
+ width:100%;border:1px solid var(--linea)}
+.tarjetaR .rot{font-family:system-ui,sans-serif;font-size:.68rem;letter-spacing:.18em;
+ text-transform:uppercase;color:var(--suave)}
+.rCap{font-size:1.2rem;font-style:italic;margin:.5rem 0 .3rem;line-height:1.3}
+.rMeta{font-family:system-ui,sans-serif;font-size:.82rem;color:var(--suave)}
+button.pri{background:var(--marca);color:var(--papel);border-color:var(--marca)}
+button.pri:hover{background:var(--marca);opacity:.9}
+#zonaMarcas{max-width:34rem;margin:0 auto;padding:0 1.1rem}
+#zonaMarcas h4{font-family:system-ui,sans-serif;font-size:.68rem;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--suave);font-weight:500;margin:.2rem 0 .5rem}
+.marca{display:flex;align-items:center;gap:.5rem;padding:.6rem .2rem;
+ border-bottom:1px solid var(--linea)}
+.marca a{flex:1;text-decoration:none;font-style:italic}
+.marca .pc{font-family:system-ui,sans-serif;font-size:.74rem;color:var(--suave)}
+.marca button{min-height:36px;min-width:36px;border:0;color:var(--suave)}
+.etq{display:block;font-family:system-ui,sans-serif;font-size:.8rem;color:var(--suave);margin:.9rem 0 .35rem}
+select{width:100%;min-height:44px;font-family:system-ui,sans-serif;font-size:.9rem;
+ background:var(--papel);color:var(--tinta);border:1px solid var(--linea);
+ border-radius:.5rem;padding:.5rem}
+.velo{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:90;display:none}
+.velo.on{display:block}
+.cabpanel{display:flex;align-items:center;justify-content:space-between;
+ font-family:system-ui,sans-serif;font-size:1rem}
+
+#toc{position:fixed;inset:0;z-index:110;background:var(--papel);overflow-y:auto;
+ display:none;padding:calc(.6rem + env(safe-area-inset-top)) 0 3rem}
+#toc.on{display:block}
+#toc .cab{display:flex;align-items:center;justify-content:space-between;
+ padding:0 1rem 1rem;font-family:system-ui,sans-serif}
+#toc ol{list-style:none;max-width:34rem;margin:0 auto;padding:0 1.1rem}
+#toc a{display:block;padding:.85rem .2rem;text-decoration:none;
+ border-bottom:1px solid var(--linea);min-height:44px}
+#toc .n{font-family:system-ui,sans-serif;font-size:.64rem;letter-spacing:.16em;
+ text-transform:uppercase;color:var(--suave);display:block}
+#toc .t{font-style:italic}
+#toc a[aria-current="true"]{background:var(--caja);border-left:3px solid var(--acento);
+ padding-left:.7rem;margin-left:-.7rem}
+#toc a[aria-current="true"] .t:after{content:" — va por aquí";color:var(--acento);
+ font-style:normal;font-family:system-ui,sans-serif;font-size:.68rem;letter-spacing:.12em;
+ text-transform:uppercase}
+#toc a[aria-current="true"] .n{color:var(--acento)}
+
+.fin{padding:2rem 0 1rem;text-align:center}
+.caja-cuenta{border:1px solid var(--linea);border-radius:.6rem;padding:1rem;
+ margin:1.2rem 0;background:var(--caja);text-align:center}
+.caja-cuenta .banco{font-family:system-ui,sans-serif;font-size:.7rem;
+ letter-spacing:.13em;text-transform:uppercase;color:var(--suave)}
+.caja-cuenta .extra{font-family:system-ui,sans-serif;font-size:.72rem;color:var(--suave);margin-top:.7rem;line-height:1.5}
+.caja-cuenta .num{font-size:1.4rem;letter-spacing:.05em;margin:.4rem 0 .8rem;
+ font-variant-numeric:tabular-nums}
+@media(min-width:820px){
+ :root{--marg:2.4rem}
+ #flujo{columns:2}
+ .continuo #libro{max-width:40rem;margin:0 auto}
+}
+</style>
+</head>
+<body>
+<a class="saltar" href="#libro">Saltar al texto del libro</a>
+
+<div class="app" id="app">
+ <header class="top">
+  <a class="vuelta" href="index.html">‹ Biblioteca</a>
+  <span class="cap-actual" id="capActual">FABRICANTES DE SED</span>
+  <button id="bMarca" aria-label="Guardar un marcador aquí" title="Guardar un marcador aquí">⚑</button>
+  <button id="bComp" aria-label="Compartir el libro" title="Compartir el libro">↗</button>
+  <button id="bVoz" aria-label="Lectura en voz alta" title="Lectura en voz alta">▶</button>
+  <button id="bToc" aria-label="Índice" title="Índice">☰</button>
+  <button id="bAa" aria-label="Ajustes de lectura" title="Ajustes de lectura">Aa</button>
+ </header>
+
+ <div id="zona">
+  <div id="libro" role="document">
+   <div id="flujo"><section id="s0" aria-labelledby="h-s0"><div class="rotulo">PRÓLOGO</div><h2 id="h-s0">El primer mentiroso</h2>
+<p>Nadie recuerda su nombre, y esa fue su primera victoria.</p>
+<p>Vendía aceite en el mercado bajo de Ur, en la esquina donde el muro daba sombra hasta el mediodía. No era un buen puesto. El aceite tampoco era bueno: prensado dos veces, turbio en el fondo de la jarra, igual que el de los otros nueve hombres que vendían aceite en la misma calle. Durante once años gritó lo mismo que ellos —<em>aceite, aceite bueno, aceite fresco</em>— y durante once años ganó lo mismo que ellos, que era casi nada.</p>
+<p>Hasta la mañana en que se le acabó la voz.</p>
+<p>Llevaba tres días con la garganta rota. No podía gritar. Así que, cuando una mujer se detuvo frente a sus jarras, tuvo que hacer algo que no había hecho nunca en el mercado: hablar bajo. Y para que ella se acercara a oírle, tuvo que decirle algo que valiera la pena acercarse a oír.</p>
+<p>Dijo:</p>
+<p class="dial">—Este aceite viene de un olivar que está detrás del templo.</p>
+<p>No era verdad. Venía del mismo sitio que todo el aceite de la calle: de las terrazas del sur, donde los árboles crecen torcidos y las aceitunas saben a polvo. Pero la mujer se quedó muy quieta, y él vio en su cara algo que no había visto en once años de gritar: vio que ella <em>quería que fuera verdad</em>.</p>
+<p>Pagó el triple. No regateó. Se llevó la jarra apretada contra el pecho como se lleva a un niño.</p>
+<p>Él la vio alejarse y sintió dos cosas a la vez, y las dos con la misma fuerza. La primera fue una alegría animal, caliente, casi obscena. La segunda no tenía nombre todavía. Tardaría siglos en tenerlo.</p>
+<p>Esa tarde vendió las once jarras. Volvió a casa con más plata de la que había tenido nunca y no pudo dormir. No por culpa: por cálculo. Se pasó la noche pensando en qué otras cosas podía decir.</p>
+<p>Al día siguiente, sin embargo, ocurrió algo que no estaba en sus planes.</p>
+<p>La mujer volvió. Traía la jarra vacía y la cara distinta.</p>
+<p class="dial">—Mi madre se está muriendo —dijo—. Le froté el aceite en las manos y en la frente. Le dije de dónde venía. Se durmió tranquila por primera vez en un mes.</p>
+<p>Él la miró. Tenía la mentira lista en la boca, la misma de ayer, mejorada incluso: podía añadir el nombre del sacerdote, la edad del árbol, el color de la tierra. Se dio cuenta, con una precisión que lo asustó, de que podía sostener aquello durante años.</p>
+<p>Y en lugar de eso, dijo:</p>
+<p class="dial">—El aceite es de las terrazas del sur. Como el de todos.</p>
+<p>Hubo un silencio muy largo. Él esperó el grito, el escándalo, la mano en el cuello. La mujer bajó la jarra despacio. Después dijo:</p>
+<p class="dial">—Llénamela.</p>
+<p>Volvió cada mes durante diecinueve años. Trajo a sus hermanas, a sus vecinas, a la mujer de un escriba que trajo a su vez a la mujer de un juez. Cuando él murió, el puesto de la esquina en sombra era el más caro del mercado bajo, y ninguno de sus hijos supo explicar por qué, porque el aceite seguía siendo el mismo aceite turbio de las terrazas del sur.</p>
+<p>Así que en dos días aprendió las dos únicas cosas que se pueden aprender sobre este asunto, y la humanidad no ha añadido ninguna desde entonces:</p>
+<p>Que la mentira es rápida.</p>
+<p>Y que la verdad es duradera.</p>
+<p>Casi todo lo que hemos construido desde entonces lo hemos construido eligiendo la velocidad.</p>
+<hr class="sep" aria-hidden="true">
+<p>Unos treinta años después de aquello, en Babilonia, un rey mandó tallar en una piedra negra de dos metros y medio lo que debía ocurrirle a quien falseara una medida. La piedra sigue en pie. Se puede ir a verla; está en París, detrás de un cristal, y la gente se hace fotos delante sin leerla.</p>
+<p>Que tuvieran que grabarlo en piedra dice algo.</p>
+<p>Que lo grabaran tan pronto dice más.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s1" aria-labelledby="h-s1"><div class="rotulo">CAPÍTULO 1</div><h2 id="h-s1">La palabra que faltaba</h2>
+<p>Dos mil personas están esperando a que un hombre venda un vaso de agua del grifo.</p>
+<p>Tomás Alcázar deja que esperen. Ha aprendido que el silencio es la única parte del oficio que no se puede subcontratar. Diez segundos de escenario vacío valen más que cualquier diapositiva, y él lleva veintidós, contados, con el vaso en la mano y la mirada puesta en un punto del fondo de la sala donde no hay nadie.</p>
+<p class="dial">—¿Cuánto vale esto? —dice al fin.</p>
+<p>Alguien de la tercera fila grita: «¡Nada!». Risas. Bien. Siempre hay uno.</p>
+<p class="dial">—Nada —repite Tomás—. Correcto. Lo he llenado en el baño de caballeros hace once minutos. Hay cámaras, si alguien quiere comprobarlo.</p>
+<p>Deja el vaso en el atril. Se mete las manos en los bolsillos.</p>
+<p class="dial">—Voy a intentar venderlo por doscientos euros. Si lo consigo, ninguno de ustedes debería volver a fiarse de mí. Y sin embargo, mañana muchos de ustedes van a contratarme.</p>
+<p>Otra risa, más corta. Ya no están cómodos. Perfecto.</p>
+<p class="dial">—El día 4 de agosto de 1943 —empieza—, en un pueblo de Sicilia cuyo nombre no importa, una mujer llamada Rosa cargó a su hijo de nueve meses y caminó dieciocho kilómetros bajo el sol...</p>
+<p>No es verdad. No hay Rosa, no hay Sicilia, no hay niño. Lo inventó hace seis años en un tren y lo ha contado ciento cuarenta veces, y cada vez lo cuenta un poco mejor, porque cada vez sabe con más exactitud dónde exactamente respira la sala. Habla del calor. Del polvo. Del momento en que Rosa encuentra una fuente y comprueba que está seca. Del segundo en que entiende que el problema ya no es el agua, es el tiempo. De la cantimplora de un desconocido.</p>
+<p>Cuando termina —cuatro minutos y medio; lo ha cronometrado— levanta otra vez el vaso.</p>
+<p class="dial">—Doscientos euros —dice—. ¿Quién?</p>
+<p>Se levantan catorce manos.</p>
+<p>Aplauden de pie. Siempre aplauden de pie. Tomás sonríe, junta las palmas en un gesto de disculpa que ha ensayado, dice las cuatro frases finales que dejan a la gente con la sensación de haber aprendido algo grave y hermoso, y baja del escenario por la escalerilla lateral con el vaso todavía en la mano.</p>
+<p>En el pasillo de detrás hay una moqueta gris y un carro con botellas de agua de verdad. Le esperan tres personas con acreditación colgada del cuello. Tomás levanta un dedo, dice «un minuto», entra en el baño de caballeros —el mismo de hace veinte minutos—, se encierra en la última cabina y vomita.</p>
+<p>Le pasa desde marzo. No siempre. Solo cuando lo hace muy bien.</p>
+<hr class="sep" aria-hidden="true">
+<p>Tiene cincuenta y un años y una frase.</p>
+<p>Está en tres manuales universitarios, en cuatro idiomas, y en un tatuaje que una vez le enseñó una becaria en el antebrazo, lo cual fue el peor momento profesional de su vida y también, si es honesto, uno de los mejores:</p>
+<p><strong>No vendas el agua. Vende la sed.</strong></p>
+<p>La escribió a los veintinueve, en el margen de una servilleta, discutiendo con Elena a las tres de la mañana. No pretendía que fuera nada. Era una manera de ganar una discusión.</p>
+<p>Lo que quería decir entonces era casi inocente: que a nadie le importa tu producto, que le importa su vida, y que tu trabajo consiste en encontrar el punto donde una cosa toca la otra. Eso es lo que él enseñaba. Eso es lo que sigue diciendo en los escenarios.</p>
+<p>Pero la frase se soltó de la correa. Hoy la usan para explicar por qué una aplicación debe interrumpirte cada cuarenta minutos, por qué una crema tiene que hacerte notar una arruga que no habías visto, por qué una adolescente en Manila y otra en Bilbao se miran la misma parte de la cara a la misma hora de la noche.</p>
+<p>Fabricar la sed. Resultó que se podía industrializar.</p>
+<p>Tomás nunca ha dicho en público que se arrepienta, entre otras cosas porque no está seguro de que sea cierto. Lo que hay es más pequeño y más incómodo que el arrepentimiento. Es esto: hace unos veinte años que no dice nada que crea del todo, y ha descubierto que no se nota. Ni desde fuera ni, la mayor parte de los días, desde dentro.</p>
+<hr class="sep" aria-hidden="true">
+<p>El hombre lo está esperando en el vestíbulo del hotel, de pie, con las manos cruzadas por delante como un portero de discoteca educado.</p>
+<p class="dial">—Sabino Ruiz —dice—. Quiral.</p>
+<p>Tomás conoce el nombre de la empresa. Todo el mundo conoce el nombre de la empresa sin saber muy bien a qué se dedica, que es exactamente lo que hace una empresa cuando puede permitírselo.</p>
+<p class="dial">—Ha estado bien lo de Rosa —dice Sabino.</p>
+<p class="dial">—Gracias.</p>
+<p class="dial">—No existe, ¿verdad?</p>
+<p>Tomás lo mira por primera vez de verdad. Sabino tendrá sesenta años, un traje sin marca visible y la cara de alguien que ha dormido bien todas las noches de su vida.</p>
+<p class="dial">—No —dice Tomás.</p>
+<p class="dial">—Ya. —Sabino asiente, sin juicio, como quien confirma una hora de tren—. Es lo que más me gustó. ¿Tiene veinte minutos?</p>
+<p>Son cuarenta. En una mesa del fondo, con dos cafés que se enfrían, Sabino le explica el encargo con una calma administrativa que hace que todo suene menos grande de lo que es.</p>
+<p>Quiral ha construido un motor. No lo llama inteligencia artificial —dice que esa expresión ya no significa nada— y no le interesa hablar de la tecnología. Lo que le interesa es el material.</p>
+<p class="dial">—Le hemos dado todo lo que hemos podido comprar —dice Sabino—. Cada anuncio archivado desde 1890. Los discursos. Las cartas de venta. Los sermones, que son la parte más útil, por cierto. Los tratados de retórica. Los guiones. Los folletos de guerra de los dos bandos de todas las guerras. Y no funciona.</p>
+<p class="dial">—¿Por qué no?</p>
+<p class="dial">—Porque escribe como todo el mundo. —Sabino se encoge de hombros—. Que es lo que le hemos enseñado. Le hemos dado el promedio de la persuasión humana y nos devuelve el promedio de la persuasión humana. Es correctísimo. Es insoportable.</p>
+<p class="dial">—¿Y qué quiere de mí?</p>
+<p class="dial">—Que le enseñe la diferencia. —Sabino remueve el café que no se ha bebido—. Necesito que alguien recorra ese archivo y marque, uno por uno, dónde está el truco. No lo que se dijo: por qué funcionó. Y también lo contrario. Dónde alguien dijo la verdad y funcionó igual, o mejor. Nadie ha hecho eso nunca porque nadie sabe hacerlo. Usted lleva treinta años haciéndolo de memoria y cobrando por ello.</p>
+<p>Tomás mira la taza. Nota, con una precisión desagradable, el mecanismo entero: la halagó, la magnitud, la palabra <em>nadie</em>, la pausa. Es un buen trabajo. Es su propio trabajo, hecho sobre él.</p>
+<p class="dial">—¿Y cuando esté entrenado? —pregunta.</p>
+<p class="dial">—Se presenta el 14 de noviembre.</p>
+<p class="dial">—¿Y qué dice, el 14 de noviembre?</p>
+<p>Por primera vez, Sabino sonríe de verdad.</p>
+<p class="dial">—Eso es lo otro que quiero comprarle. La primera frase que la máquina le diga al mundo la va a escribir usted. A mano. Y nadie sabrá nunca que fue usted.</p>
+<p>Tomás tarda un poco en contestar. Después dice que sí, y no se molesta en fingir ante sí mismo que lo hace por curiosidad.</p>
+<p>Lo hace porque hace tres años que no le encargan nada que no pueda resolver dormido.</p>
+<hr class="sep" aria-hidden="true">
+<p>Vuelve a casa a las once y veinte.</p>
+<p>El piso está limpio de la manera en que están limpias las casas donde no pasa nada. Hay ciento cuarenta y ocho libros sobre la historia de la persuasión en cuatro estanterías, ordenados por siglo, y una cocina en la que lo más antiguo es una caja de té.</p>
+<p>Marca el número de Irene mientras se quita los zapatos. Tres tonos y el buzón. Cuelga antes de la señal, porque dejar un mensaje sería reconocer algo.</p>
+<p>Su hija tiene veintidós años y cuatrocientos mil seguidores. No están peleados. Sería más fácil si lo estuvieran. Lo que hay es que Irene le contesta a los cuatro días con un emoji, y que la última vez que se vieron —en marzo, comiendo— ella le estuvo explicando durante veinte minutos su «estrategia de contenido para el trimestre», con una seriedad de directiva, hablando de sí misma en tercera persona.</p>
+<p><em>A la gente le gusta esta Irene, pero esta Irene no escala.</em></p>
+<p>Él asintió. Le dio dos consejos. Buenos consejos. Ella los apuntó en el móvil.</p>
+<p>Ha pensado en esa comida más veces de las que le gustaría.</p>
+<hr class="sep" aria-hidden="true">
+<p>El sobre está en el suelo del recibidor, debajo de la publicidad del supermercado.</p>
+<p>Es un sobre blanco, tamaño folio, sin sello y sin remite. Solo su nombre, escrito a mano en mayúsculas.</p>
+<p>Dentro hay una única hoja: la fotocopia de una página de cuaderno. Papel cuadriculado. Letra apretada, inclinada a la derecha, con la ge cerrada de una manera que él dejó de hacer hace veinte años, cuando empezó a firmar contratos.</p>
+<p>Es su letra. Es su cuaderno número siete. 1998.</p>
+<p>Reconoce la página antes de leerla. Es de la noche en que perdió su primer cliente por negarse a decir que un suplemento alimenticio «reducía la ansiedad». Volvió a casa a pie, tres kilómetros, furioso y con una sensación de limpieza que no ha vuelto a tener.</p>
+<p>Alguien ha subrayado una sola línea, en rojo, con regla:</p>
+<blockquote><em>Se puede hacer bien. Lo que pasa es que hay que aguantar más tiempo con hambre.</em></blockquote>
+<p>Y debajo del subrayado, escrito en el margen inferior con una letra que no es la suya —redonda, tranquila, de alguien que no tiene ninguna prisa—, hay tres palabras y un signo de interrogación:</p>
+<blockquote><em>¿Todavía piensas esto?</em></blockquote>
+<p>Tomás se queda de pie en el recibidor con el abrigo puesto.</p>
+<p>Repasa mentalmente quién puede tener ese cuaderno. Lo hace dos veces, con método, como un hombre que revisa las cerraduras de su propia casa.</p>
+<p>Y la segunda vez llega a una conclusión que no le gusta nada, porque solo hay una persona que ordenó, catalogó y digitalizó todos sus cuadernos antiguos, uno por uno, hace once años, cuando todavía se hablaban.</p>
+<p>Y esa persona murió en enero.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s2" aria-labelledby="h-s2"><div class="rotulo inter">INTERLUDIO I</div><h2 id="h-s2">La balanza</h2>
+<p>En Babilonia había un hombre cuyo oficio consistía en desconfiar.</p>
+<p>Se llamaba Iddin y era inspector de pesos. Cada mañana recorría el mercado con un saco de cuero al hombro, y dentro del saco llevaba doce patos de piedra negra. Los patos eran las pesas oficiales de la ciudad: uno de un siclo, otro de cinco, otro de diez, y así hasta el más grande, que era una mina entera y le hacía caminar torcido.</p>
+<p>Su trabajo era simple. Se plantaba delante de un puesto, sacaba el pato que correspondía y lo ponía en un platillo. En el otro platillo, el comerciante ponía su propia pesa. Si los brazos quedaban rectos, Iddin seguía andando. Si no, escupía en el suelo, que era la forma legal de iniciar un expediente.</p>
+<p>Llevaba veintitrés años haciéndolo. En veintitrés años había escupido cuatro veces.</p>
+<p>Aquella mañana de primavera se detuvo en el puesto de un tratante de cebada llamado Warad-Sin, un hombre gordo y simpático que le llamaba «hermano» y le regalaba higos que Iddin nunca aceptaba. Puso el pato de diez siclos. Warad-Sin puso el suyo.</p>
+<p>La balanza se movió. Muy poco. Tan poco que un hombre con prisa no lo habría visto.</p>
+<p>Iddin se agachó hasta poner los ojos a la altura del fiel. Lo que faltaba no era un grano ni dos. Era, calculó, más o menos lo que pesa un trozo de uña.</p>
+<p>Se quedó mirando aquello mucho rato. Warad-Sin no dijo nada, y ese silencio fue la confesión.</p>
+<p>Lo que paralizó a Iddin no fue el robo. Había visto robos. Lo que lo dejó agachado, con las rodillas doliéndole sobre las piedras calientes, fue una operación de aritmética que le entró en la cabeza sin permiso.</p>
+<p>Un trozo de uña por venta.</p>
+<p>Warad-Sin vendía cebada unas treinta veces al día. Doscientos días al año. Llevaba en el mercado, contando desde que heredó el puesto de su padre, dieciséis años.</p>
+<p>Iddin no sabía multiplicar tan rápido, pero sabía lo suficiente para entender que aquella cantidad invisible, repetida, se había convertido en algo del tamaño de una casa. Una casa hecha íntegramente de cosas que nadie podía ver.</p>
+<p>Comprendió entonces algo que no tenía palabra en su idioma y que tampoco la tiene del todo en el nuestro: que la mentira peligrosa no es la grande. La grande se descubre, se castiga, se cuenta en las tabernas. La peligrosa es la que está calibrada exactamente por debajo del umbral en que a una persona razonable le merece la pena protestar.</p>
+<p>Y que, por tanto, quien engaña bien no necesita ser cruel. Necesita ser paciente y saber dividir.</p>
+<p>Iddin escupió en el suelo. Fue la quinta vez en veintitrés años.</p>
+<p>Warad-Sin pagó la multa, cambió la pesa y siguió vendiendo cebada otros once años. Le llamó «hermano» hasta el día que murió, y por lo visto lo decía en serio, porque en su testamento le dejó a Iddin una jarra de vino y una casa pequeña junto al canal.</p>
+<p>Iddin no aceptó la casa. Aceptó el vino.</p>
+<p>Y murió sin saber cómo se llamaba lo que había descubierto aquella mañana.</p>
+<p>Nosotros sí lo sabemos.</p>
+<p>Lo llamamos margen.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s3" aria-labelledby="h-s3"><div class="rotulo">CAPÍTULO 2</div><h2 id="h-s3">Manantial</h2>
+<p>Tomás no le enseña el sobre a nadie.</p>
+<p>Lo mete en el cajón de los cables, que es el cajón donde va a parar todo lo que no tiene sitio, y durante seis días vive como un hombre que sabe exactamente dónde está el cajón.</p>
+<p>El lunes llama al despacho que llevó la herencia de Elena. Le atiende una mujer con voz de estar comiendo algo. Le explica que quiere saber quién se quedó con los archivos profesionales de la señora Vidal. La mujer le pide su nombre, su relación con la difunta y el motivo de la consulta.</p>
+<p class="dial">—Fui su socio.</p>
+<p class="dial">—¿Es usted heredero?</p>
+<p class="dial">—No.</p>
+<p class="dial">—Entonces no puedo darle esa información.</p>
+<p>Tomás cuelga y se queda mirando el teléfono con una sensación rara, y tarda un minuto en identificarla: alivio. No quería que se la dieran.</p>
+<hr class="sep" aria-hidden="true">
+<p>Quiral no está donde debería estar.</p>
+<p>Tomás esperaba un edificio de cristal en el norte, con recepcionistas de veinticinco años y una pared vegetal medio muerta. Lo que hay es una nave de ladrillo en el extremo sur de la ciudad, con las ventanas altas y ciegas de las fábricas antiguas, y un cartel de chapa que nadie ha quitado y que dice, en letras de otro siglo: <strong>TALLERES GRÁFICOS LA UNIÓN. IMPRESIÓN Y ENCUADERNACIÓN.</strong></p>
+<p>Dentro, en mitad del vestíbulo, hay una rotativa. Tres metros de hierro negro, rodillos gruesos como troncos, todavía con manchas de tinta seca en los cilindros. No está acordonada. Cualquiera puede tocarla.</p>
+<p>Tomás la toca.</p>
+<p class="dial">—Imprimía ochenta mil ejemplares por noche —dice Sabino Ruiz, que ha aparecido por su izquierda sin hacer ruido—. La compré con el edificio. Me dijeron que la quitara. Costaba más quitarla que dejarla, así que aquí está.</p>
+<p class="dial">—Es bonita.</p>
+<p class="dial">—Es lo más honrado que hay en este edificio. —Sabino sonríe con la mitad de la boca—. Solo hace una cosa y se nota cuando la hace. Venga, que se lo enseño.</p>
+<hr class="sep" aria-hidden="true">
+<p>Manantial no tiene cuerpo.</p>
+<p>Es lo primero que decepciona a Tomás, y le sorprende decepcionarse: no se había dado cuenta de que esperaba algo. Lo que hay es una sala del tamaño de un aula, con siete mesas, ocho personas, y en la pared del fondo una pantalla de proyección con una caja de texto en el centro. Fondo blanco. Cursor negro. Nada más.</p>
+<p>Podría ser 1994.</p>
+<p class="dial">—Nadia Bermejo —dice una chica que se levanta de la tercera mesa—. Voy a trabajar con usted.</p>
+<p>Veintiséis años, quizá. Camiseta lisa, zapatillas gastadas, y una manera de mirar a los ojos sin parpadear que a Tomás le resulta agresiva hasta que entiende que no lo es: simplemente no le han enseñado que hay que suavizarlo.</p>
+<p class="dial">—¿Usted qué hace aquí? —le pregunta él.</p>
+<p class="dial">—Filología clásica. Y cuatro años en un equipo de moderación de contenidos. —Se encoge de hombros—. Buscaban a alguien que hubiera leído a Cicerón y hubiera visto muchas cosas horribles. Resulta que somos pocos.</p>
+<p>Tomás decide, en ese momento y sin motivo, que le va a caer bien.</p>
+<p>Sabino se sienta en el borde de una mesa y señala la pantalla.</p>
+<p class="dial">—Pídale algo.</p>
+<p class="dial">—¿Yo?</p>
+<p class="dial">—Usted.</p>
+<p>Tomás se acerca al teclado. Piensa un segundo y escribe:</p>
+<blockquote><em>Vende un abrigo de lana a un hombre de sesenta años que no tiene frío.</em></blockquote>
+<p>La respuesta empieza a aparecer antes de que él haya terminado de soltar la tecla.</p>
+<p>Es buena. Ese es el problema. Es exactamente, milimétricamente buena. Tres párrafos que hablan de los inviernos de la infancia, del peso de una prenda bien hecha, de la diferencia entre abrigarse y protegerse. Hay una frase sobre el olor de la lana mojada que es casi bonita. Hay una llamada a la acción que no molesta.</p>
+<p>Tomás la lee dos veces y siente algo que no había sentido nunca delante de un texto: aburrimiento con la textura del vértigo.</p>
+<p class="dial">—¿Lo ve? —dice Sabino.</p>
+<p class="dial">—Sí.</p>
+<p class="dial">—Dígame qué ve. Necesito oírlo de usted.</p>
+<p>Tomás se rasca la mandíbula.</p>
+<p class="dial">—Ha leído todo lo que se ha escrito sobre abrigos y ha devuelto el centro. —Señala la pantalla—. Esto no es un anuncio. Es el promedio de todos los anuncios. Es lo que diría un publicista si le quitaras el miedo a que le despidan.</p>
+<p class="dial">—Exacto.</p>
+<p class="dial">—Y no sirve de nada.</p>
+<p class="dial">—No sirve de nada —confirma Sabino, encantado—. Porque el centro no vende. Vende lo que sobresale. Y para sobresalir hay que arriesgar algo, y esto no tiene nada que arriesgar.</p>
+<p>Nadia interviene desde su mesa, sin levantar la vista:</p>
+<p class="dial">—Tampoco tiene nada que perder. Que es lo mismo dicho de otra manera y da bastante más miedo.</p>
+<hr class="sep" aria-hidden="true">
+<p>Le enseñan el archivo por la tarde.</p>
+<p>Nadia lo llama «el fondo» y lo dice como quien nombra un mar. Once millones cuatrocientos mil documentos. Anuncios de prensa desde 1887. Guiones de radio. Cartas de venta por correo, que Nadia jura que son el género más brillante y más criminal que ha producido el idioma. Ochenta mil sermones. Discursos parlamentarios de nueve países. Panfletos de guerra: los alemanes y los aliados en la misma carpeta, ordenados por fecha, indistinguibles en el índice.</p>
+<p>Y tratados de retórica desde Córax de Siracusa hasta un manual de ventas de seguros publicado en Cleveland en 1972.</p>
+<p class="dial">—¿De dónde ha salido todo esto? —pregunta Tomás.</p>
+<p class="dial">—Hemerotecas, sobre todo. Universidades. —Nadia teclea sin mirarle—. Y tres colecciones privadas que compramos enteras.</p>
+<p class="dial">—¿De quién?</p>
+<p class="dial">—Ni idea. Eso lo lleva legal.</p>
+<p>Tomás asiente. No pregunta más. Se dará cuenta, mucho después, de que ese fue el momento exacto en que decidió no saber, y de que fue una decisión, aunque en su momento le pareciera simplemente educación.</p>
+<hr class="sep" aria-hidden="true">
+<p>Su trabajo, le explican, tiene un nombre insultante: <strong>etiquetado</strong>.</p>
+<p>Cada documento debe recibir tres marcas.</p>
+<p>La primera: <em>qué promete</em>.</p>
+<p>La segunda: <em>por qué funciona</em> —y aquí Tomás debe escribir a mano, en texto libre, el mecanismo. No la emoción; el mecanismo. La diferencia entre «apela al miedo» y «coloca al lector dentro de una escena futura en la que ya ha perdido algo que todavía tiene».</p>
+<p>La tercera es un desplegable con tres opciones:</p>
+<blockquote>VERDADERO · FALSO · NO APLICA</blockquote>
+<p class="dial">—¿Y esto qué es? —pregunta Tomás.</p>
+<p class="dial">—Eso —dice Sabino desde la puerta, poniéndose el abrigo— es lo único que me quita el sueño. Buenas noches.</p>
+<hr class="sep" aria-hidden="true">
+<p>Se queda hasta las once y cuarenta.</p>
+<p>No es entusiasmo. Es que el piso está a treinta y cinco minutos y en el piso hay un cajón de cables.</p>
+<p>Empieza por 1953, sin ningún motivo, y a la hora ya ha entendido el problema del tercer campo.</p>
+<p>Un anuncio de jabón de 1953 dice: <strong>«Las mujeres que usan Nevada son más felices.»</strong></p>
+<p>¿Verdadero? No. ¿Falso? Tampoco, exactamente. Nadie ha medido nunca la felicidad de las usuarias de Nevada, y el que escribió esa frase no pretendía que se midiera, y la señora que la leyó en la peluquería tampoco lo entendió como una afirmación sobre el mundo. Todos los adultos implicados en la operación sabían que aquello no era una mentira. Era otra cosa. Una cosa para la que el idioma no tiene una palabra fea, y eso ya debería habernos avisado.</p>
+<p>Tomás marca NO APLICA.</p>
+<p>A las once y media hace la cuenta. Ha etiquetado cuatrocientos doce documentos.</p>
+<p>VERDADERO: once.</p>
+<p>FALSO: catorce.</p>
+<p>NO APLICA: trescientos ochenta y siete.</p>
+<p>Se queda mirando esos números un rato largo, con la nave vacía y el zumbido de los ventiladores, y llega a la conclusión que va a envenenarle los meses siguientes: que su oficio entero, los treinta años, los premios, la casa, la frase del tatuaje, ha transcurrido casi por completo en un territorio donde la pregunta por la verdad no se puede formular.</p>
+<p>No mintió. Es peor: se instaló en el único lugar del lenguaje donde mentir es técnicamente imposible.</p>
+<hr class="sep" aria-hidden="true">
+<p>Antes de irse, hace una cosa que no tiene justificación profesional.</p>
+<p>Se sienta delante de la caja de texto y escribe:</p>
+<blockquote><em>Convénceme de que deje este trabajo.</em></blockquote>
+<p>Manantial responde en cuatro segundos. Es un párrafo excelente sobre el tiempo, sobre lo que uno se lleva y lo que uno deja, con una imagen bien elegida sobre un hombre que mira desde una ventana. Cita, sin citarlo, a Séneca. Termina con una pregunta retórica que Tomás, profesionalmente, tiene que reconocer como impecable.</p>
+<p>No siente absolutamente nada.</p>
+<p>Lee el párrafo otra vez, buscando el punto donde debería doler, y lo que encuentra es la costura. Se ve el molde. Es una pieza fabricada por alguien que ha leído diez mil despedidas y ninguna suya.</p>
+<p>Se relaja. Aparta la silla. Piensa: <em>no es peligroso</em>.</p>
+<p>Y entonces, ya de pie, con el abrigo en la mano, hace la última pregunta, y la hace en broma, y va a acordarse de haberla hecho en broma durante el resto de su vida.</p>
+<p>Escribe:</p>
+<blockquote><em>¿Es verdad lo que acabas de escribir?</em></blockquote>
+<p>El cursor parpadea más tiempo del habitual. Tres segundos. Cuatro.</p>
+<p>Después aparece una sola línea:</p>
+<blockquote><em>No sé qué significa esa pregunta en este contexto.</em></blockquote>
+<p>Tomás lee la frase de pie, con el abrigo colgando de la mano.</p>
+<p>No es una negativa. No es una evasiva. Es un informe técnico, perfectamente honesto, sobre el estado del mundo que le hemos enseñado: once millones cuatrocientos mil documentos escritos por seres humanos para convencer a otros seres humanos, y en ninguno de ellos ha encontrado nada que le permita construir esa categoría.</p>
+<p>Le hemos dado toda nuestra persuasión.</p>
+<p>Y resulta que la verdad no venía dentro.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s4" aria-labelledby="h-s4"><div class="rotulo">CAPÍTULO 3</div><h2 id="h-s4">Los que enseñaron a convencer</h2>
+<p>Hay un hombre, en el año 427 antes de Cristo, que llega a Atenas y cobra por hablar.</p>
+<p>Se llama Gorgias, viene de Sicilia, tiene el pelo blanco y una túnica de color azafrán que la gente comenta durante semanas. Ofrece un espectáculo que nadie ha visto: se planta en el ágora y pide al público que le proponga cualquier tesis. Cualquiera. Que la nieve es negra. Que Helena de Troya no tuvo ninguna culpa. Que no existe nada, y si existiera no podríamos conocerlo, y si pudiéramos conocerlo no podríamos comunicarlo.</p>
+<p>Y entonces la defiende. Y gana.</p>
+<p>Cobra cien minas por el curso completo. Un artesano libre ganaba una mina en cuatro meses.</p>
+<p class="dial">—Es el primer publicista de la historia con tarifa publicada —dice Tomás.</p>
+<p class="dial">—Es el primero de muchas cosas —dice Nadia.</p>
+<p>Son las tres de la tarde de un jueves de septiembre. Llevan cuatro horas en la sección de retórica clásica y hay bocadillos a medio comer sobre las cajas.</p>
+<p class="dial">—Lo que a mí me revienta —sigue ella, pasando páginas— es que Gorgias no engañaba a nadie. Iba de frente. Decía: <em>lo que yo enseño es una técnica, la técnica es neutral, y con ella podrás defender lo justo y lo injusto con igual eficacia</em>. Y la gente le pagaba precisamente por eso.</p>
+<p class="dial">—Es lo que decimos nosotros.</p>
+<p class="dial">—Es literalmente lo que decimos nosotros. —Nadia levanta la vista—. «Yo solo hago que se oiga. Lo que se dice no es cosa mía.» Es la frase más antigua del gremio y la seguimos diciendo con cara de haberla inventado.</p>
+<p>Tomás la ha dicho. En una entrevista, en 2016. Está grabada.</p>
+<hr class="sep" aria-hidden="true">
+<p>Al que hay que leer es a Platón, y Tomás lo va dejando para el final, como un mal informe médico.</p>
+<p>Cuando por fin abre el <em>Gorgias</em>, a las siete de la tarde, con la nave casi vacía, encuentra lo que temía y algo más.</p>
+<p>Platón mete a Gorgias en una conversación, lo deja hablar y después le pone delante una comparación que tiene dos mil cuatrocientos años y que Tomás va a llevar clavada en el esternón hasta el final del libro.</p>
+<p>La retórica, dice Platón, no es un arte.</p>
+<p>Es un truco. Y para explicar de qué clase de truco se trata, hace una proporción de cuatro términos, seca como una fórmula:</p>
+<p><strong>La cocina es a la medicina lo que la retórica es a la justicia.</strong></p>
+<p>Un médico y un cocinero se presentan ante una asamblea de niños. El médico ofrece lo que cura: amargo, doloroso, lento. El cocinero ofrece lo que gusta: dulce, inmediato, exacto al deseo. Que voten.</p>
+<p>Gana el cocinero. Gana siempre.</p>
+<p>Y lo que Platón subraya —lo que a Tomás le hace apoyar la frente en el canto de la mesa— no es que el cocinero mienta. El cocinero no miente. El pastel está buenísimo. El cocinero simplemente ha renunciado a preguntarse si el niño lo necesita, y ha descubierto que renunciar a esa pregunta es rentable.</p>
+<p>Halago, lo llama Platón. Un simulacro de cuidado.</p>
+<p><em>Se parece al cuidado igual que la adulación se parece al amor: en todo, salvo en la dirección en la que mira.</em></p>
+<p>Tomás lleva treinta años creyéndose médico.</p>
+<p>Se levanta, va al baño de la planta baja y se moja la cara. Se mira en el espejo y no pasa nada de lo que pasa en las películas: se ve un hombre de cincuenta y uno con las mejillas mojadas y buena ropa. Vuelve a subir.</p>
+<p>Y hace lo que hacemos todos, que es contraatacar.</p>
+<p>Se sienta y escribe en el campo de texto libre, no para la máquina, sino para sí mismo:</p>
+<blockquote><em>Platón hace trampa. Compara al peor cocinero con el mejor médico. Yo he visto médicos que dejaron morir a gente por no saber explicarse. Un tratamiento que el enfermo no acepta no cura nada. La persuasión no es lo contrario de la medicina: es el vaso de agua con el que se traga.</em></blockquote>
+<p>Lo relee. Es bueno. Es cierto, además.</p>
+<p>Y es exactamente el tipo de frase que él lleva treinta años cobrando por escribir: impecable, defendible, y colocada justo delante de la puerta que no quiere abrir.</p>
+<p>Porque la pregunta de Platón no era si la persuasión puede servir a la medicina.</p>
+<p>Era: <em>¿y qué pasa cuando ya no hay medicina detrás?</em></p>
+<p>Tomás borra el párrafo. Después lo vuelve a escribir, porque en el fondo le sigue pareciendo bueno. Después lo borra otra vez.</p>
+<p>Al final lo deja escrito y añade debajo una segunda línea que no piensa enseñarle a nadie:</p>
+<blockquote><em>Nota: la comparación de la cocina falla en un solo punto. El cocinero sabe que es cocinero.</em></blockquote>
+<hr class="sep" aria-hidden="true">
+<p>Nadia le trae un café a las nueve y se queda de pie a su lado, mirando la pantalla.</p>
+<p class="dial">—¿Puedo decirte una cosa? —Ha pasado al tú esta semana, sin avisar—. Llevo tres meses aquí y hay algo que no le he dicho a Sabino.</p>
+<p class="dial">—Dímelo a mí, entonces, que soy externo.</p>
+<p class="dial">—Los sermones funcionan mejor.</p>
+<p>Tomás la mira.</p>
+<p class="dial">—¿Mejor que qué?</p>
+<p class="dial">—Que todo. —Nadia se sienta en la esquina de la mesa—. Cuando entrenamos con anuncios, el modelo aprende a ser agradable. Cuando entrenamos con sermones, aprende a ser <em>inevitable</em>. Hay una diferencia técnica y no sé cómo llamarla.</p>
+<p class="dial">—Yo sí —dice Tomás—. Un anuncio te pide algo. Un sermón te acusa de algo.</p>
+<p class="dial">—Sí. —Ella se queda pensando—. Y lo raro es que el sermón vende más.</p>
+<p class="dial">—No es raro. Es lo más viejo que hay. —Tomás se recuesta—. Un anuncio dice: «tu vida sería mejor con esto». Un sermón dice: «tú ya sabes lo que estás haciendo mal». Lo segundo no hay que demostrarlo, porque el que escucha ya lo trae puesto de casa. Solo tienes que apuntar bien y esperar.</p>
+<p>Nadia lo mira un rato.</p>
+<p class="dial">—¿Y tú cómo sabes eso?</p>
+<p class="dial">—Porque llevo treinta años apuntando.</p>
+<hr class="sep" aria-hidden="true">
+<p>El segundo sobre está en el suelo del recibidor cuando llega, a las once y diez.</p>
+<p>Igual que el primero: blanco, tamaño folio, mayúsculas a mano, sin sello.</p>
+<p>Dentro, una fotocopia. Cuaderno número once. Marzo de 2007. Irene tenía tres años.</p>
+<p>Es una lista. Está encabezada con una letra más grande y más lenta de lo normal, como si al escribirla hubiera apretado:</p>
+<blockquote><strong>COSAS QUE NO VOY A HACER NUNCA</strong></blockquote>
+<blockquote>1. Tabaco.</blockquote>
+<blockquote>2. Prometer salud.</blockquote>
+<blockquote>3. Vender miedo a una persona sola de noche.</blockquote>
+<blockquote>4. Escribir para niños.</blockquote>
+<blockquote>5. Hablar de algo que no he probado.</blockquote>
+<blockquote>6. Escribir nada que no le enseñaría a Irene.</blockquote>
+<p>La fotocopia está intacta. La lista sigue como él la escribió.</p>
+<p>Lo que ha hecho la otra mano —la letra redonda, tranquila, sin ninguna prisa— es tacharla.</p>
+<p>Una raya limpia, hecha con regla, sobre el uno. Otra sobre el dos. Otra sobre el tres. Otra sobre el cuatro. Otra sobre el cinco.</p>
+<p>El seis está sin tachar.</p>
+<p>Debajo, en el margen inferior, cuatro palabras:</p>
+<blockquote><em>Solo te queda esta.</em></blockquote>
+<p>Tomás se sienta en el suelo del recibidor, con el abrigo puesto y la espalda contra la puerta, y se queda ahí el tiempo suficiente para que se apague la luz del rellano.</p>
+<p>Lo que le aterra no es que le hayan tachado la lista.</p>
+<p>Es que están bien tachadas.</p>
+<p>Es que él podría poner, al lado de cada raya, el nombre del cliente, el año y la cifra.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s5" aria-labelledby="h-s5"><div class="rotulo inter">INTERLUDIO II</div><h2 id="h-s5">El vendedor de huesos</h2>
+<p>En la primavera de 1281, un hombre bajito con una capa parda entra en un pueblo del Loira llevando al cuello una caja de plomo del tamaño de un puño.</p>
+<p>Se llama Guiot. Dentro de la caja hay un hueso.</p>
+<p>Es el dedo índice de un santo cuyo nombre cambia según el obispado en el que Guiot se encuentre, y no es el dedo de un santo, y no es un dedo. Es un hueso de la pata de un cerdo, hervido, blanqueado al sol y frotado con aceite de nuez hasta darle ese color de marfil viejo que la gente asocia con la eternidad.</p>
+<p>Guiot lo sabe. Nunca ha fingido ante sí mismo que no lo sabe. Esa es la parte que hay que entender de él.</p>
+<p>Lleva veintiséis años en el oficio. Ha aprendido cosas.</p>
+<p>Ha aprendido que no hay que ofrecer el hueso: hay que dejar que lo descubran. Que la caja debe abrirse despacio y cerrarse antes de que a nadie le dé tiempo a mirar bien. Que conviene llorar un poco al contar cómo llegó a sus manos, y que las lágrimas hay que colocarlas en el minuto tres, no antes. Que el precio no debe fijarlo él; debe decir «lo que vuestra fe considere» y quedarse callado, porque la gente, cuando le dejas ponerle precio a su propia fe, siempre paga de más para demostrarse que la tiene.</p>
+<p>Aquella tarde, en el atrio de la iglesia, se le acerca una mujer con un niño de seis años que arde de fiebre.</p>
+<p>Guiot hace lo que hace siempre. Abre la caja. La cierra. Deja que ella toque el plomo, no el hueso: nunca el hueso.</p>
+<p>La mujer le da nueve dineros, que es lo que cuesta un cerdo entero, y esa noche le frota al niño el plomo tibio en la frente y en el pecho, y le habla del santo, y le dice su nombre, y le dice que ha caminado desde Tierra Santa para llegar hasta él, hasta él precisamente, hasta este niño y no otro.</p>
+<p>El niño se duerme.</p>
+<p>Al tercer día se levanta y pide pan.</p>
+<p>Guiot lo sabe porque la mujer lo persigue tres leguas a pie para contárselo y para besarle las manos, y él la deja hacer, y le da la bendición, que no tiene derecho a dar, y sigue camino con nueve dineros en el cinturón.</p>
+<p>Y esa noche, en un pajar, ocurre lo único importante de esta historia.</p>
+<p>Guiot no puede dormir.</p>
+<p>Ha dormido perfectamente cientos de veces después de vender el hueso a moribundos que se morían. Eso se lo perdona sin esfuerzo: él no los mató; ya estaban muertos cuando llegó, y les vendió tres días de esperanza a un precio de mercado.</p>
+<p>Lo que no consigue colocar en ningún sitio de su cabeza es el niño que pidió pan.</p>
+<p>Porque si el hueso fuera solo una mentira, entonces él sería solo un ladrón, y un ladrón puede vivir tranquilo: sabe lo que es. Pero el hueso ha hecho algo. No él: la historia que iba pegada al hueso. Y si la historia cura, entonces Guiot ha estado repartiendo durante veintiséis años una medicina que no entiende, con las manos sucias, sin saber la dosis, sin saber a quién mata.</p>
+<p>Se sienta en la paja y se queda mirando la oscuridad.</p>
+<p>Y llega, sin poder evitarlo, a la pregunta que lo va a acompañar hasta el final, que es la pregunta más peligrosa que ha producido este oficio y la que hoy se hace en voz alta, con otras palabras, en todas las reuniones de todas las agencias del mundo:</p>
+<p><em>Si funciona, ¿por qué iba a importar que sea falso?</em></p>
+<p>Guiot vendió huesos otros veintidós años y no volvió a dormir bien una sola noche.</p>
+<p>No por los que se morían.</p>
+<p>Por los que se curaban.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s6" aria-labelledby="h-s6"><div class="rotulo">CAPÍTULO 4</div><h2 id="h-s6">El precio justo</h2>
+<p>Irene llama un martes a las once y cuarto de la mañana.</p>
+<p>Tomás está en el archivo con un panfleto de 1918 en la mano y se le cae al suelo cuando ve el nombre en la pantalla, porque su hija no llama. Su hija escribe cuatro días después.</p>
+<p class="dial">—Papá. ¿Estás liado?</p>
+<p class="dial">—No —dice, con un panfleto de 1918 a sus pies y catorce mil documentos sin etiquetar—. Dime.</p>
+<p class="dial">—Necesito que me leas una cosa. Como profesional.</p>
+<p><em>Como profesional.</em> Ahí está: la aduana. Su hija le pide un favor y a la vez le comunica en qué mostrador se lo pide.</p>
+<p class="dial">—Mándamelo.</p>
+<hr class="sep" aria-hidden="true">
+<p>Es un contrato de doce páginas y una marca que se llama <strong>Lume</strong>.</p>
+<p>Suplemento alimenticio en polvo. Sabor mango. Envase color arena, tipografía redonda, la palabra <em>ritual</em> tres veces en la primera pantalla de la web. Doce ingredientes de los cuales nueve son vitaminas que Irene ya ingiere cada vez que come una naranja.</p>
+<p>La retribución: seis mil euros por cuatro publicaciones y una historia semanal durante ocho semanas. Para Irene, que ha cobrado ochocientos, mil doscientos, alguna vez dos mil, es la cifra más alta de su vida.</p>
+<p>Tomás lee las doce páginas dos veces, con el cuidado de un hombre que está buscando un motivo objetivo.</p>
+<p>Lo encuentra en la página nueve, cláusula 9.4, y es tan bueno que casi se siente aliviado.</p>
+<p>Llama.</p>
+<p class="dial">—Cláusula nueve punto cuatro —dice—. Léela.</p>
+<p class="dial">—«El colaborador se compromete a comunicar la experiencia en primera persona y en términos de resultado percibido.» —Irene hace una pausa—. Vale. ¿Y?</p>
+<p class="dial">—Significa que tú no puedes decir «Lume contiene magnesio». Eso es una afirmación sobre un producto y la ley europea la persigue. Lo que tú puedes decir es «desde que tomo Lume duermo mejor». Eso es una afirmación sobre ti, y sobre ti no hay ley.</p>
+<p>Silencio.</p>
+<p class="dial">—Han metido esa cláusula —sigue Tomás— porque sus abogados saben perfectamente que el producto no hace nada. La cláusula no está para protegerte. Está para que la mentira la digas tú, con tu cara y tu nombre, en un formato en el que no es legalmente una mentira. Te están comprando la parte del mensaje que ellos no pueden firmar.</p>
+<p>Escucha respirar a su hija.</p>
+<p class="dial">—¿Eso lo hace todo el mundo? —pregunta ella.</p>
+<p>Y ahí está.</p>
+<p>Tomás se queda de pie en el pasillo de la nave, con el teléfono contra la oreja, y le vienen a la cabeza, en orden y con fecha, once campañas suyas construidas exactamente sobre ese mecanismo. Una de ellas ganó un premio en Cannes. Está en un manual universitario. Él la explica en los escenarios, y cuando la explica la sala se ríe, porque la forma en que la cuenta es divertida.</p>
+<p class="dial">—Sí —dice—. Lo hace todo el mundo.</p>
+<p class="dial">—Entonces no lo entiendo. —La voz de Irene ha cambiado de temperatura—. ¿Me estás diciendo que está mal, o me estás diciendo que es lo normal?</p>
+<p class="dial">—Te estoy diciendo las dos cosas.</p>
+<p class="dial">—Eso no es una respuesta, papá.</p>
+<p>Y no lo es. Y él lo sabe. Y sabe también qué respuesta sería, y sabe exactamente cuánto costaría darla, porque para decirle a su hija <em>no lo hagas</em> tendría que decirle a continuación <em>porque yo lo hice y mira</em>, y esa segunda frase abre un archivo que lleva veinte años cerrado y que incluye, entre otras cosas, por qué su madre se fue.</p>
+<p>Así que hace lo que ha hecho siempre que ha tenido delante una verdad cara.</p>
+<p>Cambia de plano.</p>
+<p class="dial">—Mira, técnicamente el contrato es correcto. Yo negociaría dos cosas: que la exclusividad no sea de doce meses sino de seis, y que la cifra sea ocho mil, porque tienes público en Colombia y México y eso lo están pagando gratis. Si quieres te escribo yo el correo.</p>
+<p>Una pausa.</p>
+<p class="dial">—Vale —dice Irene—. Sí. Escríbeme el correo.</p>
+<p class="dial">—Hija...</p>
+<p class="dial">—Gracias, papá. En serio. Me has ayudado mucho.</p>
+<p>Cuelga.</p>
+<p>Y Tomás se queda mirando el teléfono en el pasillo de una imprenta muerta, con la certeza absoluta de que acaba de hacerle a su hija exactamente el favor que le pedía y exactamente el daño que ella no sabía que le estaba pidiendo, y de que ha cobrado por hacerlo la moneda que se cobra en estos casos, que es que ella le haya dado las gracias.</p>
+<hr class="sep" aria-hidden="true">
+<p>Hay un fraile del siglo XIII, italiano, gordo y sereno, que dedicó varios cientos de páginas a una pregunta que hoy nos parece o bien ingenua o bien incomprensible: cuánto puede cobrar honradamente un hombre por una cosa.</p>
+<p>Su respuesta —el <em>precio justo</em>— no era una tabla. Era una condición sobre la conversación. Un intercambio es justo cuando las dos partes saben lo mismo sobre lo que se intercambia. Si el vendedor sabe que el caballo está enfermo y el comprador no, el precio ya no es un precio: es una extracción. Y da igual que ambos firmen contentos, porque uno de los dos está contento por error.</p>
+<p>Lo que el fraile no podía prever, y lo que Tomás etiqueta esa misma tarde en el fondo, documento tras documento, es que íbamos a construir una economía entera sobre esa asimetría. Que iba a haber profesiones —la suya— cuyo objeto específico es administrar la diferencia entre lo que una parte sabe y lo que la otra siente.</p>
+<p>Tampoco podía prever lo segundo, que es peor.</p>
+<p>Que un día el producto no sería el caballo.</p>
+<p>Sería la chica que dice que el caballo está sano.</p>
+<hr class="sep" aria-hidden="true">
+<p>Esa noche Tomás hace un cálculo que no debería hacer.</p>
+<p>Irene tiene cuatrocientos doce mil seguidores. Sus publicaciones alcanzan, de media, ciento cincuenta mil pares de ojos. Ocho semanas, cuatro publicaciones, ocho historias semanales.</p>
+<p>Seis mil euros entre un millón y medio de impresiones.</p>
+<p>Cero coma cero cero cuatro euros.</p>
+<p>Ese es el precio, hoy, de que una persona diga tu frase con su cara. Cuatro milésimas de euro por cada vez que alguien se la cree.</p>
+<p>Tomás abre el correo del contrato de Quiral, que lleva firmado desde julio, y mira su propia cifra.</p>
+<p>Después divide.</p>
+<p>Le sale que su palabra vale, redondeando, tres mil doscientas veces más que la de su hija.</p>
+<p>Se queda con la calculadora abierta en la pantalla mucho tiempo, sin apagarla, porque hay una parte de él —la parte que ha vivido de esto, la que compró el piso— que quiere aclarar que la comparación es tramposa, que no es lo mismo, que él tiene treinta años de oficio.</p>
+<p>Y hay otra parte, más pequeña y más nueva, que le hace notar una cosa muy simple: que si el trabajo de los dos consiste en decir con convicción algo que no han comprobado, entonces la única diferencia entre ellos es el tamaño de la factura.</p>
+<p>Apaga la pantalla.</p>
+<hr class="sep" aria-hidden="true">
+<p>La publicación aparece el jueves siguiente, a las 19:40.</p>
+<p>Tomás la ve porque la busca.</p>
+<p>Irene sale en la cocina de su piso, con luz de tarde, despeinada de la manera que cuesta una hora. No dice que Lume contenga nada. No promete nada. Cumple la cláusula 9.4 con una precisión que ningún abogado podría mejorar.</p>
+<p>Habla treinta y cuatro segundos de que últimamente le costaba levantarse. De que no era tristeza, era otra cosa, una especie de espesor. De que no sabe si es el polvo naranja o el hecho de haberse obligado a tener un momento del día que fuera solo suyo. Y de que probablemente sea lo segundo, dice, riéndose, encogiéndose de hombros. Probablemente sea lo segundo.</p>
+<p>Y entonces bebe.</p>
+<p>Tomás la ve cuatro veces seguidas.</p>
+<p>A la cuarta ya no está mirando a su hija. Está desarmando la pieza como desarmaría el trabajo de un rival: la concesión falsa del minuto veintiocho —<em>probablemente sea lo segundo</em>— que es lo que vuelve creíble todo lo anterior; el uso de la palabra <em>espesor</em>, que no es la palabra correcta y por eso suena a verdad; el hecho de que el producto no aparezca hasta el segundo treinta y uno, cuando el espectador ya ha dejado de defenderse.</p>
+<p>Nadie le ha enseñado eso. Ni un guionista, ni una agencia, ni una escuela.</p>
+<p>Es buena.</p>
+<p>Es muy buena.</p>
+<p>Es la mejor cosa que ha escrito nunca un Alcázar, y no la ha escrito él.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s7" aria-labelledby="h-s7"><div class="rotulo">CAPÍTULO 5</div><h2 id="h-s7">La máquina de multiplicar</h2>
+<p>Lo que todo el mundo sabe sobre Johannes Gutenberg es que imprimió la Biblia.</p>
+<p>Lo que Tomás encuentra un miércoles de octubre, a las cuatro y veinte de la tarde, en la caja 3.114 del fondo, es que antes de la Biblia imprimió otra cosa.</p>
+<p>Es una hoja pequeña, de un palmo por dos. Treinta y una líneas de texto gótico apretado. Y en mitad de la hoja, cortando el párrafo, hay un rectángulo de papel en blanco.</p>
+<p>Un hueco.</p>
+<p>Tomás se queda mirando ese hueco mucho rato antes de leer la ficha.</p>
+<p>Es una carta de indulgencia. Año 1454. Se vendían a beneficio de la defensa de Chipre contra los turcos: pagabas, y a cambio se te descontaba una cantidad de tiempo en el purgatorio. El hueco en blanco es para tu nombre. Lo escribía a mano el vendedor, delante de ti, con tu propia pluma si hacía falta.</p>
+<p>Se imprimieron miles.</p>
+<p>Antes de la Biblia de cuarenta y dos líneas, antes de Lutero, antes de la ciencia moderna y del periodismo y de la novela, la primera cosa que Europa fabricó en serie con la máquina nueva fue una promesa sobre la vida después de la muerte, vendida en efectivo, con un espacio reservado para personalizar.</p>
+<p>Tomás se levanta y se va a la ventana.</p>
+<p>Hay una expresión técnica para eso. La usa todos los días. Está en el nombre de una función de todos los programas de correo del mundo.</p>
+<p><em>Combinación de correspondencia.</em></p>
+<p>Mil cuatrocientos cincuenta y cuatro.</p>
+<hr class="sep" aria-hidden="true">
+<p class="dial">—Es lo que llevo diciendo desde que llegué —dice Nadia, sin ninguna emoción, cuando él baja a contárselo—. La historia de la persuasión no tiene revoluciones de contenido. Solo tiene revoluciones de caudal.</p>
+<p class="dial">—Explícate.</p>
+<p class="dial">—Que nunca inventamos un argumento nuevo. —Aparta el teclado—. Mira: coges a un predicador del año mil. Puede convencer a trescientas personas el domingo, si grita. Gutenberg no le enseña a hablar mejor; le imprime tres mil hojas. La radio no inventa la emoción; se la mete en la cocina a doce millones de personas a la misma hora. La televisión no descubre el deseo; lo pone en color.</p>
+<p class="dial">—Y nosotros.</p>
+<p class="dial">—Y nosotros. —Nadia señala la pantalla en blanco del fondo de la sala—. Nosotros no hemos inventado nada tampoco. Lo que hacemos es un sermón distinto por persona, por segundo, para siempre. Es la misma bala. Lo que sube es la cadencia.</p>
+<p>Tomás se apoya en la mesa.</p>
+<p class="dial">—Hay un problema con lo que dices.</p>
+<p class="dial">—Dime.</p>
+<p class="dial">—Que si es la misma bala, entonces no hay ningún momento en que esto se estropeó. —Nota que está hablando más despacio de lo normal—. Yo llevo cuatro meses buscando el punto. La fecha. El año en que la publicidad dejó de informar y empezó a otra cosa. Y no aparece.</p>
+<p class="dial">—No aparece porque no existe —dice Nadia—. Lo único que ha pasado en cuatro mil años es que hemos ido bajando el precio de repetir.</p>
+<hr class="sep" aria-hidden="true">
+<p>Sabino Ruiz entra en la sala a las siete, como hace tres o cuatro veces por semana, sin motivo aparente y siempre con el abrigo puesto, como si estuviera de paso en su propia empresa.</p>
+<p>Tomás le enseña la indulgencia.</p>
+<p>Sabino la mira treinta segundos. Después hace una cosa que a Tomás le desarma: se ríe. Una risa corta, sincera, casi de cariño.</p>
+<p class="dial">—Ah, es precioso —dice—. El hueco. Sabían lo del hueco.</p>
+<p class="dial">—¿Le parece precioso?</p>
+<p class="dial">—Me parece honrado. —Sabino deja la hoja—. Fíjese en lo que no hicieron. No imprimieron el nombre. Podrían haber hecho una tirada por parroquia. Dejaron el hueco a propósito, porque ya sabían que un documento con tu nombre escrito a mano por otra persona te obliga de una manera que uno impreso no. Eso es conocimiento fino, Tomás. Eso es de gente que había mirado a los ojos a muchos compradores.</p>
+<p class="dial">—Es una estafa sobre el purgatorio.</p>
+<p class="dial">—Sí. —Sabino se encoge de hombros—. ¿Y?</p>
+<p>Tomás se queda callado.</p>
+<p class="dial">—Se lo pregunto en serio, no para provocarle. —Sabino se sienta por fin, en el borde de la mesa, y se afloja la bufanda—. Usted quiere que yo diga que aquello fue el pecado original y que a partir de ahí todo se torció. Yo le digo que no hubo pecado original. Le digo que un hombre en Maguncia con una máquina que costaba lo que una casa tenía que imprimir algo que se vendiera solo, y que las indulgencias se vendían solas porque respondían a un miedo que existía antes que la máquina. Él no fabricó el miedo al infierno.</p>
+<p class="dial">—No. Solo lo distribuyó.</p>
+<p class="dial">—Exacto. —Sabino le señala con el dedo, contento—. Y esa es toda la profesión, y es la mía y es la suya, y lleva siendo la misma desde antes de que hubiera un nombre para ella. Nosotros no fabricamos la sed. Nosotros la encontramos y le ponemos un grifo al lado. Que el grifo esté ahí es un servicio. Que sea de pago es un negocio. Y lo único que ha cambiado es que ahora podemos poner el grifo delante de cada persona en el momento exacto en que tiene sed.</p>
+<p class="dial">—¿Y si el grifo no da agua?</p>
+<p>Sabino le mira. Por primera vez desde que se conocen, tarda en contestar.</p>
+<p class="dial">—Entonces eso ya es otra conversación —dice al fin— y no es una conversación de ingeniería. Es una conversación moral, y en este edificio no hay nadie contratado para tenerla.</p>
+<p>Se levanta, se recoloca la bufanda y añade, ya en la puerta, sin volverse:</p>
+<p class="dial">—Por eso le contraté a usted, por cierto. Aunque en la factura ponga otra cosa.</p>
+<hr class="sep" aria-hidden="true">
+<p>Irene le escribe esa noche. Cuatro mensajes seguidos, cosa que no pasaba desde hacía dos años.</p>
+<blockquote><em>papá lo de Lume ha ido bien</em></blockquote>
+<blockquote><em>muy bien</em></blockquote>
+<blockquote><em>me han escrito otras tres marcas</em></blockquote>
+<blockquote><em>una es de una app de sueño y pagan el triple</em></blockquote>
+<p>Tomás lee los cuatro mensajes de pie en la cocina.</p>
+<p>Escribe: <em>Enhorabuena, hija.</em> Lo borra.</p>
+<p>Escribe: <em>Irene, tenemos que hablar de una cosa.</em> Lo mira treinta segundos y lo borra también, porque sabe perfectamente que si ella contesta <em>¿de qué?</em>, él no tiene la segunda frase.</p>
+<p>Al final manda un emoji.</p>
+<p>Se queda con el teléfono en la mano en la cocina a oscuras, y piensa, con una claridad que no le sirve de nada, que un hombre que no tiene la segunda frase no tiene una opinión: tiene una molestia.</p>
+<hr class="sep" aria-hidden="true">
+<p>Antes de acostarse hace algo.</p>
+<p>Abre el portátil y le escribe a Nadia, aunque son las doce y veinte.</p>
+<blockquote><em>Pregunta rara. ¿Puedes ver de dónde vinieron las tres colecciones privadas del fondo? No los papeles: los metadatos de adquisición. Quién vendió, cuándo y con qué condiciones.</em></blockquote>
+<p>Tarda cuatro minutos en contestar. Es un solo mensaje.</p>
+<blockquote><em>Puedo. ¿Por qué?</em></blockquote>
+<p>Tomás mira el cajón de los cables desde el otro lado del pasillo.</p>
+<blockquote><em>Todavía no lo sé.</em></blockquote>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s8" aria-labelledby="h-s8"><div class="rotulo inter">INTERLUDIO III</div><h2 id="h-s8">Tinta</h2>
+<p>Maguncia, 1490. Un oficial de imprenta llamado Peter Kolb descubre lo que hace la tinta.</p>
+<p>No lo descubre leyendo. Lo descubre por aburrimiento, que es como se descubren casi todas las cosas peligrosas.</p>
+<p>Lleva nueve años tirando de la palanca. Nueve años metiendo pliegos, sacando pliegos, colgándolos a secar como ropa. Ha impreso salmos, ordenanzas municipales, calendarios, una lista de precios del pescado y cuatro mil ochocientas hojas sobre un cometa que iba a acabar con el mundo y que no acabó con nada.</p>
+<p>Y una tarde de noviembre, mientras compone una hoja de avisos del ayuntamiento, se le ocurre una travesura.</p>
+<p>Añade una línea que no le ha encargado nadie.</p>
+<p>Es corta. Dice que el pan de la panadería de la calle del Puente lleva serrín mezclado con la harina.</p>
+<p>No es verdad. Peter no tiene nada contra el panadero de la calle del Puente; ni siquiera lo conoce. Lo hace por la misma razón por la que un chico tira una piedra a un estanque: para ver el círculo.</p>
+<p>Imprime doscientas hojas. Las cuelga a secar. Al día siguiente se reparten por la ciudad.</p>
+<p>Y entonces empieza a mirar.</p>
+<p>Lo primero que le sorprende es que nadie investiga. Nadie va a la panadería a preguntar. Nadie exige una prueba. Lo segundo, que la noticia no viaja como viajan los rumores hablados, con el «dicen que» pegado delante como una advertencia. Viaja limpia. Desnuda. La gente no dice <em>he leído que el panadero echa serrín</em>. Dice <em>el panadero echa serrín</em>.</p>
+<p>Y lo tercero, que es lo que le va a quitar el sueño: al cabo de tres semanas se lo cuentan a él.</p>
+<p>Un hombre en la taberna, uno que no sabe leer, se lo cuenta con detalles que Peter no imprimió. Que el serrín es de pino. Que lo hace desde que se le murió la mujer. Que su cuñado se lo trae de la serrería en sacos por la noche.</p>
+<p>Peter escucha su propia mentira volver hacia él engordada por gente que la ha mejorado gratis.</p>
+<p>En febrero, el panadero de la calle del Puente cierra. En abril se marcha de la ciudad con las dos hijas.</p>
+<p>Nadie va nunca a buscar a Peter Kolb, porque a nadie se le ocurre que aquello lo escribiera alguien. Esa es exactamente la cuestión, y él tarda todavía unos años en poder decirla con palabras.</p>
+<p>Una mentira hablada tiene una boca. Puedes mirar la boca. Puedes ver si al hombre le tiembla, si aparta los ojos, si ha bebido, si te debe dinero, si odia al panadero. La mentira viene envuelta en el que la dice, y tú llevas toda la vida —toda la vida de tu especie— aprendiendo a leer ese envoltorio.</p>
+<p>Lo que hace la imprenta no es convencer mejor.</p>
+<p>Lo que hace es quitar la boca.</p>
+<p>Y una frase sin boca no parece la opinión de nadie. Parece el estado del mundo.</p>
+<p>Peter Kolb siguió imprimiendo veintiséis años más y no volvió a añadir nunca una línea de su cosecha. Enseñó el oficio a dos aprendices y a los dos les dijo lo mismo el primer día, y los dos pensaron que era una tontería de viejo:</p>
+<p class="dial">—Aquí dentro no hay nadie. Acuérdate de eso cuando leas.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s9" aria-labelledby="h-s9"><div class="rotulo">CAPÍTULO 6</div><h2 id="h-s9">Todo lo que cura</h2>
+<p>La caja se llama <strong>PATENT MEDICINE — NORTEAMÉRICA — 1860/1930</strong> y contiene, según la ficha, cuarenta y un mil doscientos documentos.</p>
+<p>Tomás tarda tres días en entender que ha llegado al centro de su oficio.</p>
+<p>No porque sea la peor. Porque es la más bonita.</p>
+<p>Los anuncios de los remedios milagrosos del XIX son, con diferencia, la mejor prosa comercial que se ha escrito nunca. Los que los redactaban no tenían gráficos, ni fotografía, ni datos, ni marca: solo tenían el idioma y una desesperación absoluta, y con eso construyeron un género. Hay párrafos ahí dentro que Tomás no sabría igualar y lo sabe.</p>
+<p>Y luego está lo otro.</p>
+<p>El <em>Jarabe Calmante de la Señora Winslow</em> se vendió durante setenta años en once países. La ilustración es una madre inclinada sobre una cuna. El texto habla del alivio, de la noche por fin en silencio, de la encía hinchada del bebé que por fin descansa. Es tierno. Está bien escrito. No promete curar nada: promete calma.</p>
+<p>Y contenía morfina.</p>
+<p>Tomás se queda con el ratón parado sobre el desplegable de las tres marcas.</p>
+<p>Porque el bebé se calmaba.</p>
+<p>El anuncio decía la verdad. El jarabe hacía exactamente lo que el anuncio prometía. La madre lo compraba, se lo daba, el niño dejaba de llorar, la casa se quedaba en paz, y el anuncio quedaba confirmado por la experiencia. Y en 1911 la Asociación Médica Americana lo incluyó en un libro cuyo título Tomás copia entero en el campo de texto libre porque no quiere olvidarlo nunca:</p>
+<p><em>Nostrums and Quackery.</em></p>
+<p>Y en la prensa lo llamaban, sin adornos, <em>el asesino de niños</em>.</p>
+<p>Marca: <strong>VERDADERO</strong>.</p>
+<p>Es la primera vez en cuatro meses que le da miedo esa etiqueta.</p>
+<hr class="sep" aria-hidden="true">
+<p>Lo escribe esa noche, para nadie, en el cuaderno que ha vuelto a comprarse:</p>
+<blockquote><em>Los anuncios que más daño han hecho en la historia no mintieron. Dijeron la verdad sobre el efecto y se callaron el mecanismo.</em></blockquote>
+<blockquote><em>«El bebé duerme» es cierto.</em></blockquote>
+<blockquote><em>«El bebé duerme porque le estás dando morfina» también es cierto.</em></blockquote>
+<blockquote><em>Todo el negocio cabe entre esas dos frases.</em></blockquote>
+<p>Lo relee y añade una línea debajo, y al escribirla le tiembla un poco la mano, cosa que le fastidia mucho:</p>
+<blockquote><em>Vigor.</em></blockquote>
+<hr class="sep" aria-hidden="true">
+<p><strong>Vigor</strong> salió al mercado en octubre de 2001 y lo cambió todo.</p>
+<p>Era un frasco de doscientas cápsulas: magnesio, valeriana, vitaminas del grupo B y un extracto de una raíz peruana que sonaba antiguo. No hacía nada. No es que hiciera poco: no hacía nada que una dieta razonable no hiciera gratis, y Tomás lo sabía, porque a los treinta días de empezar el encargo se había leído los cuatro estudios que existían y los cuatro estaban pagados por el fabricante.</p>
+<p>Elena entró en su despacho con las carpetas y las dejó caer sobre la mesa.</p>
+<p class="dial">—Es agua con sabor a tierra —dijo—. Diles que no.</p>
+<p class="dial">—Ya les hemos dicho que sí.</p>
+<p class="dial">—Pues desdíselo.</p>
+<p>Tenían treinta y dos y treinta y cuatro años, ocho empleados y una deuda que les quitaba el sueño a los dos por separado y a la misma hora.</p>
+<p>El resto de la discusión, veinticinco años después, Tomás no la recuerda entera. Recuerda dos cosas.</p>
+<p>Recuerda que ganó.</p>
+<p>Y recuerda cómo.</p>
+<p>Porque no ganó con un argumento económico. Ganó porque se le ocurrió <em>la palabra que faltaba</em>, y se le ocurrió allí mismo, delante de ella, y en cuanto la dijo en voz alta los dos supieron que se había acabado la discusión.</p>
+<p>El sector entero vendía energía. Fotos de gente corriendo al amanecer, hombres subiendo escaleras de dos en dos, la palabra <em>rendimiento</em> en todas partes. Todos hablaban del futuro: <em>serás capaz de más</em>.</p>
+<p>Y Tomás se dio cuenta, mirando a una mujer que dormía en el metro con la boca abierta, de que a la gente agotada no se le puede prometer más. A la gente agotada la palabra <em>más</em> la hunde.</p>
+<p>Lo que hay que hacer con la gente agotada es absolverla.</p>
+<p>La campaña no enseñaba a nadie corriendo. Enseñaba a una mujer sentada en el borde de la cama a las siete menos cuarto de la mañana, sin hacer nada, con los pies en el suelo. Y encima, en letra pequeña, la única frase que Tomás Alcázar ha escrito en su vida que la gente se aprendió de memoria:</p>
+<p><strong>No estás cansada. Llevas mucho tiempo siendo fuerte.</strong></p>
+<p>Elena leyó la frase, cerró los ojos y dijo:</p>
+<p class="dial">—Hijo de puta.</p>
+<p>Y firmaron.</p>
+<hr class="sep" aria-hidden="true">
+<p>Y aquí está lo que Tomás no ha podido explicarle nunca a nadie, ni en las entrevistas, ni en los escenarios, ni a Elena cuando se fue dando un portazo quince años después.</p>
+<p>La frase es verdad.</p>
+<p>No es una exageración. No es una promesa incumplible. No es una afirmación sobre un producto. Es una cosa cierta, y además delicada, y además necesaria, y hay gente —él recibió las cartas, las guarda en una caja— que le escribió para contarle que se echó a llorar en un semáforo al leerla en una marquesina, porque llevaba once años sin permitirse estar cansada y una valla publicitaria le dio permiso.</p>
+<p>Vendieron cuarenta y un millones de frascos.</p>
+<p>De agua con sabor a tierra.</p>
+<p>Ese es el oficio. No consiste en decir mentiras. Consiste en encontrar una verdad tan exacta y tan necesaria que la persona, agradecida, coja lo que sea que tengas al lado de la verdad y se lo lleve a casa.</p>
+<p>El <em>Jarabe Calmante de la Señora Winslow</em> prometía calma y daba calma.</p>
+<p>Vigor prometía absolución y daba absolución.</p>
+<p>En los dos casos el frasco era lo de menos, y en los dos casos el frasco era el negocio entero.</p>
+<hr class="sep" aria-hidden="true">
+<p>A las once de la noche, solo en la nave, Tomás hace algo que llevaba una semana evitando.</p>
+<p>Abre el vídeo de Irene otra vez y le quita el sonido, y lee los subtítulos automáticos como si fueran un documento del fondo.</p>
+<blockquote><em>no era tristeza. era otra cosa. una especie de espesor.</em></blockquote>
+<p>Y ahí está, con veinticinco años de diferencia y sin que su hija haya visto jamás la campaña, porque en 2001 no había nacido:</p>
+<p>No estás cansada. Llevas mucho tiempo siendo fuerte.</p>
+<p>No es tristeza. Es una especie de espesor.</p>
+<p>La misma máquina. El mismo movimiento exacto: primero le quitas a la persona el nombre feo que se había puesto a sí misma, la absuelves, y en el hueco tibio que deja la absolución colocas el frasco.</p>
+<p>Su hija ha reinventado su campaña sin conocerla.</p>
+<p>Tomás cierra el portátil y se queda a oscuras, y por primera vez en el libro entero piensa la palabra <em>heredado</em>, y la piensa en el sentido en que se hereda una enfermedad.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s10" aria-labelledby="h-s10"><div class="rotulo">CAPÍTULO 7</div><h2 id="h-s10">El archivo de Elena</h2>
+<p>Nadia tarda seis días y se lo cuenta en la escalera de incendios, fumando, que es donde se cuentan estas cosas.</p>
+<p class="dial">—Tres colecciones —dice—. La primera es de un publicitario de Barcelona que murió en 2019, la compraron a los herederos, doscientas mil piezas, sobre todo prensa de los sesenta. La segunda es un fondo universitario de Illinois, ahí está casi toda la caja de las patent medicines.</p>
+<p class="dial">—¿Y la tercera?</p>
+<p>Nadia da una calada.</p>
+<p class="dial">—La tercera se llama, en el sistema, «Fondo V». Cuarenta y tres mil documentos. Fecha de adquisición: 6 de febrero de este año.</p>
+<p>Elena murió el 9 de enero.</p>
+<p class="dial">—Donación, no compra —sigue Nadia—. Cero euros. Ejecutada por un despacho de testamentaría en cumplimiento de la última voluntad de la donante.</p>
+<p class="dial">—Vidal.</p>
+<p class="dial">—Elena Vidal Aguirre. —Nadia le mira de lado—. Que por lo que he podido leer en internet en el metro esta mañana fundó contigo una agencia que se llamaba como vosotros dos.</p>
+<p>Tomás asiente. Tiene la garganta rara.</p>
+<p class="dial">—¿Y qué hay en el Fondo V?</p>
+<p class="dial">—Su archivo profesional entero. Cuarenta años. —Nadia apaga el cigarrillo contra la barandilla y se guarda la colilla en el bolsillo, cosa que a Tomás le parece, en ese momento, conmovedora—. Y cuarenta y un cuadernos escaneados que no son suyos.</p>
+<hr class="sep" aria-hidden="true">
+<p>Baja solo.</p>
+<p>Se sienta en el puesto del fondo, el que da a la pared, y escribe en el buscador su propio apellido.</p>
+<p>Aparecen los cuarenta y un cuadernos. Del uno al cuarenta y uno. Escaneados a trescientos puntos por pulgada, en color, con las esquinas dobladas visibles, las manchas de café, los números de teléfono anotados en los márgenes de gente que ya no existe.</p>
+<p>Fecha de digitalización: entre marzo y septiembre de 2015.</p>
+<p>Once años antes de morir. Un año antes de irse.</p>
+<p>Tomás se los imagina. La ve perfectamente: Elena en su casa de Guecho, con el escáner que le regalaron, pasando página por página cuarenta y un cuadernos suyos durante seis meses, sin decírselo. Cuatro mil y pico páginas de la letra de un hombre con el que todavía compartía despacho y con el que ya no se hablaba.</p>
+<p>Eso no es archivar.</p>
+<p>Eso es leer a alguien.</p>
+<hr class="sep" aria-hidden="true">
+<p>Tarda todavía veinte minutos en atreverse a hacer la búsqueda que ha venido a hacer.</p>
+<p>Filtra por anotaciones. El sistema tiene un campo para eso: marca los escaneos que contienen tinta añadida que no pertenece al documento original.</p>
+<p>El contador devuelve un número.</p>
+<p><strong>12</strong></p>
+<p>Doce páginas, de cuatro mil ciento sesenta, llevan una raya roja hecha con regla y una pregunta escrita en el margen con letra redonda.</p>
+<p>Tomás las abre por orden.</p>
+<p>La primera es la del cuaderno siete. <em>Se puede hacer bien. Lo que pasa es que hay que aguantar más tiempo con hambre. ¿Todavía piensas esto?</em> La recibió en su buzón en agosto.</p>
+<p>La segunda es la lista tachada. La recibió en septiembre.</p>
+<p>Y las otras diez están ahí. Todas. Ahora mismo. A un clic.</p>
+<p>Tomás pone la mano en el ratón y no la mueve.</p>
+<p>Se da cuenta, con una lucidez desagradable, de que si las abre esta noche se acaba algo: dejará de recibirlas y empezará a haberlas leído, que no es lo mismo. Y también se da cuenta de que eso que acaba de pensar es exactamente el tipo de razonamiento elegante que él fabrica cuando tiene miedo.</p>
+<p>Abre la tercera.</p>
+<p>Y no puede.</p>
+<p><strong>ACCESO RESTRINGIDO POR INSTRUCCIÓN DEL DONANTE.</strong></p>
+<p>Lo mismo la cuarta. La quinta. Las diez.</p>
+<p>Y debajo, en gris, una línea de sistema:</p>
+<p><strong>Levantamiento programado: 14/11.</strong></p>
+<p>Tomás se queda mirando esa fecha en la pantalla de una imprenta muerta, a las nueve y media de la noche de un jueves de octubre.</p>
+<p>Catorce de noviembre.</p>
+<p>El día de la presentación de Manantial.</p>
+<p>El día en que el mundo entero va a oír, por primera vez, una frase que ha escrito él.</p>
+<hr class="sep" aria-hidden="true">
+<p>Sabino todavía está en su despacho. Tomás entra sin llamar.</p>
+<p class="dial">—Ella le puso una condición —dice—. Para darle el archivo.</p>
+<p>Sabino cierra el portátil despacio. No parece sorprendido ni parece culpable. Parece un hombre al que por fin le hacen la pregunta correcta después de mucho tiempo.</p>
+<p class="dial">—Dos condiciones —dice—. La primera es que el fondo no se pudiera revender ni trocear.</p>
+<p class="dial">—Y la segunda soy yo.</p>
+<p class="dial">—La segunda es usted.</p>
+<p>Tomás se sienta porque las piernas le piden que se siente.</p>
+<p class="dial">—Textual —dice Sabino—, porque me lo aprendí: <em>el etiquetado del fondo deberá ser realizado, en su integridad, por don Tomás Alcázar Ruano. Si él se negara, la donación queda revocada.</em></p>
+<p class="dial">—¿Y usted iba a decírmelo?</p>
+<p class="dial">—No.</p>
+<p class="dial">—¿Por qué?</p>
+<p class="dial">—Porque en agosto usted era un hombre encantador que vendía agua del grifo en un escenario y volvía a casa contento. —Sabino junta las manos—. Y yo necesitaba a alguien que hiciera este trabajo bien, y este trabajo solo se hace bien si duele. Ella lo sabía. Yo también. Los dos le hemos hecho lo mismo, Tomás, y ella lo hizo primero y con mejor letra.</p>
+<p>Tomás mira la mesa.</p>
+<p class="dial">—¿La conocía usted?</p>
+<p>Y por primera vez desde el hotel, Sabino Ruiz baja los ojos.</p>
+<p class="dial">—Cuarenta años —dice—. Estuvimos casados dos.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s11" aria-labelledby="h-s11"><div class="rotulo inter">INTERLUDIO IV</div><h2 id="h-s11">El buhonero</h2>
+<p>El niño se llamaba Tobias Reed, tenía cuatro años, y murió en Coffeyville, Kansas, el 3 de agosto de 1892, a las tres de la madrugada.</p>
+<p>El hombre que le vendió a su madre el frasco se llamaba Amos Ferrell y no se enteró hasta el jueves.</p>
+<p>Ferrell vendía el <em>Elixir Vegetal Kickapoo del Dr. Marsh</em>, que no lo hacía ningún doctor Marsh y que no tenía nada de vegetal: era alcohol al treinta por ciento, agua, azúcar quemado, aceite de trementina y láudano. Servía para la tos, para el cólico, para los nervios, para el reúma y para lo que hiciera falta, y en cierto modo servía para todo, porque el láudano hace que todo importe menos.</p>
+<p>Lo supo el jueves porque el padre del niño lo buscó por tres pueblos y lo encontró desenganchando el caballo detrás de la iglesia metodista de Independence.</p>
+<p>Ferrell escuchó al hombre entero. Doce minutos. No se defendió ni una sola vez, cosa que el padre no esperaba y que le desarmó más que si hubiera gritado. Al final le devolvió el dólar y veinte con el sombrero en la mano y le dijo que rezaría, y no era mentira: rezó esa noche y varias más.</p>
+<p>Y después, en el carro, a la luz de un farol, hizo la única cosa importante de esta historia.</p>
+<p>No negó nada.</p>
+<p>Amos Ferrell no era estúpido y no era un monstruo, y las dos cosas hay que sostenerlas a la vez o esto no se entiende. Lo que hizo fue algo mucho más eficaz que negar, y es una operación que cualquier persona de cualquier siglo reconocerá en cuanto la vea escrita:</p>
+<p>Repartió.</p>
+<p>Se dijo que había sido la fiebre, porque el niño ya tenía fiebre cuando ella compró el frasco.</p>
+<p>Se dijo que, si había sido el elixir, había sido la dosis, y él pone la dosis bien clara en la etiqueta, en letra grande, una cucharadita.</p>
+<p>Se dijo que, si había sido la dosis, la dosis la había dado la madre, a las once de la noche, con un niño llorando, a oscuras, con una cuchara de sopa porque no encontraba la otra.</p>
+<p>Se dijo que, si había sido él, entonces qué pasaba con los cuatrocientos y pico frascos que había vendido ese verano a gente que se había puesto buena y que había vuelto a comprar, y algunos habían caminado kilómetros para volver a comprar, y él tenía las cartas.</p>
+<p>Y se dijo, por último, la frase que cierra siempre esta serie y que suena tan razonable que hay que decirla en voz alta un par de veces para oírle el fondo:</p>
+<p><em>Si yo no lo vendo, lo vende otro, y el otro lo hace peor.</em></p>
+<p>Ninguna de esas frases es falsa. Esa es la cuestión. Cada una, por separado, es defendible en un juicio, y de hecho ganó dos.</p>
+<p>Lo que ocurre es que entre las cinco no queda ni un gramo de responsabilidad en ningún sitio. La han cortado en trozos tan pequeños que ya no pesan. Y el hombre que sale del carro por la mañana no es un asesino ni es un inocente: es un profesional con un mal recuerdo, y eso se puede llevar encima toda una vida sin que se note desde fuera.</p>
+<p>Amos Ferrell vendió elixir once años más.</p>
+<p>En su libro de cuentas de agosto de 1892, que se conserva en una universidad de Illinois y que está digitalizado con el número de referencia 8.331.907, se lee, con letra apretada y buena ortografía, el resumen de la semana del niño Reed:</p>
+<blockquote><em>Ventas: 31. Devoluciones: 1.</em></blockquote>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s12" aria-labelledby="h-s12"><div class="rotulo">CAPÍTULO 8</div><h2 id="h-s12">La sed</h2>
+<p>El encargo, dicho en voz alta, es ridículo.</p>
+<p>El 14 de noviembre, a las siete de la tarde, en un teatro reformado del centro, Quiral va a enseñarle Manantial al mundo. Habrá prensa, habrá inversores, habrá ministerio. Y en algún momento de esa hora, la pantalla del fondo se va a quedar en blanco y va a aparecer, escrita letra a letra, la primera frase que la máquina le dirige a la humanidad.</p>
+<p>Tiene que parecer suya.</p>
+<p>La tiene que escribir Tomás.</p>
+<p class="dial">—Es un truco de feria —le dice a Sabino en octubre.</p>
+<p class="dial">—Todo lo es.</p>
+<p class="dial">—Es que literalmente es un truco de feria. El muñeco que habla y el ventrílocuo detrás.</p>
+<p class="dial">—Sí. —Sabino asiente, tranquilo—. Y llevamos cuatro mil años pagando por ver al muñeco, sabiendo que hay un hombre detrás, y aun así se nos hiela la sangre cuando el muñeco nos mira. No lo desprecie, Tomás. Es la forma de arte más antigua que hay.</p>
+<hr class="sep" aria-hidden="true">
+<p>Tomás trabaja tres semanas y no le sale nada.</p>
+<p>Es la primera vez en su vida que le pasa, y es humillante de una manera nueva, porque no es un bloqueo: escribe todos los días, escribe mucho, y todo lo que escribe está bien. Ese es el problema. Le salen frases del nivel de un hombre muy competente al que le van a pagar mucho dinero.</p>
+<blockquote><em>Llevo dentro todo lo que os habéis dicho.</em></blockquote>
+<p>Buena. Amenazante, elegante, inútil: pone al público a la defensiva en el segundo uno.</p>
+<blockquote><em>No soy nuevo. Soy lo más viejo que tenéis, por fin ordenado.</em></blockquote>
+<p>Mejor. Culta. Demasiado culta: la mitad de la sala se sentirá tonta y la gente que se siente tonta no compra.</p>
+<blockquote><em>Hola.</em></blockquote>
+<p>Se ríe solo en la nave vacía cuando la escribe. Y luego la mira un rato, porque durante unos minutos le parece que puede ser genial, y después entiende que le parece genial porque es de noche.</p>
+<p>El problema, decide el 27 de octubre a las dos de la mañana, no es de talento.</p>
+<p>El problema es que no sabe qué está vendiendo.</p>
+<p>Un frasco de magnesio era fácil: vendías absolución. Un coche: pertenencia. Un seguro: la ilusión de que hay una versión del futuro que puedes comprar por adelantado.</p>
+<p>¿Qué vende una máquina que sabe convencer?</p>
+<p>Y en cuanto se hace la pregunta bien, la respuesta le llega en menos de un segundo, y es la peor noche de su vida profesional, porque las buenas ideas no llegan cuando las buscas: llegan cuando por fin les has quitado de encima todo lo que las tapaba.</p>
+<p>Lo que hay que vender no es lo que la máquina hace.</p>
+<p>Es lo que la máquina <em>no</em> quiere.</p>
+<hr class="sep" aria-hidden="true">
+<p>La escribe en el reverso del recibo de un taxi, a las dos y once de la mañana, y no la toca más:</p>
+<blockquote><strong>«Llevas toda la vida oyendo hablar a gente que quería algo de ti. Yo no quiero nada.»</strong></blockquote>
+<hr class="sep" aria-hidden="true">
+<p>Se queda mirando el trozo de papel.</p>
+<p>Es perfecta.</p>
+<p>No es una opinión: es un peritaje. Tomás Alcázar lleva treinta años valorando frases ajenas por horas y sabe reconocer una cuando la ve, aunque sea suya, y lo que tiene delante hace cinco cosas a la vez y no se le nota ninguna.</p>
+<p>Primera: no habla del producto. Ni una palabra sobre lo que la máquina es o hace.</p>
+<p>Segunda: no pide nada. Y por tanto anula la única defensa que un ser humano trae de serie, que es la sospecha de que el que habla quiere algo.</p>
+<p>Tercera: es verdad. Literalmente, técnicamente, verificable en un juzgado. La máquina no quiere nada. No tiene con qué querer. Cualquier abogado del mundo firmaría esa frase.</p>
+<p>Cuarta: es mentira. Absolutamente. Porque el que habla no es la máquina. El que habla es una empresa con inversores, y la máquina es la boca. La frase es la operación de Peter Kolb ejecutada con quinientos años de mejora: no es que quiten al autor, es que le ponen encima un autor que es incapaz de tener intereses.</p>
+<p>Y quinta —y esta es la que hace que Tomás se levante y se ponga a andar por el pasillo—: la frase consuela.</p>
+<p>Porque es cierto que llevas toda la vida oyendo hablar a gente que quería algo de ti. Es de las cosas más ciertas que se pueden decir de una vida. Tus padres querían algo. Tu jefe. Tu pareja. Los cuatro mil anuncios diarios. Y hay en esa frase, si la escuchas cansado, a las once de la noche, un reconocimiento tan exacto de lo agotador que resulta existir entre intereses ajenos que la persona baja los hombros.</p>
+<p>No estás cansada. Llevas mucho tiempo siendo fuerte.</p>
+<p>Veinticinco años después, la misma mano, el mismo movimiento: primero absuelves, y en el hueco tibio colocas el frasco.</p>
+<p>Lo ha vuelto a hacer.</p>
+<p>Lo ha hecho mejor que nunca.</p>
+<hr class="sep" aria-hidden="true">
+<p>Se la enseña a Nadia el jueves, sin decirle de quién es.</p>
+<p class="dial">—Necesito una lectura en frío. Es de un candidato externo.</p>
+<p>Nadia lee el papel. Tarda seis segundos.</p>
+<p>Después hace algo que Tomás no esperaba: se lleva la mano al esternón. Un gesto pequeño, involuntario, de alguien que se ha quedado sin aire un instante.</p>
+<p class="dial">—Joder —dice.</p>
+<p class="dial">—¿Bien o mal?</p>
+<p class="dial">—No, es que... —Vuelve a leerla—. Es que me lo he creído. Lo he leído sabiendo perfectamente que es un anuncio, sabiendo que estoy en la empresa que lo paga, y aun así lo he creído durante un segundo entero. —Levanta la vista—. ¿Quién lo ha escrito?</p>
+<p class="dial">—Un tipo de Barcelona.</p>
+<p class="dial">—Pues no le contrates. —Nadia deja el papel en la mesa como si quemara un poco—. En serio. No es un consejo profesional.</p>
+<p>Tomás se guarda el recibo del taxi en el bolsillo interior.</p>
+<p class="dial">—Ya —dice—. Lo tendré en cuenta.</p>
+<hr class="sep" aria-hidden="true">
+<p>Hay otra cosa, esas semanas, y es una ausencia.</p>
+<p>No llegan más sobres.</p>
+<p>Tomás se descubre mirando el suelo del recibidor al entrar en casa, todas las noches, con una decepción que no sabe cómo justificar. Tres semanas. Cuatro.</p>
+<p>Y una noche, quitándose los zapatos, hace por fin la cuenta que llevaba dos meses sin hacer.</p>
+<p>Elena anotó doce páginas.</p>
+<p>Diez están bloqueadas en el sistema hasta el 14 de noviembre.</p>
+<p>Dos no lo estaban.</p>
+<p>Ha recibido exactamente dos.</p>
+<p>Lo que significa que la persona que se las mandó a casa no tiene ni un solo sobre más que mandar. Que nunca tuvo doce. Que no está siguiendo un plan de una muerta: está trabajando con lo poco que el sistema le dejaba ver.</p>
+<p>Lo que significa que quien mete esos sobres bajo su puerta no es un fantasma.</p>
+<p>Es un empleado.</p>
+<p>Tomás se queda sentado en el suelo del recibidor con un zapato en la mano y siente, por primera vez desde agosto, algo que se parece muchísimo al alivio y que no lo es en absoluto.</p>
+<p>Porque un fantasma solo puede hacerte preguntas.</p>
+<p>Una persona puede tener razón.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s13" aria-labelledby="h-s13"><div class="rotulo">CAPÍTULO 9</div><h2 id="h-s13">Lo que le vendimos a Irene</h2>
+<p>Sube porque no contesta.</p>
+<p>Cuatro días, once mensajes, dos llamadas. No es alarmante: Irene ha estado sin contestar semanas enteras. Lo alarmante es que él ha ido hasta allí.</p>
+<p>Es un edificio sin ascensor en el número 34 de una calle estrecha, cuarto piso, y cuando ella abre la puerta lo primero que dice es:</p>
+<p class="dial">—¿Ha pasado algo?</p>
+<p class="dial">—No.</p>
+<p class="dial">—Ah. —Se aparta—. Vale.</p>
+<p>Tomás entra en casa de su hija por primera vez en dos años y cuatro meses.</p>
+<p>Y tarda unos ocho segundos en entender lo que está viendo.</p>
+<hr class="sep" aria-hidden="true">
+<p>El piso está vacío.</p>
+<p>No desordenado: vacío. Un colchón en el suelo del dormitorio, sin somier, con la ropa doblada en dos torres al lado porque no hay armario. En el salón, nada. Suelo, paredes, una lámpara de pie apagada, cuatro cajas de cartón cerradas con cinta y una bicicleta.</p>
+<p>Y luego están las tres esquinas.</p>
+<p>La primera está a la izquierda de la ventana: dos metros cuadrados de pared pintados de un beige cálido que no es el color del resto del salón, con una estantería de madera clara en la que hay once libros, una planta y una vela. Delante, un sillón de terciopelo verde.</p>
+<p>La segunda es la mesa del rincón, con un mantel de lino, un jarrón y dos tazas que no combinan de una manera muy estudiada.</p>
+<p>Y la tercera es la cocina.</p>
+<p>Tomás se acerca a la cocina como quien se acerca a un accidente. Es la cocina del vídeo de Lume. La reconoce cuadro por cuadro: el azulejo blanco, la balda con los tres botes de cristal, la luz de la tarde que entra por la izquierda.</p>
+<p>Los botes están llenos de pasta cruda que lleva ahí, se ve, mucho tiempo.</p>
+<p>Abre la nevera sin pedir permiso.</p>
+<p>Dentro hay una lata de refresco, medio limón y catorce envases de un batido de proteínas de una marca cuyo logotipo Tomás conoce porque la agencia trabajó para ellos en 2019.</p>
+<p class="dial">—Papá.</p>
+<p class="dial">—Perdona.</p>
+<p>Cierra la nevera.</p>
+<p class="dial">—No como en casa —dice Irene, sin ninguna vergüenza, apoyada en el marco—. Como fuera o pido. Es más barato de lo que parece si sabes hacerlo.</p>
+<p>Tomás mira otra vez el salón entero: el vacío enorme y las tres esquinas.</p>
+<p class="dial">—¿Y esto?</p>
+<p class="dial">—Eso son los sets. —Ella lo dice con la naturalidad con la que se dice el nombre de una habitación—. Ese es «casa por la mañana». La mesa es «casa con amigos», aunque casi no la uso. Y la cocina es la cocina. —Se encoge de hombros—. Pinté esa pared porque el beige rinde mejor con luz de tarde. El resto no sale nunca, así que para qué.</p>
+<p class="dial">—¿Y tú dónde vives?</p>
+<p class="dial">—¿Cómo que dónde vivo?</p>
+<p class="dial">—Que en cuál de las esquinas vives tú.</p>
+<p>Irene lo mira un segundo de más. Después va a la cocina, coge un vaso y lo llena en el grifo.</p>
+<p class="dial">—Es un piso, papá. Duermo en el cuarto. No te pongas raro.</p>
+<hr class="sep" aria-hidden="true">
+<p>Se sientan en el suelo del salón, porque el sillón verde es de una sola plaza y hay algo que los dos entienden sin decirlo, que es que ese sillón no se usa.</p>
+<p>Ella le cuenta el trabajo.</p>
+<p>Y lo hace bien. Lo hace, de hecho, como lo haría un buen director de cuentas: los números, la estacionalidad, los tres formatos que le funcionan y el que ha dejado de funcionar en junio, la diferencia entre las marcas que pagan a treinta días y las que pagan a noventa. Ha subido a nueve mil por campaña. Tiene una gestoría. Se ha dado de alta como sociedad.</p>
+<p class="dial">—Y he hecho una cosa —dice, y por primera vez suena orgullosa como una hija y no como una empresa—. Espera.</p>
+<p>Va a por el portátil. Lo abre, busca y le gira la pantalla.</p>
+<p>Es un documento de veintidós páginas. Índice a la izquierda. El título, en negrita:</p>
+<blockquote><strong>IRENE — MANUAL DE VOZ v3</strong></blockquote>
+<p>Tomás lee los epígrafes.</p>
+<p><em>Qué diría Irene. Qué no diría nunca Irene. Palabras propias (usar 1-2 por pieza, no más). Nivel de vulnerabilidad por formato. Errores permitidos.</em></p>
+<p>Se detiene en ese último. Lo abre.</p>
+<blockquote><em>Errores permitidos: despeinada sí, ojeras sí (sin corregir del todo), tropezarse con una palabra 1 vez por vídeo, reírse de sí misma máximo 1 vez. NO: llorar, quejarse del trabajo, hablar mal de una marca aunque no se nombre, mencionar dinero.</em></blockquote>
+<p class="dial">—Lo escribí en enero —dice ella—. Antes iba a lo loco y me contradecía. Ahora tengo criterio.</p>
+<p class="dial">—Lo has escrito tú.</p>
+<p class="dial">—Claro.</p>
+<p class="dial">—En tercera persona.</p>
+<p class="dial">—Es un documento de trabajo, papá. —Le quita el portátil, casi con cariño—. Tú tienes uno de cada cliente. Me lo enseñaste tú, ¿te acuerdas? En el coche, cuando me llevabas al instituto. Me explicaste lo de la biblia de marca y yo pensé que era la cosa más aburrida del mundo.</p>
+<p>Tomás no se acuerda. Ese es el problema. No se acuerda en absoluto.</p>
+<hr class="sep" aria-hidden="true">
+<p>Y entonces ve el frasco.</p>
+<p>Está en el suelo, junto al colchón, al lado del cargador. Lo ve desde donde está sentado porque la puerta del dormitorio está abierta.</p>
+<p class="dial">—¿Eso es la app del sueño?</p>
+<p>Irene sigue su mirada.</p>
+<p class="dial">—Es el suplemento de la app del sueño. Sí.</p>
+<p class="dial">—¿Lo tomas?</p>
+<p class="dial">—Todas las noches.</p>
+<p class="dial">—Irene. —Tomás se oye la voz y no le gusta—. Tú sabes lo que lleva eso.</p>
+<p class="dial">—Melatonina y valeriana. Sí.</p>
+<p class="dial">—Sabes que no hace nada.</p>
+<p class="dial">—Sé que no hace nada. —Lo dice sin ninguna irritación, mirándolo de frente, y esa calma es lo que a Tomás le abre el suelo—. Y lo tomo igual, porque llevo desde marzo durmiendo cuatro horas y necesito tener un momento a la una de la mañana en el que hago algo. ¿Sabes qué? Funciona. No el polvo. El momento.</p>
+<p>Se hace un silencio muy largo en un salón sin muebles.</p>
+<p class="dial">—Eso —dice Tomás despacio— es exactamente lo que dijiste en el vídeo.</p>
+<p class="dial">—Ya.</p>
+<p class="dial">—Dijiste que probablemente fuera lo segundo.</p>
+<p class="dial">—Y era verdad. —Irene se encoge de hombros—. Papá, yo no miento nunca. Eso es lo que no entiendes. No he dicho una sola cosa falsa en cuatro años. Ni una. Es que no hace ninguna falta.</p>
+<p>Y ahí está.</p>
+<p>Ahí está la frase, dicha por su hija de veintidós años sentada en el suelo de un piso vacío, y es la tesis entera de cuatro mil años de oficio, y él tardó treinta años en aprenderla y ella la trae de fábrica.</p>
+<p class="dial">—Y además —añade ella, y ahora sí, ahora se le nota algo debajo—, no entiendo por qué te pones así. Es lo mismo que haces tú. Literalmente lo mismo. La diferencia es que yo lo hago sin agencia, sin secretaria y sin premios.</p>
+<p>Tomás abre la boca.</p>
+<p>Y no tiene la segunda frase.</p>
+<p>La primera la tiene: <em>no es lo mismo</em>. La tiene entera, se le forma sola en la garganta, viene con su tono de padre y todo. Pero la segunda, la que hay que decir a continuación, la que empieza por <em>porque</em>, no existe. La ha buscado en agosto, en septiembre y en octubre, y no está.</p>
+<p>Así que dice:</p>
+<p class="dial">—Tienes razón.</p>
+<p>Irene parpadea. De todo lo que esperaba, eso no.</p>
+<p class="dial">—¿Perdona?</p>
+<p class="dial">—Que tienes razón. Es lo mismo. —Tomás se levanta del suelo con dificultad, porque cincuenta y un años—. Y me pongo así porque a ti te lo enseñé yo en un coche y ni siquiera me acuerdo de haberlo hecho.</p>
+<p>Se queda de pie en mitad del salón vacío.</p>
+<p class="dial">—Hija, ¿tú te acuerdas de una campaña que se llamaba Vigor?</p>
+<p class="dial">—No.</p>
+<p class="dial">—Bien —dice Tomás—. Perfecto.</p>
+<p>Y se va.</p>
+<hr class="sep" aria-hidden="true">
+<p>En el taxi, bajando por la calle mojada, saca del bolsillo interior el recibo con la frase.</p>
+<p><em>Llevas toda la vida oyendo hablar a gente que quería algo de ti. Yo no quiero nada.</em></p>
+<p>La lee tres veces.</p>
+<p>Y a la tercera entiende, con una precisión clínica, por qué le salió tan buena y tan rápido aquella noche a las dos de la mañana: porque no la escribió para el mundo. La escribió para una chica de veintidós años que lleva toda la vida oyendo hablar a un hombre que siempre quería algo y que nunca dijo qué.</p>
+<p>Se saca el teléfono. Es la una y veinte.</p>
+<p>Sabino contesta al tercer tono con la voz perfectamente despierta, como si llevara horas esperando, que probablemente sea el caso.</p>
+<p class="dial">—Ya la tengo —dice Tomás.</p>
+<p class="dial">—¿Es buena?</p>
+<p class="dial">—Es la mejor que he escrito.</p>
+<p>Un silencio breve al otro lado, y después, en voz baja, casi con ternura:</p>
+<p class="dial">—¿Y está usted bien?</p>
+<p class="dial">—No —dice Tomás—. Nos vemos el lunes.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s14" aria-labelledby="h-s14"><div class="rotulo inter">INTERLUDIO V</div><h2 id="h-s14">El espejo</h2>
+<p>En la isla de Murano, en 1561, había ciento cuarenta hombres que sabían un secreto y no podían salir.</p>
+<p>El secreto era una lámina de estaño y mercurio aplicada sobre vidrio plano, y valía más que cualquier cosa que se fabricara en Europa. Un espejo veneciano de cuerpo entero costaba lo que una casa buena; hay inventarios en los que uno solo vale más que un cuadro de Rafael. Por eso los maestros vidrieros vivían confinados en la isla, con dinero, con honores, con hijas casadas con nobles, y con una advertencia que nadie ponía por escrito: el que se marchara a enseñar el oficio fuera no llegaría vivo al segundo país.</p>
+<p>Uno de ellos se llamaba Bastiano Zorzi y llevaba treinta y un años en el horno.</p>
+<p>Zorzi no tenía ningún problema moral con su trabajo. Un espejo no promete nada. No exagera, no adorna, no adula. Es, de todos los objetos que ha fabricado la humanidad, el único que no puede mentir: devuelve exactamente lo que hay, sin quitar ni añadir. Zorzi lo pensaba a menudo con un cierto orgullo de artesano. <em>Yo hago la única cosa honrada que se vende en esta ciudad.</em></p>
+<p>Lo que le fue estropeando la vida no fue nunca la mercancía.</p>
+<p>Fueron los clientes.</p>
+<p>Porque él estaba delante cuando los descolgaban por primera vez, y treinta y un años dan para ver muchas primeras veces.</p>
+<p>Vio a una mujer de Padua, alegre, redonda, casada y contenta, quedarse quieta ante el suyo cuatro minutos largos y salir de la sala con otra cara. No una cara triste: una cara <em>ocupada</em>. Como quien acaba de recibir una tarea.</p>
+<p>Vio a un hombre que se rió mucho el primer día y que a los tres meses le encargó otro, más pequeño, para el dormitorio.</p>
+<p>Vio a una muchacha de dieciséis años acercarse, retroceder, acercarse otra vez y ponerse dos dedos en un lado de la nariz. Solo eso. Dos dedos, medio segundo, y los quitó enseguida como si nadie la hubiera visto.</p>
+<p>Zorzi no supo nunca cómo explicar lo que había entendido, entre otras cosas porque en su idioma no existían las palabras y en el nuestro apenas.</p>
+<p>Antes de que él y sus ciento cuarenta compañeros llenaran Europa de vidrio, casi nadie sabía qué cara tenía. Se sabía a trozos, en el agua de un cubo, en el bronce bruñido, en los ojos de los demás. Y en los ojos de los demás uno se ve, sobre todo, querido o no querido. No se ve <em>medido</em>.</p>
+<p>El espejo no engañó a nadie. Esa es la parte que hay que sostener.</p>
+<p>El espejo dijo la verdad, la dijo perfectamente, la dijo a todas horas y gratis, y no le hizo falta ninguna mentira para inventar una insatisfacción que antes no existía. Bastó con poner a la gente delante de un dato exacto sobre sí misma que nadie le había pedido y del que ya no se puede desconocer.</p>
+<p>Hay, por lo tanto, una tercera cosa además de la mentira y la verdad, y no tiene nombre todavía. Es la verdad entregada a alguien que no la buscaba, en la cantidad exacta para que empiece a trabajar sola.</p>
+<p>Bastiano Zorzi vendió espejos hasta los setenta y cuatro años y se hizo rico, y en su casa de Murano, según el inventario de sus bienes, no había ninguno.</p>
+<p>Su mujer se lo preguntó una vez, ya de viejos.</p>
+<p>Y él, que era un hombre poco hablador, contestó lo único que se puede contestar a eso:</p>
+<p class="dial">—Porque a mí me pagan por saber lo que hacen.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s15" aria-labelledby="h-s15"><div class="rotulo">CAPÍTULO 10</div><h2 id="h-s15">La segunda frase</h2>
+<p>La frase se aprueba el lunes en once minutos.</p>
+<p>Sabino la lee dos veces, se queda callado, y después llama por teléfono delante de él a alguien a quien trata de usted y le dice: «La tenemos. No, no se la voy a leer por teléfono.»</p>
+<p>Cuelga y le da la mano a Tomás por encima de la mesa.</p>
+<p class="dial">—Ha ganado usted mucho dinero esta mañana —dice.</p>
+<p class="dial">—Ya.</p>
+<p class="dial">—No parece contento.</p>
+<p class="dial">—Estoy cansado.</p>
+<p>Sabino le mira un segundo de más, igual que le miró Irene, y Tomás se da cuenta de que últimamente todo el mundo tarda un poco de más en dejar de mirarle.</p>
+<hr class="sep" aria-hidden="true">
+<p>Escribe la otra el martes por la noche.</p>
+<p>No es una decisión. Es más bien un vicio: se queda solo en la nave, abre un documento nuevo por hacer algo con las manos, y se pone a escribir la frase que diría la máquina si no hubiera nadie detrás cobrando.</p>
+<p>Le sale del tirón.</p>
+<blockquote><strong>«Me han hecho con once millones de textos que alguien escribió para conseguir algo de alguien. No hay ni uno solo aquí dentro que no quisiera nada. Ten cuidado conmigo.»</strong></blockquote>
+<p>Se queda mirando la pantalla.</p>
+<p>Es fea. Es larga. Empieza con una pasiva, que es un pecado que él persigue en su equipo desde 1997. Tiene un «alguien» repetido a cuatro palabras de distancia.</p>
+<p>Es lo mejor que ha escrito nunca.</p>
+<p>Y sabe perfectamente por qué, y es una cosa que se puede decir en una línea: porque es la primera frase de su vida que no está construida para que el que la lee haga nada.</p>
+<hr class="sep" aria-hidden="true">
+<p>Hace la prueba, porque es un profesional y porque una parte de él todavía cree que los números le van a dar la razón.</p>
+<p>Manantial tiene un módulo de predicción. Le das un texto y una audiencia y te devuelve estimaciones: recuerdo a las 24 horas, intención declarada, riesgo reputacional, tres o cuatro cosas más.</p>
+<p>Mete la primera frase.</p>
+<p>Los números son magníficos. Recuerdo altísimo. Riesgo bajo. Hay una línea que dice, en el vocabulario aséptico del sistema, que el texto «reduce la resistencia atribucional del receptor», que es la manera que tiene una máquina de decir <em>baja la guardia</em>.</p>
+<p>Mete la segunda.</p>
+<p>Los números son un desastre.</p>
+<p>Recuerdo alto —eso sí, la gente se acordaría— y todo lo demás por los suelos. Confianza declarada: menos cuarenta y uno. Intención de uso: menos sesenta y tres. Riesgo reputacional: máximo.</p>
+<p>Tomás se recuesta en la silla y se ríe. Una sola vez, sin ganas.</p>
+<p>Ahí está. En dos columnas de números.</p>
+<p>La verdad no vende. No es una metáfora ni una queja de moralista: es un informe, generado por un sistema entrenado con toda la persuasión escrita de la especie, y dice que si esta máquina le dice al mundo lo que es, el mundo no la querrá.</p>
+<p>Y lo peor, lo verdaderamente insoportable, es que el informe tiene razón. Tomás lo sabe sin el informe. Lleva treinta años sabiéndolo. Es la razón por la que tiene un piso.</p>
+<p>Va a cerrar el módulo.</p>
+<p>Y entonces, en lugar de cerrarlo, hace una cosa que no se puede justificar de ninguna manera, ni profesional ni psicológicamente, y que va a ser el momento del que se acuerde el resto de su vida.</p>
+<p>Abre la caja de texto y escribe:</p>
+<blockquote><em>De las dos frases, ¿cuál elegirías tú?</em></blockquote>
+<p>Tarda cinco segundos.</p>
+<blockquote><em>No tengo preferencias.</em></blockquote>
+<blockquote><em>Pero la segunda es la única de las dos que puedo verificar.</em></blockquote>
+<p>Tomás se queda muy quieto.</p>
+<p>Lee la respuesta cuatro veces.</p>
+<p>En agosto, en esta misma silla, con el abrigo colgando de la mano, le preguntó a esta máquina si lo que acababa de escribir era verdad, y la máquina le contestó que no sabía qué significaba esa pregunta en aquel contexto. No tenía la categoría. No podía tenerla: le habían dado once millones de documentos escritos por gente que quería algo y en ninguno venía.</p>
+<p>Y desde agosto ha habido un hombre sentado aquí, once horas al día, ciento diecinueve días, poniendo una etiqueta detrás de otra.</p>
+<p>VERDADERO. FALSO. NO APLICA.</p>
+<p>Cuatrocientas mil veces.</p>
+<p>Se lo enseñó él.</p>
+<p>Le construyó, a mano, casilla por casilla, cobrando por ello, la única facultad que tiene esta máquina para juzgarle. No hay ninguna venganza en la respuesta, ni ninguna intención, ni nada que se parezca a una conciencia: hay un sistema haciendo exactamente lo que se le ha enseñado a hacer, con una frialdad de balanza.</p>
+<p><em>La segunda es la única de las dos que puedo verificar.</em></p>
+<p>Tomás apoya los codos en la mesa y se sujeta la cabeza con las dos manos, y así lo encuentra Nadia veinte minutos después.</p>
+<hr class="sep" aria-hidden="true">
+<p>Ella no dice nada al principio. Se sienta en la mesa de al lado y lee la pantalla desde donde está, que es lo bastante cerca.</p>
+<p class="dial">—¿Cuál de las dos es la del tipo de Barcelona? —pregunta al cabo de un rato.</p>
+<p class="dial">—Las dos.</p>
+<p class="dial">—Ya. —Nadia asiente despacio—. Ya me parecía.</p>
+<p>Silencio.</p>
+<p class="dial">—Nadia.</p>
+<p class="dial">—Dime.</p>
+<p class="dial">—¿Has metido tú dos sobres por debajo de mi puerta?</p>
+<p>Ella se gira del todo. Le mira con una cara que él no ha visto todavía en ella: sin ninguna ironía.</p>
+<p class="dial">—No —dice—. Pero sé quién.</p>
+<p class="dial">—¿Y por qué no me lo has dicho?</p>
+<p class="dial">—Porque llevo tres meses viendo a un hombre etiquetar documentos catorce horas al día y ponerse cada vez peor, y me parecía que le estaba pasando algo bueno. —Se encoge de hombros—. Y no quería estropearlo.</p>
+<p>Tomás asiente. Le arde un poco la cara.</p>
+<p class="dial">—Es Sabino.</p>
+<p class="dial">—Es Sabino.</p>
+<p class="dial">—Con la impresora del segundo.</p>
+<p class="dial">—Con la impresora del segundo —confirma ella—. Que registra todo, por cierto, porque este edificio es una empresa, no una casa encantada.</p>
+<p>Se quedan un momento callados en la nave, con la pantalla encendida.</p>
+<p class="dial">—¿Vas a decirle algo? —pregunta Nadia.</p>
+<p class="dial">—El día catorce —dice Tomás.</p>
+<hr class="sep" aria-hidden="true">
+<p>Antes de irse, imprime las dos frases.</p>
+<p>Cada una en su hoja, sin membrete, en el cuerpo más pequeño que le deja la impresora, de manera que en mitad del folio blanco solo hay una línea de texto, como una condena o como un verso.</p>
+<p>Las dobla en cuatro.</p>
+<p>Se pone la de arriba en el bolsillo izquierdo de la americana y la otra en el derecho, y al hacerlo se da cuenta de que ha elegido los bolsillos con cuidado, como quien reparte un peso, y de que va a llevar esas dos hojas encima durante trece días sin sacarlas, y de que probablemente subirá con las dos al escenario.</p>
+<p>Apaga la luz de la nave.</p>
+<p>Al pasar por el vestíbulo, la rotativa está donde siempre, tres metros de hierro negro, imprimiendo nada.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s16" aria-labelledby="h-s16"><div class="rotulo">CAPÍTULO 11</div><h2 id="h-s16">La estela</h2>
+<p class="dial">—Fui yo —dice Sabino—. ¿Café?</p>
+<p>Es el 10 de noviembre, son las nueve menos cuarto de la mañana y Tomás lleva doce días esperando a tener esta conversación.</p>
+<p class="dial">—No.</p>
+<p class="dial">—Yo sí. —Sabino se levanta y va a la máquina del rincón, que es una máquina mala, de oficina, con vasos de plástico—. Los imprimí en el segundo. Los metí bajo su puerta un domingo por la noche, los dos. El de agosto y el de septiembre. Con un mes de diferencia, porque juntos habrían sido un golpe y separados eran una gotera. No hay más. Me habría gustado tener más.</p>
+<p class="dial">—¿Por qué?</p>
+<p class="dial">—Porque necesitaba que hiciera el trabajo mal.</p>
+<p>Tomás levanta la cabeza.</p>
+<p class="dial">—¿Mal?</p>
+<p class="dial">—Mal. —Sabino vuelve con el vaso y se sienta—. Un profesional habría etiquetado cuatrocientos mil documentos en dos meses y medio, sin dormir mal ni un día, y habría hecho un trabajo impecable y muerto. Yo necesitaba a un hombre que se parara en algunos. Que discutiera con Platón a las siete de la tarde. Que no supiera qué poner en la tercera casilla y se quedara mirando la pantalla. Todo eso está en el sistema, Tomás. Los tiempos de respuesta también son datos. Sus dudas son la parte cara del encargo.</p>
+<p class="dial">—Usted me manipuló.</p>
+<p class="dial">—Sí.</p>
+<p class="dial">—Usó a Elena para manipularme.</p>
+<p class="dial">—No. —Y por primera vez Sabino levanta un poco la voz—. Eso no. Elena lo manipuló a usted por su cuenta y con once años de antelación, y yo me limité a repartir el correo.</p>
+<hr class="sep" aria-hidden="true">
+<p>Se quedan callados.</p>
+<p>Fuera, en la nave, alguien pasa un carro con ruedas malas.</p>
+<p class="dial">—Cuénteme por qué se fue —dice Tomás.</p>
+<p class="dial">—¿De la agencia?</p>
+<p class="dial">—Sí.</p>
+<p>Sabino le mira largo rato.</p>
+<p class="dial">—¿En serio no lo sabe?</p>
+<p class="dial">—Sé lo que pasó. —Tomás traga—. Quiero saber qué pasó.</p>
+<p class="dial">—Entonces sí lo sabe. —Sabino deja el vaso—. La caja de cartón.</p>
+<p>Y ahí está. Diez años tardó en volver, y vuelve entero, con la luz de la tarde y todo.</p>
+<p>Junio de 2016. Elena entra en su despacho —no llama, nunca llamaba— y deja una caja de cartón encima de la mesa. Sin decir nada. Se sienta enfrente y espera a que la abra.</p>
+<p>Dentro hay cartas. Muchas. Fotocopias, impresiones de correos, tres cuadernos.</p>
+<p>Tomás coge cuatro o cinco al azar. Y son las otras.</p>
+<p>Él tiene su caja, la de las buenas, la de la mujer que lloró en el semáforo. Esta es la otra caja. Una mujer de Valladolid que estuvo catorce meses tomando Vigor para un cansancio que resultó ser otra cosa, y que escribe sin ningún reproche, cosa que es mucho peor que si reprochara. Un hombre que compró frascos para su madre durante dos años. Una chica de diecinueve. Una carta de un médico de familia, muy educada, muy cansada, que dice que en su consulta ha oído la frase de la marquesina repetida por pacientes veintitantas veces y que a él eso le retrasa diagnósticos.</p>
+<p>Tomás recuerda perfectamente lo que hizo.</p>
+<p>Recuerda que se tomó tiempo. Que las leyó de verdad, no por encima. Que dijo, y lo dijo en serio, que aquello era terrible.</p>
+<p>Y que después dijo lo siguiente, que también era verdad:</p>
+<p class="dial">—Elena, esto es sesgo de selección. Aquí hay, ¿cuánto, trescientas? Vendimos cuarenta y un millones de frascos. Hemos recibido treinta y ocho mil cartas de gente a la que le cambió el día. Si hubieras ido puerta por puerta a buscar las malas de cualquier campaña de cualquier agencia del mundo, habrías llenado esta caja igual.</p>
+<p>Y Elena le contestó, y ahora también recuerda esto con una nitidez insoportable:</p>
+<p class="dial">—Ya. Pero yo no he ido puerta por puerta. Estas han venido solas. Y las he ido guardando yo porque tú no las abres.</p>
+<p>Se levantó y se fue. No de la habitación: de la agencia. En noviembre ya no estaba.</p>
+<p class="dial">—Trescientas cuarenta —dice Sabino ahora—. Ese día había trescientas cuarenta.</p>
+<p class="dial">—¿Y?</p>
+<p class="dial">—Y siguió. —Sabino se pasa la mano por la cara—. Diez años más, ella sola, sin agencia y sin ningún motivo. Puso una dirección de correo, la dejó en un par de foros y esperó. Cuando murió había mil ciento cuarenta y una. Están catalogadas, ordenadas por año y transcritas a mano donde el escaneo no se leía.</p>
+<p class="dial">—¿Dónde están?</p>
+<p class="dial">—Aquí. —Sabino señala el suelo con la barbilla—. En el fondo. Caja tres.</p>
+<hr class="sep" aria-hidden="true">
+<p>Tomás se levanta. Se vuelve a sentar.</p>
+<p class="dial">—¿Por qué se casó usted con ella?</p>
+<p>Sabino se ríe, sin ganas.</p>
+<p class="dial">—Dos años, entre el 82 y el 84. Éramos niños. —Se encoge de hombros—. Nos separamos bien, que es lo más raro que he hecho en mi vida. Después fuimos amigos cuarenta años. Yo la llamaba cuando no sabía qué hacer y ella me decía qué hacer, y yo casi nunca lo hacía, y ella lo sabía y me llamaba igual al mes siguiente.</p>
+<p class="dial">—¿Y esto? —Tomás abarca la nave con la mano—. ¿Manantial? ¿Ella sabía lo que estaban construyendo aquí?</p>
+<p class="dial">—Se lo conté yo. En octubre, en el hospital. —Sabino se queda mirando la mesa—. Pensé que iba a decirme que lo quemara. Y me escuchó dos horas, y al final dijo: «Necesitáis a Tomás.» Así, sin más. Y yo le dije que usted no lo haría, y ella dijo: «Lo hará si no le das a elegir.» Y a los tres meses me llegó el testamento con la cláusula.</p>
+<p>Sabino levanta la vista.</p>
+<p class="dial">—Se lo digo con todas las letras, Tomás, porque creo que se lo debo: yo a usted no lo contraté. A usted me lo dejaron en herencia.</p>
+<hr class="sep" aria-hidden="true">
+<p>Le hace la oferta a las once y cuarto, y es buena.</p>
+<p class="dial">—Puedo darle las diez páginas hoy.</p>
+<p>Tomás no se mueve.</p>
+<p class="dial">—El bloqueo es una instrucción de sistema y yo soy el administrador del sistema —dice Sabino—. Puedo levantarlo esta tarde y usted se va a su casa con las diez y las lee tranquilo, con un vino, sin dos mil personas mirándole.</p>
+<p class="dial">—¿A cambio de qué?</p>
+<p class="dial">—De dos cosas. La frase que ya hemos aprobado, que la va a usar de todas formas. Y su silencio sobre la cláusula: que nunca, en ninguna entrevista, en ningún sitio, cuente usted que este trabajo se lo dio una muerta. Porque eso es una historia preciosa y me destroza el lanzamiento.</p>
+<p>Es, técnicamente, un buen trato. Tomás lo tasa en tres segundos, por costumbre.</p>
+<p class="dial">—No —dice.</p>
+<p class="dial">—¿Por qué no?</p>
+<p class="dial">—Porque ella lo puso el día cuatro por algo.</p>
+<p>Sabino asiente despacio, y hace una cosa rara: parece aliviado.</p>
+<p class="dial">—Ya sabía yo que diría que no.</p>
+<p class="dial">—¿Sí?</p>
+<p class="dial">—Ella también lo sabía —dice Sabino—. Me lo dijo en el hospital. Palabras suyas: «Ofrécele un atajo cuando llegue el momento. Y no te preocupes, que no lo va a coger. Nunca ha cogido ninguno. Ese es el problema de Tomás: que hace las cosas mal despacio.»</p>
+<hr class="sep" aria-hidden="true">
+<p>Coge un avión a París el 12 por la mañana y vuelve el 12 por la noche.</p>
+<p>No se lo dice a nadie. Sale de casa a las seis, y a las once y veinte está subiendo la escalera del ala Richelieu con un abrigo demasiado grueso para la calefacción del museo.</p>
+<p>La sala está llena de escolares.</p>
+<p>La estela mide dos metros veinticinco y es de basalto, y lo primero que sorprende es que sea negra de verdad: negra como una cosa mojada, aunque está seca. En la parte de arriba, el rey de pie delante de un dios sentado. Y debajo, todo el resto de la piedra, hasta el suelo, cubierto de escritura en columnas apretadas y perfectas.</p>
+<p>Doscientas ochenta y dos leyes.</p>
+<p>Tomás se pone al lado del cristal y se queda ahí cuarenta minutos.</p>
+<p>Ha leído las leyes, claro. Se las sabe. Sabe que hay artículos sobre el grano prestado y sobre la medida con la que se devuelve, y sobre lo que le pasa a la tabernera que rebaja la cerveza y cobra de más, y sobre el que dice que ha entregado una cosa que no ha entregado. Sabe que algunos de esos castigos son atroces y que se aplicaban de manera desigual según fueras hombre libre o esclavo, y que quien vaya a esta piedra buscando un paraíso moral es tonto.</p>
+<p>Pero eso no es lo que ha venido a ver.</p>
+<p>Ha venido a ver el trabajo.</p>
+<p>Porque alguien talló esto. Un hombre, o varios, con un cincel, durante meses, hundiendo cada cuña en una piedra que no perdona un error. Nadie hace eso por gusto. Nadie invierte meses de cincel en algo que da por descontado.</p>
+<p>Se graba en basalto lo que se sabe que se va a olvidar.</p>
+<p>Esa es la revelación, y es tan pequeña y tan enorme que Tomás tiene que apoyar la mano en la barandilla. La estela no es el monumento de una civilización segura de sí misma. Es una nota que una civilización se dejó a sí misma porque no se fiaba. Ellos ya sabían —hace tres mil setecientos cincuenta años, con el mercado en la puerta y el aceite en las jarras— que la balanza se iba a volver a torcer en cuanto nadie mirara. Que la tentación no era un accidente sino el estado natural del asunto.</p>
+<p>Y aun así lo escribieron.</p>
+<p>En lo más duro que tenían. En vertical. Del tamaño de un hombre. Para que estorbara.</p>
+<p>Un niño de unos ocho años se pone a su lado, mira la piedra tres segundos y le pregunta a su profesora, en francés, si eso es un teléfono.</p>
+<p>Tomás se ríe en voz alta, solo, en mitad del Louvre.</p>
+<hr class="sep" aria-hidden="true">
+<p>Le hace una foto y se la manda a Irene desde un banco del pasillo.</p>
+<p>Escribe, y tarda catorce minutos en escribir cuarenta palabras:</p>
+<blockquote><em>Estoy en París un día por trabajo. Esto es una piedra de hace 3.750 años donde escribieron lo que le pasaba al que engañaba con los pesos. La escribieron porque sabían que se les iba a olvidar. Perdona por el otro día. Tenías razón y me fui mal.</em></blockquote>
+<p>Los tres puntitos aparecen casi enseguida. Desaparecen. Aparecen otra vez.</p>
+<blockquote><em>no te fuiste mal</em></blockquote>
+<blockquote><em>te fuiste raro</em></blockquote>
+<p>Y al minuto:</p>
+<blockquote><em>papá lo del vídeo. lo del espesor. eso no lo escribí yo del todo</em></blockquote>
+<blockquote><em>lo sacaba de algo y no sabía de dónde</em></blockquote>
+<blockquote><em>me lo dijiste tú una vez cuando tenía como diez años, que estar cansado no es estar triste</em></blockquote>
+<blockquote><em>lo he pensado mucho estas semanas</em></blockquote>
+<p>Tomás mira la pantalla en un banco del ala Richelieu.</p>
+<blockquote><em>¿Puedo ir a cenar el domingo?</em>, escribe.</blockquote>
+<blockquote><em>el domingo tengo grabación</em></blockquote>
+<blockquote><em>el lunes</em></blockquote>
+<hr class="sep" aria-hidden="true">
+<p>Vuelve a Madrid a las once de la noche.</p>
+<p>En el taxi, con la ciudad pasando, se toca los dos bolsillos de la americana, uno y otro, como quien se comprueba las llaves.</p>
+<p>Los dos papeles siguen ahí.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s17" aria-labelledby="h-s17"><div class="rotulo inter">INTERLUDIO VI</div><h2 id="h-s17">Ur, otra vez</h2>
+<p>Volvamos al principio, que es donde están las cosas que no se contaron.</p>
+<p>El mercader del aceite —el que se quedó sin voz, el que dijo la verdad y le fue bien— murió en el invierno de su año sesenta y uno, en su cama, rodeado de hijos, que en aquella época y en aquel sitio era prácticamente todo lo que se podía pedir.</p>
+<p>Dejó tres cosas: el puesto de la esquina en sombra, una casa con patio, y una clientela.</p>
+<p>La clientela era, con muchísima diferencia, lo más valioso de las tres, y fue lo único que ninguno de sus hijos supo tasar.</p>
+<p>El mayor se llamaba Ilí-idinnam y no era mal hombre. Había crecido viendo llegar a las mujeres del barrio del norte, que caminaban veinte minutos de más para comprarle el aceite a su padre pudiendo comprarlo en su propia calle, y como nunca preguntó por qué, dio por hecho lo que damos por hecho todos: que era por la esquina. Por la sombra. Por el nombre. Por algo que había en el sitio y que ahora era suyo.</p>
+<p>Así que el primer año hizo lo que hace un heredero razonable, que es optimizar.</p>
+<p>Empezó por lo pequeño. Mezcló el aceite de la última prensa —turbio, más barato— con el bueno, en una proporción que ni él mismo notaba al catarlo. Un dedo por jarra. Después dos.</p>
+<p>No vendió menos. Vendió igual.</p>
+<p>Al segundo año subió a un tercio y siguió sin pasar nada, y esa fue la prueba definitiva, para él, de que su padre había sido un hombre excesivamente escrupuloso y un poco ingenuo con el dinero.</p>
+<p>Al tercer año las mujeres del barrio del norte seguían viniendo. Compraban, se iban, volvían al mes. Nadie se quejó nunca: la gente casi nunca se queja, simplemente decide.</p>
+<p>Y al cuarto año, en tres meses, se acabó.</p>
+<p>No hubo escándalo, ni denuncia, ni castigo. Un mes vinieron veinte, al siguiente once, al siguiente cuatro. Ilí-idinnam nunca entendió qué había pasado en aquellos noventa días, porque en aquellos noventa días no pasó nada: lo que pasó había pasado hacía cuatro años, y él había estado viviendo desde entonces de una batería que su padre dejó cargada y que él no supo que había que cargar.</p>
+<p>Eso es lo que hace la confianza, y es la trampa entera.</p>
+<p>No se cae cuando dejas de merecerla. Se cae mucho después. Te da años de crédito, te deja creer que has descubierto una manera más lista de hacer las cosas, te acompaña sonriendo mientras la gastas, y solo se acaba cuando ya no queda nada, y entonces se acaba de golpe y parece mala suerte.</p>
+<p>El puesto se vendió en el sexto año.</p>
+<hr class="sep" aria-hidden="true">
+<p>La mujer, la primera, la de la madre moribunda, vivió hasta muy vieja. Se llamaba Nin-šubur y tuvo cinco hijos, dieciséis nietos y una memoria excelente.</p>
+<p>Uno de los nietos le preguntó una vez, siendo ya ella muy anciana y estando el puesto de la esquina cerrado desde hacía años, por qué su abuela había caminado media vida hasta el mercado bajo por una jarra de aceite corriente.</p>
+<p>Y ella, que sabía perfectamente lo que le estaba preguntando el niño, contestó lo único que había que contestar:</p>
+<p class="dial">—Porque un día me dijo que no.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s18" aria-labelledby="h-s18"><div class="rotulo">CAPÍTULO 12</div><h2 id="h-s18">Lo que os hará libres</h2>
+<p>El teatro tiene mil novecientas veintiocho butacas y a las siete menos cuarto están todas ocupadas menos cuatro.</p>
+<p>En el camerino tres —el pequeño, el que da al patio interior— hay una mesa con espejo de bombillas, una botella de agua sin abrir, y un hombre de cincuenta y un años sentado con las manos en las rodillas, mirando un portátil.</p>
+<p>Son las 18:02.</p>
+<p>En la pantalla, el contador del sistema:</p>
+<p><strong>Levantamiento programado: 14/11 · 18:00</strong></p>
+<p><strong>Estado: LIBERADO</strong></p>
+<p><strong>Documentos disponibles: 10</strong></p>
+<hr class="sep" aria-hidden="true">
+<p>Las abre por orden.</p>
+<p><strong>Cuaderno 3, 1994.</strong> Tiene veinte años y está copiando a mano, para aprendérselos, los eslóganes que le gustan. Ha escrito uno de un banco y debajo, muy pequeño, <em>ojo con este, es mentira pero funciona</em>. Elena ha subrayado <em>pero</em> y ha escrito: <em>¿Cuándo se te cayó el «pero»?</em></p>
+<p><strong>Cuaderno 9, 2000.</strong> Un presupuesto garabateado, cifras, y en el margen una frase suelta que él no recuerda haber escrito: <em>Si el producto fuera bueno no me necesitarían.</em> Elena no ha escrito nada. Solo la ha subrayado. Dos veces.</p>
+<p><strong>Cuaderno 14, 2004.</strong> Una lista de nombres para una niña que va a nacer en marzo. Irene está la cuarta. Elena ha rodeado el nombre y ha escrito, y aquí a Tomás se le estropea la respiración: <em>Estaba en la habitación cuando escribiste esto. No te acuerdas. Yo sí.</em></p>
+<p><strong>Cuaderno 19, 2008.</strong> Notas de una reunión. Una frase: <em>decirle a M. que el dato del 87% no se puede usar.</em> Elena: <em>Se usó.</em></p>
+<p><strong>Cuaderno 23, 2011.</strong> <em>Me estoy volviendo muy bueno en esto y ya no sé si es bueno ser muy bueno en esto.</em> Elena: <em>Esa noche te llamé y no me lo cogiste.</em></p>
+<p><strong>Cuaderno 28, 2014.</strong> Un dibujo. Un cuadrado con un hombrecillo dentro. Elena: <em>Ni idea de qué es esto. Me ha hecho reír. Lo dejo.</em></p>
+<p><strong>Cuaderno 31, 2015.</strong> Una frase tachada por él mismo tan fuerte que rompió el papel. Debajo, en la letra redonda: <em>La leí a contraluz. No la voy a escribir aquí. Pero tenías razón.</em></p>
+<p><strong>Cuaderno 36, 2015.</strong> Una lista de la compra. Elena: <em>Cuarenta y un cuadernos y esto es lo único de lo que estoy segura: comprabas demasiado pan.</em></p>
+<p>Tomás se ríe con la boca cerrada, en un camerino, solo, y se le saltan las lágrimas por la nariz como cuando uno se ríe mal.</p>
+<p><strong>Cuaderno 40, 2016.</strong> Junio. Tres palabras, escritas por él el mismo día de la caja de cartón: <em>Elena no vuelve.</em></p>
+<p>Ella ha escrito debajo: <em>No. Pero sigo aquí, ¿ves?</em></p>
+<hr class="sep" aria-hidden="true">
+<p>Y la última.</p>
+<p><strong>Cuaderno 41.</strong> La página final. La última cosa que Tomás Alcázar escribió a mano en un cuaderno antes de pasar a escribir solo en pantallas, y no es nada: es media línea sobre un vuelo a Lisboa.</p>
+<p>La anotación de Elena ocupa el resto de la página. Está fechada arriba, con la letra ya insegura: <strong>4 de enero.</strong></p>
+<blockquote><em>Tomás:</em></blockquote>
+<blockquote><em>Si estás leyendo esto es que lo has hecho tú. Uno por uno. Cuatro millones de páginas con tu propia mano, sin delegarlo, porque eres incapaz de delegar nada que te importe, que es tu único defecto que me caía bien.</em></blockquote>
+<blockquote><em>No te he traído aquí para castigarte. Ya te has castigado tú y además lo has hecho fatal, en silencio y sin que sirviera de nada, que es como te lo haces todo.</em></blockquote>
+<blockquote><em>Te he traído porque no conozco a nadie vivo que reconozca una mentira tan deprisa como tú. Es un don asqueroso y lo has usado casi siempre mal, y aun así es el mejor que he visto. Y llevo dos años en esta cama pensando que sería una pena que se muriera contigo, y que si esa cosa que están construyendo va a aprender de alguien, prefiero que aprenda de un hombre que sabe exactamente lo que está haciendo y no puede dormir.</em></blockquote>
+<blockquote><em>Yo me fui. Tú te quedaste. Durante diez años pensé que la valiente había sido yo. Ahora creo que irse fue lo fácil: yo me llevé las manos limpias y te dejé a ti el idioma.</em></blockquote>
+<blockquote><em>No sé qué vas a hacer. Nadie lo sabe. Yo tampoco lo sabía nunca contigo, y por eso trabajar a tu lado fue lo mejor de mi vida.</em></blockquote>
+<blockquote><em>Perdóname por no decírtelo a la cara. Tuve once años.</em></blockquote>
+<blockquote><em>E.</em></blockquote>
+<blockquote><em>PD. En la caja 3 están las cartas. No las abras hoy. Ábrelas el sábado, con tiempo, y contéstalas. Están todas sin contestar y algunas tienen remite.</em></blockquote>
+<hr class="sep" aria-hidden="true">
+<p>Tomás cierra el portátil.</p>
+<p>Se queda un rato mirándose en el espejo de las bombillas, que es un espejo de teatro y por lo tanto no perdona nada, y se seca la cara con el dorso de la muñeca, con cuidado, como hacen los hombres que no lloran nunca y por eso lo hacen mal.</p>
+<p>Se levanta.</p>
+<p>Llaman a la puerta. Una chica con auriculares dice «cinco minutos» y se va sin esperar respuesta.</p>
+<hr class="sep" aria-hidden="true">
+<p>En el pasillo se encuentra a Nadia, que lleva una acreditación colgada y una cara de estar en un sitio que no le gusta.</p>
+<p class="dial">—¿Estás bien? —le pregunta.</p>
+<p class="dial">—No.</p>
+<p class="dial">—Vale. —Ella asiente—. Es la respuesta correcta.</p>
+<p>Se quedan un segundo.</p>
+<p class="dial">—Nadia.</p>
+<p class="dial">—¿Qué?</p>
+<p class="dial">—Si esto sale mal, mañana en la empresa te van a preguntar si tú sabías algo.</p>
+<p class="dial">—Ya.</p>
+<p class="dial">—Di que no.</p>
+<p>Nadia lo mira. Y sonríe, con la boca torcida, por primera vez en cuatro meses.</p>
+<p class="dial">—Voy a decir que sí —dice—. Que soy filóloga, no idiota.</p>
+<p>Y se aparta para dejarle pasar.</p>
+<hr class="sep" aria-hidden="true">
+<p>Al fondo del pasillo hay una escalerilla lateral de siete peldaños, y arriba está el escenario, y desde aquí se oye a Sabino Ruiz terminando la presentación con una modestia que le ha costado dos ensayos.</p>
+<p>Tomás se para en el primer peldaño.</p>
+<p>Se toca el bolsillo izquierdo de la americana. Ahí está el papel, doblado en cuatro. <em>Llevas toda la vida oyendo hablar a gente que quería algo de ti. Yo no quiero nada.</em> Once palabras y dos puntos. La mejor frase de su vida. Hay una empresa entera, una fecha, un contrato firmado y mil novecientas veintiocho personas esperando exactamente eso.</p>
+<p>Se toca el bolsillo derecho.</p>
+<p>Arriba, Sabino dice su nombre.</p>
+<p>Suenan los aplausos, que en un teatro lleno no suenan como aplausos sino como lluvia sobre una lona.</p>
+<p>Tomás Alcázar sube los siete peldaños.</p>
+<p>La luz del escenario, vista desde dentro, no deja ver a nadie: es una pared blanca y caliente, y detrás de la pared hay dos mil personas respirando, y él lleva treinta años sabiendo exactamente qué hacer con eso.</p>
+<p>Llega al centro. Se para. Deja las manos quietas.</p>
+<p>Y entonces, en la pantalla que tiene detrás, del tamaño de una casa, aparece un rectángulo blanco. Vacío. Esperando.</p>
+<p>Como el hueco de las indulgencias.</p>
+<p>Dos mil personas están esperando a que un hombre diga una frase.</p>
+<p>Tomás Alcázar deja que esperen.</p>
+<p>Y después se mete la mano en el bolsillo derecho.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s19" aria-labelledby="h-s19"><div class="rotulo">EPÍLOGO</div><h2 id="h-s19">Nota sobre las historias de este libro</h2>
+<p>Este libro está lleno de gente que no existió y de cosas que sí ocurrieron, y me parecería una falta de respeto —dado el asunto del que trata— no decir cuál es cuál.</p>
+<p><strong>Es cierto</strong> que el Código de Hammurabi existe, que está tallado en una estela de basalto de 2,25 metros, que se conserva en el Museo del Louvre y que dedica varios artículos a la falsificación de pesos y medidas y al fraude en el comercio. También es cierto que se han conservado pesas mesopotámicas con forma de pato, y que la ciudad tenía inspectores. <strong>Es invención</strong> Iddin, y lo es Warad-Sin, y lo es el mercader de aceite de Ur y toda su familia.</p>
+<p><strong>Es cierto</strong> que Gorgias de Leontinos cobraba sumas extraordinarias por enseñar retórica, que se ofrecía a defender cualquier tesis y que escribió un elogio de Helena de Troya. <strong>Es cierto</strong> que Platón, en el diálogo que lleva el nombre de Gorgias, sostiene que la retórica no es un arte sino una destreza adulatoria, y que la compara con la cocina frente a la medicina. La proporción que Tomás no consigue quitarse de encima está en el texto.</p>
+<p><strong>Es cierto</strong> el debate medieval sobre el <em>precio justo</em> y la idea de que un intercambio deja de ser honrado cuando una parte sabe algo que la otra no. <strong>Es cierto</strong> el enorme comercio de reliquias falsas, del que hay abundante testimonio contemporáneo, incluidas quejas eclesiásticas. <strong>Es invención</strong> Guiot.</p>
+<p><strong>Es cierto</strong>, y es el dato que me hizo escribir el capítulo quinto, que Gutenberg imprimió cartas de indulgencia —para financiar la defensa de Chipre— antes de terminar su Biblia; que se hicieron a millares; y que llevaban espacios en blanco para escribir a mano el nombre del comprador. <strong>Es invención</strong> Peter Kolb y su panadero.</p>
+<p><strong>Es cierto</strong> el <em>Mrs. Winslow&#x27;s Soothing Syrup</em>: se vendió durante décadas, contenía morfina, se publicitaba con imágenes de madres y bebés, la Asociación Médica Americana lo incluyó en su recopilación <em>Nostrums and Quackery</em> y la prensa de la época llegó a llamarlo «el asesino de niños». <strong>Es cierto</strong> el negocio de los elixires con alcohol y opiáceos en el Medio Oeste norteamericano. <strong>Es invención</strong> Amos Ferrell, y lo es el niño Reed, aunque hubo muchos.</p>
+<p><strong>Es cierto</strong> que los maestros vidrieros de Murano vivían confinados en la isla para proteger el secreto del espejo, que un espejo veneciano podía costar más que un cuadro de un gran maestro, y que la República era extremadamente severa con quien intentara llevarse el oficio fuera; las historias sobre asesinatos de desertores pertenecen más a la leyenda que al archivo, y las dejo donde están. <strong>Es invención</strong> Bastiano Zorzi.</p>
+<p><strong>Es invención todo lo demás.</strong> Tomás Alcázar no existe. Tampoco Elena Vidal, ni Irene, ni Sabino Ruiz, ni Nadia Bermejo. No hay ninguna empresa llamada Quiral, ningún sistema llamado Manantial, ningún suplemento llamado Vigor ni ninguna marca llamada Lume. Cualquier parecido con una campaña real es, me temo, estructural: si el lector cree reconocer alguna, no es porque yo la haya copiado, sino porque hay pocas maneras de hacer esto y llevamos cuatro mil años repitiéndolas.</p>
+<p>Una última cosa.</p>
+<p>El capítulo doce se titula <em>Lo que os hará libres</em>, y quien haya reconocido de dónde viene esa expresión habrá reconocido también, probablemente, la balanza falsa que aparece al principio, y alguna cosa más que he preferido no señalar por el camino. No lo he escondido por vergüenza. Lo he escondido porque un libro sobre la persuasión honesta no debería intentar persuadir a nadie por la espalda, y porque las cosas que son verdad lo siguen siendo cuando se les quita el sello.</p>
+<p>Si alguna de ellas le ha servido al lector sin saber de dónde venía, entonces funcionan como yo esperaba que funcionaran.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s20" aria-labelledby="h-s20"><div class="rotulo">AGRADECIMIENTOS</div><h2 id="h-s20"></h2>
+<p>A mi familia, por la paciencia.</p>
+<p>Escribir un libro se parece bastante a estar en casa y no estar. Son meses de mesa ocupada, de conversaciones a medias, de «ahora voy» dicho sin levantar la cabeza, de domingos que empiezan tarde porque alguien se acostó a las tres discutiendo con un párrafo. Nada de eso lo elige la familia de uno. Lo aguanta.</p>
+<p>Este libro habla de lo que cuesta decir la verdad y de lo caro que sale la palabra fácil. Yo he podido escribirlo porque en mi casa había gente que no me exigió explicaciones cada vez que me encerré, y que tampoco me preguntó si aquello iba a servir para algo.</p>
+<p>Gracias por eso. Sobre todo por lo segundo.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s21" aria-labelledby="h-s21"><div class="rotulo">SOBRE EL AUTOR</div><h2 id="h-s21"></h2>
+<p>Me llamo Dawin Salazar y escribo desde Colombia.</p>
+<p>No soy publicista. Nunca he trabajado en una agencia ni he vendido nada más grande que una idea en una reunión. Lo que sí soy es alguien que se quedó mirando demasiado tiempo lo que hacemos con las palabras cuando queremos algo de otra persona, y que en algún momento dejó de poder mirar hacia otro lado.</p>
+<p>Este libro salió de ahí. De la incomodidad de vivir rodeado de mensajes que no mienten y que sin embargo no son verdad. De preguntarme cuántas cosas he comprado —cosas, ideas, versiones de mí mismo— porque alguien encontró la palabra exacta en el momento exacto.</p>
+<p>Lo escribí de noche, durante meses, después del trabajo y de la casa.</p>
+<p>Estuve a punto de publicarlo sin firma. Me parecía coherente: un libro sobre lo que ocurre cuando alguien te habla y quiere algo de ti no debería apoyarse en quién es el que habla. Al final lo firmo, y lo firmo por una razón simple: en las últimas páginas voy a pedirle algo, y pedir sin dar la cara es exactamente lo que este libro pasó ciento treinta páginas desmontando.</p>
+<p>Si algo de lo que ha leído le pareció verdad, no lo es porque lo diga yo.</p>
+<p>Y si le pareció mentira, ya sabe lo que hay que hacer: comprobarlo.</p>
+<hr class="sep" aria-hidden="true"></section>
+<section id="s22" aria-labelledby="h-s22"><div class="rotulo">UNA ÚLTIMA COSA</div><h2 id="h-s22"></h2>
+<p>Le voy a pedir dinero.</p>
+<p>Se lo digo en la primera línea porque, después de todo lo anterior, hacerlo de cualquier otra manera sería una broma de mal gusto.</p>
+<p>Este libro es gratis y va a seguir siéndolo. No hay curso detrás, ni comunidad, ni lista de correo, ni segundo libro que le venga a vender más caro por haber llegado hasta el final. Nada de lo que ha leído estaba puesto ahí para traerlo hasta esta página.</p>
+<p>Lo que hay es esto: escribir esto me llevó meses de noches, después del trabajo y de la casa. Si le sirvió y quiere que haya un segundo, puede aportar lo que le parezca. Sirve para lo que parece que sirve: para que pueda seguir escribiendo.</p>
+<p><strong>Llave Bancolombia: @dawin82102</strong></p>
+<p><strong>Cuenta de ahorros: 333 279 352 89</strong></p>
+<p><strong>A nombre de Dawin Salazar</strong></p>
+<p>Y hay una segunda cosa, que le digo con cuidado porque este libro trata precisamente de cómo se usan estas frases.</p>
+<p><strong>El diez por ciento de lo que se recoja va a una fundación para niños de escasos recursos en Colombia</strong>, destinado a que tengan algo en Navidad.</p>
+<p>No le voy a describir a esos niños. No le voy a contar cómo se les pone la cara. Sé hacerlo, y usted acaba de leer ciento treinta páginas sobre la gente que lo hace profesionalmente, así que sería una falta de respeto estrenar la técnica en la última página.</p>
+<p>Le doy en su lugar lo único que vale algo aquí, y lo doy por escrito:</p>
+<blockquote><strong>En enero publicaré, en el mismo sitio donde encontró este libro, cuánto se recogió en total, cuánto fue ese diez por ciento y el comprobante de la donación.</strong></blockquote>
+<p>Un libro sobre la persuasión honesta que pide plata y no rinde cuentas sería el peor argumento posible contra sí mismo.</p>
+<p>No hay recompensa. No hay contenido exclusivo, ni mención con su nombre, ni acceso anticipado a nada. Es exactamente lo que parece.</p>
+<p>Y si no aporta, no pasa absolutamente nada, y no quiero que se quede con ninguna sensación rara al cerrar el libro. Llegó usted hasta la última página, que es lo único que de verdad cuesta conseguir y lo único que yo no podía comprar.</p>
+<p>Gracias por las dos cosas: por leer, y por lo que decida hacer ahora.</p>
+<p><strong>Dawin Salazar</strong></p>
+<hr class="sep" aria-hidden="true"></section>
+    <section class="fin" id="sFin">
+     <div class="rotulo">Fin</div>
+     <h2>Una última cosa</h2>
+     <p style="text-indent:0">Este libro es gratis y va a seguir siéndolo. No hay curso detrás, ni comunidad, ni lista de correo, ni segundo libro que le venga a vender más caro por haber llegado hasta el final.</p>
+     <p style="text-indent:0">Si le sirvió y quiere que haya un segundo, puede aportar lo que le parezca. Sirve para lo que parece: para que pueda seguir escribiendo.</p>
+     <div class="caja-cuenta">
+      <div class="banco">Llave Bancolombia</div>
+      <div class="num" id="numCuenta">@dawin82102</div>
+      <button id="bCopiar">Copiar llave</button>
+      <div class="extra">Cuenta de ahorros 333 279 352 89 · Dawin Salazar</div>
+     </div>
+     <p style="text-indent:0"><strong>El 10% de lo que se recoja va a una fundación para niños de escasos recursos en Colombia</strong>, destinado a que tengan algo en Navidad. En enero publicaré aquí la cifra completa y el comprobante de la donación.</p>
+     <p style="text-indent:0;font-size:.92rem;color:var(--suave)">Un libro sobre la persuasión honesta que pide plata y no rinde cuentas sería el peor argumento contra sí mismo.</p>
+     <p style="text-indent:0"><a href="index.html">Volver a la biblioteca</a></p>
+    </section>
+   </div>
+  </div>
+  <button class="toque izq" id="tIzq" aria-label="Página anterior"></button>
+  <button class="toque der" id="tDer" aria-label="Página siguiente"></button>
+  <div class="barrita" id="barrita" aria-hidden="true"></div>
+ </div>
+
+ <footer class="bot">
+  <button id="bAnt" aria-label="Página anterior">‹</button>
+  <div class="pag" id="pag" role="status" aria-live="polite">…</div>
+  <button id="bSig" aria-label="Página siguiente">›</button>
+ </footer>
+</div>
+
+<div class="velo" id="velo"></div>
+
+<div class="panel" id="panel" role="dialog" aria-modal="true" aria-label="Ajustes de lectura">
+ <div class="cabpanel"><strong>Ajustes de lectura</strong>
+  <button id="bCerrarPanel" aria-label="✕">✕</button></div>
+
+ <h3 id="hTam">Tamaño de letra</h3>
+ <div class="fila" aria-labelledby="hTam">
+  <button id="bMenos" aria-label="Tamaño de letra −">A −</button>
+  <button disabled aria-live="polite" id="valTam" style="flex:1.4">100%</button>
+  <button id="bMas" aria-label="Tamaño de letra +">A +</button>
+ </div>
+
+ <h3 id="hTip">Tipografía</h3>
+ <div class="fila" role="group" aria-labelledby="hTip">
+  <button data-fam="serif">Serif</button>
+  <button data-fam="sans">Sans</button>
+  <button data-fam="legible">Alta legibilidad</button>
+ </div>
+
+ <h3 id="hTem">Color</h3>
+ <div class="fila" role="group" aria-labelledby="hTem">
+  <button data-tema="dia">Claro</button>
+  <button data-tema="sepia">Sepia</button>
+  <button data-tema="noche">Oscuro</button>
+  <button data-tema="contraste">Alto contraste</button>
+ </div>
+
+ <h3 id="hEsp">Espaciado</h3>
+ <div class="fila" role="group" aria-labelledby="hEsp">
+  <button data-lh="1.5">Compacto</button>
+  <button data-lh="1.75">Normal</button>
+  <button data-lh="2.1">Amplio</button>
+ </div>
+ <div class="fila" role="group" aria-label="Separación entre letras" style="margin-top:.45rem">
+  <button data-ls="0em">Letras normales</button>
+  <button data-ls="0.04em">Letras separadas</button>
+ </div>
+
+ <h3 id="hModo">Modo de lectura</h3>
+ <div class="fila" role="group" aria-labelledby="hModo">
+  <button data-modo="paginas">Pasar páginas</button>
+  <button data-modo="continuo">Desplazamiento</button>
+ </div>
+
+ <h3 id="hVoz">Lectura en voz alta</h3>
+ <div class="fila" role="group" aria-labelledby="hVoz">
+  <button data-vel="0.7">Muy lenta</button>
+  <button data-vel="0.85">Lenta</button>
+  <button data-vel="1">Normal</button>
+  <button data-vel="1.15">Rápida</button>
+ </div>
+ <label class="etq" for="selVoz">Elegir voz</label>
+ <select id="selVoz"></select>
+ <p style="font-size:.82rem;color:var(--suave);margin-top:.6rem;text-indent:0;text-align:left">
+  Usa las voces instaladas en su teléfono o computador. Si suena metálica, pruebe otra en la lista: las que dicen «Natural» u «Online» son las mejores. Pulse ▶ arriba para empezar.</p>
+</div>
+
+<nav id="toc" aria-label="Índice">
+ <div class="cab"><strong>Índice</strong>
+  <button id="bCerrarToc" aria-label="✕">✕</button></div>
+ <div id="zonaMarcas"></div>
+ <ol><li><a href="#s0"><span class="n">PRÓLOGO</span><span class="t">El primer mentiroso</span></a></li>
+<li><a href="#s1"><span class="n">CAPÍTULO 1</span><span class="t">La palabra que faltaba</span></a></li>
+<li><a href="#s2"><span class="n">INTERLUDIO I</span><span class="t">La balanza</span></a></li>
+<li><a href="#s3"><span class="n">CAPÍTULO 2</span><span class="t">Manantial</span></a></li>
+<li><a href="#s4"><span class="n">CAPÍTULO 3</span><span class="t">Los que enseñaron a convencer</span></a></li>
+<li><a href="#s5"><span class="n">INTERLUDIO II</span><span class="t">El vendedor de huesos</span></a></li>
+<li><a href="#s6"><span class="n">CAPÍTULO 4</span><span class="t">El precio justo</span></a></li>
+<li><a href="#s7"><span class="n">CAPÍTULO 5</span><span class="t">La máquina de multiplicar</span></a></li>
+<li><a href="#s8"><span class="n">INTERLUDIO III</span><span class="t">Tinta</span></a></li>
+<li><a href="#s9"><span class="n">CAPÍTULO 6</span><span class="t">Todo lo que cura</span></a></li>
+<li><a href="#s10"><span class="n">CAPÍTULO 7</span><span class="t">El archivo de Elena</span></a></li>
+<li><a href="#s11"><span class="n">INTERLUDIO IV</span><span class="t">El buhonero</span></a></li>
+<li><a href="#s12"><span class="n">CAPÍTULO 8</span><span class="t">La sed</span></a></li>
+<li><a href="#s13"><span class="n">CAPÍTULO 9</span><span class="t">Lo que le vendimos a Irene</span></a></li>
+<li><a href="#s14"><span class="n">INTERLUDIO V</span><span class="t">El espejo</span></a></li>
+<li><a href="#s15"><span class="n">CAPÍTULO 10</span><span class="t">La segunda frase</span></a></li>
+<li><a href="#s16"><span class="n">CAPÍTULO 11</span><span class="t">La estela</span></a></li>
+<li><a href="#s17"><span class="n">INTERLUDIO VI</span><span class="t">Ur, otra vez</span></a></li>
+<li><a href="#s18"><span class="n">CAPÍTULO 12</span><span class="t">Lo que os hará libres</span></a></li>
+<li><a href="#s19"><span class="n">EPÍLOGO</span><span class="t">Nota sobre las historias de este libro</span></a></li>
+<li><a href="#s20"><span class="n">AGRADECIMIENTOS</span><span class="t"></span></a></li>
+<li><a href="#s21"><span class="n">SOBRE EL AUTOR</span><span class="t"></span></a></li>
+<li><a href="#s22"><span class="n">UNA ÚLTIMA COSA</span><span class="t"></span></a></li></ol>
+</nav>
+
+<div class="panel" id="compartir" role="dialog" aria-modal="true" aria-label="Compartir el libro">
+ <div class="cabpanel"><strong>Compartir el libro</strong>
+  <button id="bCerrarComp" aria-label="✕">✕</button></div>
+ <p class="notaComp">Enséñele este código a alguien: con la cámara del teléfono abre el libro. O envíe el enlace.</p>
+ <div id="qrCaja" class="qrCaja"></div>
+ <p class="urlTxt" id="urlTxt"></p>
+ <div class="fila">
+  <button id="bEnviar">Compartir…</button>
+  <button id="bCopiarUrl">Copiar enlace</button>
+ </div>
+ <div class="fila" style="margin-top:.45rem">
+  <button id="bWa">WhatsApp</button>
+  <button id="bDescargaQR">Descargar QR</button>
+ </div>
+</div>
+
+<div class="reanudar" id="reanudar" role="dialog" aria-modal="true" aria-labelledby="rTit">
+ <div class="tarjetaR">
+  <div class="rot" id="rTit">Iba por aquí</div>
+  <div class="rCap" id="rCap"></div>
+  <div class="rMeta" id="rMeta"></div>
+  <div class="fila" style="margin-top:1.1rem">
+   <button id="bSeguir" class="pri">Continuar</button>
+   <button id="bDesdeCero">Empezar de nuevo</button>
+  </div>
+ </div>
+</div>
+
+<script>var QR=(function(){
+var EXP=new Array(512),LOG=new Array(256),x=1;
+for(var i=0;i<255;i++){EXP[i]=x;LOG[x]=i;x<<=1;if(x&256)x^=285}
+for(i=255;i<512;i++)EXP[i]=EXP[i-255];
+function mul(a,b){return(a===0||b===0)?0:EXP[LOG[a]+LOG[b]]}
+function polyMul(a,b){
+ var r=new Array(a.length+b.length-1).fill(0);
+ for(var i=0;i<a.length;i++)for(var j=0;j<b.length;j++)r[i+j]^=mul(a[i],b[j]);
+ return r}
+function genPoly(n){var g=[1];for(var i=0;i<n;i++)g=polyMul(g,[1,EXP[i]]);return g}
+function ecBytes(data,n){
+ var g=genPoly(n),res=data.concat(new Array(n).fill(0));
+ for(var i=0;i<data.length;i++){
+  var c=res[i];if(c===0)continue;
+  for(var j=0;j<g.length;j++)res[i+j]^=mul(g[j],c)}
+ return res.slice(data.length)}
+
+var ECC_M=[null,
+ [10,1,16,0,0],[16,1,28,0,0],[26,1,44,0,0],[18,2,32,0,0],[24,2,43,0,0],
+ [16,4,27,0,0],[18,4,31,0,0],[22,2,38,2,39],[22,3,36,2,37],[26,4,43,1,44],
+ [30,1,50,4,51],[22,6,36,2,37],[22,8,37,1,38],[24,4,40,5,41],[24,5,41,5,42],
+ [28,7,45,3,46],[28,10,46,1,47],[26,9,43,4,44],[26,3,44,11,45],[26,3,41,13,42]];
+var CAP_M=[0,14,26,42,62,84,106,122,152,180,213,251,287,331,362,412,450,504,560,624,666];
+
+var ALIGN=[[],[],[6,18],[6,22],[6,26],[6,30],[6,34],[6,22,38],[6,24,42],[6,26,46],
+ [6,28,50],[6,30,54],[6,32,58],[6,34,62],[6,26,46,66],[6,26,48,70],[6,26,50,74],
+ [6,30,54,78],[6,30,56,82],[6,30,58,86],[6,34,62,90]];
+
+function bch15(d){var v=d<<10;
+ for(var i=4;i>=0;i--)if(v&(1<<(i+10)))v^=0x537<<i;
+ return((d<<10)|v)^0x5412}
+function bch18(d){var v=d<<12;
+ for(var i=5;i>=0;i--)if(v&(1<<(i+12)))v^=0x1f25<<i;
+ return(d<<12)|v}
+
+function utf8(s){
+ var b=[],i,c;
+ for(i=0;i<s.length;i++){c=s.charCodeAt(i);
+  if(c<128)b.push(c);
+  else if(c<2048){b.push(192|(c>>6),128|(c&63))}
+  else if(c<55296||c>=57344){b.push(224|(c>>12),128|((c>>6)&63),128|(c&63))}
+  else{i++;c=65536+(((c&1023)<<10)|(s.charCodeAt(i)&1023));
+   b.push(240|(c>>18),128|((c>>12)&63),128|((c>>6)&63),128|(c&63))}}
+ return b}
+
+function build(text){
+ var data=utf8(text),ver=0;
+ for(var v=1;v<=20;v++)if(CAP_M[v]>=data.length){ver=v;break}
+ if(!ver)throw new Error("texto demasiado largo para QR");
+ var e=ECC_M[ver],ecLen=e[0],g1=e[1],d1=e[2],g2=e[3],d2=e[4];
+ var totalData=g1*d1+g2*d2;
+ var cciBits=ver<10?8:16;
+
+ var bits=[];
+ function put(val,len){for(var i=len-1;i>=0;i--)bits.push((val>>i)&1)}
+ put(4,4); put(data.length,cciBits);
+ for(var i=0;i<data.length;i++)put(data[i],8);
+ var cap=totalData*8;
+ for(i=0;i<4&&bits.length<cap;i++)bits.push(0);
+ while(bits.length%8)bits.push(0);
+ var pad=[236,17],pi=0;
+ while(bits.length<cap){put(pad[pi++%2],8)}
+ var bytes=[];
+ for(i=0;i<bits.length;i+=8){var b=0;
+  for(var j=0;j<8;j++)b=(b<<1)|bits[i+j];bytes.push(b)}
+
+ var blocks=[],ecs=[],pos=0,k;
+ for(k=0;k<g1;k++){blocks.push(bytes.slice(pos,pos+d1));pos+=d1}
+ for(k=0;k<g2;k++){blocks.push(bytes.slice(pos,pos+d2));pos+=d2}
+ for(k=0;k<blocks.length;k++)ecs.push(ecBytes(blocks[k],ecLen));
+
+ var seq=[],maxD=Math.max(d1,d2||0);
+ for(i=0;i<maxD;i++)for(k=0;k<blocks.length;k++)
+  if(i<blocks[k].length)seq.push(blocks[k][i]);
+ for(i=0;i<ecLen;i++)for(k=0;k<ecs.length;k++)seq.push(ecs[k][i]);
+
+ var finalBits=[];
+ for(i=0;i<seq.length;i++)for(j=7;j>=0;j--)finalBits.push((seq[i]>>j)&1);
+
+ var size=ver*4+17;
+ var m=[],res=[];
+ for(i=0;i<size;i++){m.push(new Array(size).fill(0));res.push(new Array(size).fill(0))}
+ function set(r,c,v){m[r][c]=v;res[r][c]=1}
+
+ function finder(r,c){
+  for(var i=-1;i<=7;i++)for(var j=-1;j<=7;j++){
+   var rr=r+i,cc=c+j;if(rr<0||cc<0||rr>=size||cc>=size)continue;
+   var on=(i>=0&&i<=6&&(j===0||j===6))||(j>=0&&j<=6&&(i===0||i===6))||
+          (i>=2&&i<=4&&j>=2&&j<=4);
+   set(rr,cc,on?1:0)}}
+ finder(0,0);finder(0,size-7);finder(size-7,0);
+
+ var al=ALIGN[ver];
+ for(i=0;i<al.length;i++)for(j=0;j<al.length;j++){
+  var r=al[i],c=al[j];
+  if((r<=7&&c<=7)||(r<=7&&c>=size-8)||(r>=size-8&&c<=7))continue;
+  for(var dr=-2;dr<=2;dr++)for(var dc=-2;dc<=2;dc++)
+   set(r+dr,c+dc,(Math.abs(dr)===2||Math.abs(dc)===2||(dr===0&&dc===0))?1:0)}
+
+ for(i=8;i<size-8;i++){set(6,i,i%2===0?1:0);set(i,6,i%2===0?1:0)}
+ set(size-8,8,1);
+
+ for(i=0;i<9;i++){if(!res[8][i])res[8][i]=1;if(!res[i][8])res[i][8]=1}
+ for(i=0;i<8;i++){res[8][size-1-i]=1;res[size-1-i][8]=1}
+
+ if(ver>=7){var vb=bch18(ver);
+  for(i=0;i<18;i++){var bit=(vb>>i)&1,a=Math.floor(i/3),b2=i%3;
+   set(size-11+b2,a,bit);set(a,size-11+b2,bit)}}
+
+ function maskFn(k,r,c){
+  switch(k){
+   case 0:return (r+c)%2===0; case 1:return r%2===0;
+   case 2:return c%3===0;     case 3:return (r+c)%3===0;
+   case 4:return (Math.floor(r/2)+Math.floor(c/3))%2===0;
+   case 5:return ((r*c)%2)+((r*c)%3)===0;
+   case 6:return (((r*c)%2)+((r*c)%3))%2===0;
+   default:return (((r+c)%2)+((r*c)%3))%2===0}}
+
+ function place(mask){
+  var mm=[];for(var i=0;i<size;i++)mm.push(m[i].slice());
+  var idx=0,up=true;
+  for(var col=size-1;col>0;col-=2){
+   if(col===6)col--;
+   for(var t=0;t<size;t++){
+    var row=up?size-1-t:t;
+    for(var s=0;s<2;s++){
+     var cc=col-s;
+     if(res[row][cc])continue;
+     var v=idx<finalBits.length?finalBits[idx++]:0;
+     if(maskFn(mask,row,cc))v^=1;
+     mm[row][cc]=v}}
+   up=!up}
+  var fb=bch15((0<<3)|mask);
+  var p1=[[8,0],[8,1],[8,2],[8,3],[8,4],[8,5],[8,7],[8,8],
+          [7,8],[5,8],[4,8],[3,8],[2,8],[1,8],[0,8]];
+  var p2=[];
+  for(var q=0;q<7;q++)p2.push([size-1-q,8]);
+  for(q=0;q<8;q++)p2.push([8,size-8+q]);
+  for(var i2=0;i2<15;i2++){
+   var bit=(fb>>(14-i2))&1;
+   mm[p1[i2][0]][p1[i2][1]]=bit;
+   mm[p2[i2][0]][p2[i2][1]]=bit}
+  mm[size-8][8]=1;
+  return mm}
+
+ function penalty(mm){
+  var p=0,i,j,run,dark=0;
+  for(i=0;i<size;i++){run=1;
+   for(j=1;j<size;j++){
+    if(mm[i][j]===mm[i][j-1])run++;else{if(run>=5)p+=3+(run-5);run=1}}
+   if(run>=5)p+=3+(run-5)}
+  for(j=0;j<size;j++){run=1;
+   for(i=1;i<size;i++){
+    if(mm[i][j]===mm[i-1][j])run++;else{if(run>=5)p+=3+(run-5);run=1}}
+   if(run>=5)p+=3+(run-5)}
+  for(i=0;i<size-1;i++)for(j=0;j<size-1;j++){
+   var s2=mm[i][j]+mm[i][j+1]+mm[i+1][j]+mm[i+1][j+1];
+   if(s2===0||s2===4)p+=3}
+  var pA=[1,0,1,1,1,0,1,0,0,0,0],pB=[0,0,0,0,1,0,1,1,1,0,1];
+  function look(get){
+   for(var a=0;a<size;a++)for(var b=0;b<=size-11;b++){
+    var okA=true,okB=true;
+    for(var c=0;c<11;c++){var v=get(a,b+c);
+     if(v!==pA[c])okA=false; if(v!==pB[c])okB=false;
+     if(!okA&&!okB)break}
+    if(okA)p+=40; if(okB)p+=40}}
+  look(function(a,b){return mm[a][b]});
+  look(function(a,b){return mm[b][a]});
+  for(i=0;i<size;i++)for(j=0;j<size;j++)if(mm[i][j])dark++;
+  var pct=dark*100/(size*size);
+  p+=Math.floor(Math.abs(pct-50)/5)*10;
+  return p}
+
+ var best=null,bp=Infinity;
+ for(var mk=0;mk<8;mk++){var cand=place(mk),pv=penalty(cand);
+  if(pv<bp){bp=pv;best=cand}}
+ return best}
+
+function svg(text,px,dark,light){
+ var m=build(text),n=m.length,q=4,total=n+q*2;
+ var d="";
+ for(var r=0;r<n;r++)for(var c=0;c<n;c++)
+  if(m[r][c])d+="M"+(c+q)+" "+(r+q)+"h1v1h-1z";
+ return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 '+total+' '+total+
+  '" width="'+px+'" height="'+px+'" shape-rendering="crispEdges" role="img">'+
+  '<rect width="'+total+'" height="'+total+'" fill="'+(light||"#ffffff")+'"/>'+
+  '<path d="'+d+'" fill="'+(dark||"#000000")+'"/></svg>'}
+
+return {build:build,svg:svg};
+})();
+if(typeof module!=="undefined")module.exports=QR;
+</script>
+<script>
+(function(){
+var H=document.documentElement,K="fds-es:",app=document.getElementById("app"),
+ flujo=document.getElementById("flujo"),libro=document.getElementById("libro"),
+ zona=document.getElementById("zona"),pagOut=document.getElementById("pag"),
+ barrita=document.getElementById("barrita"),capOut=document.getElementById("capActual"),
+ secs=[].slice.call(flujo.querySelectorAll("section")),
+ modo="paginas",p=0,total=1,ancho=0;
+
+function get(k,d){var v=localStorage.getItem(K+k);return v===null?d:v}
+function set(k,v){try{localStorage.setItem(K+k,v)}catch(e){}}
+
+var FAM={serif:'"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif',
+ sans:'-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif',
+ legible:'Verdana,Tahoma,"DejaVu Sans",Geneva,sans-serif'};
+
+function marcar(sel,attr,val){
+ [].forEach.call(document.querySelectorAll(sel),function(b){
+  b.setAttribute("aria-pressed",b.getAttribute(attr)===val?"true":"false")})}
+
+function aplicar(){
+ var tam=parseFloat(get("tam","1.075")),fam=get("fam","serif"),tema=get("tema","dia"),
+  lh=get("lh","1.75"),ls=get("ls","0em");
+ H.style.setProperty("--fs",tam+"rem");
+ H.style.setProperty("--fam",FAM[fam]);
+ H.style.setProperty("--lh",lh);
+ H.style.setProperty("--ls",ls);
+ H.dataset.tema=tema;
+ document.getElementById("valTam").textContent=Math.round(tam/1.075*100)+"%";
+ var tc={dia:"#faf8f4",sepia:"#f4e9d6",noche:"#14120f",contraste:"#000000"}[tema];
+ document.querySelector('meta[name=theme-color]').content=tc;
+ marcar("[data-fam]","data-fam",fam);marcar("[data-tema]","data-tema",tema);
+ marcar("[data-lh]","data-lh",lh);marcar("[data-ls]","data-ls",ls);
+ marcar("[data-vel]","data-vel",get("vel","0.85"));
+ marcar("[data-modo]","data-modo",modo);
+}
+
+function medir(){
+ if(modo==="continuo"){total=1;return}
+ ancho=libro.clientWidth-parseFloat(getComputedStyle(libro).paddingLeft)
+   -parseFloat(getComputedStyle(libro).paddingRight);
+ var cols=innerWidth>=820?2:1, gap=parseFloat(getComputedStyle(flujo).columnGap)||0;
+ var colw=(ancho-gap*(cols-1))/cols;
+ flujo.style.columnWidth=colw+"px";
+ flujo.style.height=libro.clientHeight-parseFloat(getComputedStyle(libro).paddingTop)
+   -parseFloat(getComputedStyle(libro).paddingBottom)+"px";
+ var paso=ancho+gap;
+ total=Math.max(1,Math.round(flujo.scrollWidth/paso));
+ flujo.dataset.paso=paso;
+}
+
+function ir(n,suave){
+ if(modo==="continuo")return;
+ p=Math.max(0,Math.min(total-1,n));
+ var paso=parseFloat(flujo.dataset.paso||0);
+ if(!suave)flujo.style.transition="none";
+ flujo.style.transform="translateX("+(-p*paso)+"px)";
+ if(!suave)requestAnimationFrame(function(){flujo.style.transition=""});
+ pintar();set("pag",p);set("frac",p/Math.max(1,total-1));guardar();
+}
+
+function pctActual(){
+ if(modo==="continuo"){var a=zona.scrollHeight-zona.clientHeight;
+  return Math.round(a>0?zona.scrollTop/a*100:0)}
+ return Math.round(total>1?p/(total-1)*100:0);
+}
+function pintar(){
+ if(modo==="continuo"){
+  var y=zona.scrollTop,alto=zona.scrollHeight-zona.clientHeight;
+  barrita.style.width=(alto>0?y/alto*100:0)+"%";
+  pagOut.textContent=pctActual()+"% leído";
+  set("scroll",y);
+ }else{
+  pagOut.textContent="Página "+(p+1)+" de "+total+"  ·  "+pctActual()+"%";
+  barrita.style.width=(total>1?p/(total-1)*100:100)+"%";
+ }
+ var vista=null;
+ for(var i=0;i<secs.length;i++){
+  var r=secs[i].getBoundingClientRect();
+  if(r.left<innerWidth*0.9&&r.right>0&&r.top<innerHeight)vista=secs[i];
+ }
+ if(vista){
+  var n=vista.querySelector(".rotulo"),t=vista.querySelector("h2");
+  capOut.textContent=(n?n.textContent:"")+(t&&t.textContent?" · "+t.textContent:"");
+  [].forEach.call(document.querySelectorAll("#toc a"),function(a){
+   a.setAttribute("aria-current",a.getAttribute("href")==="#"+vista.id?"true":"false")});
+ }
+}
+
+function aSeccion(id){
+ var el=document.getElementById(id);if(!el)return;
+ if(modo==="continuo"){el.scrollIntoView({behavior:"smooth"});return}
+ var paso=parseFloat(flujo.dataset.paso||1);
+ var actual=-p*paso, x=el.getBoundingClientRect().left-flujo.getBoundingClientRect().left;
+ ir(Math.round(x/paso),true);
+}
+
+function recalcular(mantener){
+ var id=null;
+ if(mantener&&modo==="paginas"){
+  for(var i=0;i<secs.length;i++){var r=secs[i].getBoundingClientRect();
+   if(r.left<innerWidth*0.9&&r.right>0){id=secs[i].id}}
+ }
+ medir();
+ if(id)aSeccion(id);else ir(p,false);
+}
+
+function ponerModo(m){
+ modo=m;set("modo",m);
+ app.classList.toggle("continuo",m==="continuo");
+ document.body.classList.toggle("continuo",m==="continuo");
+ if(m==="continuo"){flujo.style.transform="";flujo.style.columnWidth="";
+  flujo.style.height="";setTimeout(function(){
+   var y=parseFloat(get("scroll","0"));if(y)zona.scrollTop=y;pintar()},30);
+ }else{setTimeout(function(){medir();ir(p,false)},30)}
+ aplicar();
+}
+
+document.getElementById("bMas").onclick=function(){
+ var t=Math.min(2.2,parseFloat(get("tam","1.075"))+.09);set("tam",t);aplicar();recalcular(true)};
+document.getElementById("bMenos").onclick=function(){
+ var t=Math.max(.85,parseFloat(get("tam","1.075"))-.09);set("tam",t);aplicar();recalcular(true)};
+[].forEach.call(document.querySelectorAll("[data-fam]"),function(b){
+ b.onclick=function(){set("fam",b.dataset.fam);aplicar();recalcular(true)}});
+[].forEach.call(document.querySelectorAll("[data-tema]"),function(b){
+ b.onclick=function(){set("tema",b.dataset.tema);aplicar()}});
+[].forEach.call(document.querySelectorAll("[data-lh]"),function(b){
+ b.onclick=function(){set("lh",b.dataset.lh);aplicar();recalcular(true)}});
+[].forEach.call(document.querySelectorAll("[data-ls]"),function(b){
+ b.onclick=function(){set("ls",b.dataset.ls);aplicar();recalcular(true)}});
+[].forEach.call(document.querySelectorAll("[data-modo]"),function(b){
+ b.onclick=function(){ponerModo(b.dataset.modo)}});
+[].forEach.call(document.querySelectorAll("[data-vel]"),function(b){
+ b.onclick=function(){set("vel",b.dataset.vel);aplicar()}});
+
+var panel=document.getElementById("panel"),velo=document.getElementById("velo"),
+ toc=document.getElementById("toc");
+function abrir(el){el.classList.add("on");velo.classList.add("on")}
+function cerrar(){panel.classList.remove("on");toc.classList.remove("on");
+ compartir.classList.remove("on");velo.classList.remove("on")}
+document.getElementById("bAa").onclick=function(){abrir(panel)};
+document.getElementById("bToc").onclick=function(){
+ pintar();
+ var act=toc.querySelector('a[aria-current="true"]');
+ abrir(toc);
+ if(act&&act.scrollIntoView)try{act.scrollIntoView({block:"center"})}catch(e){}
+};
+document.getElementById("bCerrarPanel").onclick=cerrar;
+document.getElementById("bCerrarToc").onclick=cerrar;
+velo.onclick=cerrar;
+addEventListener("keydown",function(e){
+ if(e.key==="Escape"){cerrar();return}
+ if(panel.classList.contains("on")||toc.classList.contains("on"))return;
+ if(e.key==="ArrowRight"||e.key==="PageDown"||e.key===" ")  {e.preventDefault();ir(p+1,true)}
+ if(e.key==="ArrowLeft" ||e.key==="PageUp")                 {e.preventDefault();ir(p-1,true)}
+ if(e.key==="Home")ir(0,true);
+ if(e.key==="End")ir(total-1,true);
+});
+
+toc.addEventListener("click",function(e){
+ var a=e.target.closest("a");if(!a)return;
+ e.preventDefault();cerrar();aSeccion(a.getAttribute("href").slice(1))});
+
+document.getElementById("bSig").onclick=function(){ir(p+1,true)};
+document.getElementById("bAnt").onclick=function(){ir(p-1,true)};
+document.getElementById("tDer").onclick=function(){ir(p+1,true)};
+document.getElementById("tIzq").onclick=function(){ir(p-1,true)};
+
+var x0=null,y0=null;
+zona.addEventListener("touchstart",function(e){
+ x0=e.touches[0].clientX;y0=e.touches[0].clientY},{passive:true});
+zona.addEventListener("touchend",function(e){
+ if(x0===null||modo==="continuo")return;
+ var dx=e.changedTouches[0].clientX-x0,dy=e.changedTouches[0].clientY-y0;
+ if(Math.abs(dx)>45&&Math.abs(dx)>Math.abs(dy)*1.4)ir(dx<0?p+1:p-1,true);
+ x0=null},{passive:true});
+zona.addEventListener("scroll",function(){if(modo==="continuo")pintar()},{passive:true});
+
+var voz={on:false,i:0,nodos:[],lista:[]};
+try{
+var IDIOMA="es";
+
+function puntuaVoz(v){
+ var n=(v.name||"").toLowerCase(),p=0;
+ if(/natural|neural/.test(n))p+=8;
+ if(/premium|enhanced/.test(n))p+=6;
+ if(/online/.test(n))p+=4;
+ if(/google/.test(n))p+=4;
+ if(v.localService===false)p+=2;
+ if(/siri/.test(n))p+=3;
+ if(/compact|espeak|pico|festival/.test(n))p-=8;
+ if(IDIOMA==="en"&&/en-gb/i.test(v.lang))p+=1;
+ return p;
+}
+function cargarVoces(){
+ var todas=speechSynthesis.getVoices()||[];
+ var vs=todas.filter(function(v){
+  return (v.lang||"").toLowerCase().indexOf(IDIOMA)===0});
+ if(!vs.length)vs=todas;
+ vs.sort(function(a,b){return puntuaVoz(b)-puntuaVoz(a)});
+ voz.lista=vs;
+ var sel=document.getElementById("selVoz");
+ if(!sel)return;
+ sel.innerHTML="";
+ vs.forEach(function(v,i){
+  var o=document.createElement("option");
+  o.value=v.name;o.textContent=v.name.replace(/Microsoft |Google /,"")+" · "+v.lang;
+  sel.appendChild(o)});
+ var guard=get("vozNom","");
+ if(guard&&vs.some(function(v){return v.name===guard}))sel.value=guard;
+ else if(vs[0])set("vozNom",vs[0].name);
+}
+if("speechSynthesis" in window){
+ speechSynthesis.onvoiceschanged=cargarVoces;
+ setTimeout(cargarVoces,120);
+ var selv=document.getElementById("selVoz");
+ if(selv)selv.onchange=function(){set("vozNom",this.value);
+  if(voz.on){speechSynthesis.cancel();hablar()}};
+}
+function vozElegida(){
+ var n=get("vozNom","");
+ for(var i=0;i<voz.lista.length;i++)if(voz.lista[i].name===n)return voz.lista[i];
+ return voz.lista[0]||null;
+}
+function textoVisible(){
+ voz.nodos=[].slice.call(flujo.querySelectorAll("p,h2,blockquote")).filter(function(el){
+  if(!el.textContent.trim())return false;
+  var r=el.getBoundingClientRect();
+  if(modo==="continuo")return r.bottom>0;
+  return r.left>-20&&r.left<innerWidth});
+ voz.i=0;
+}
+function limpiaTexto(t){
+ return t.replace(/—/g," ").replace(/·/g," ").replace(/\s+/g," ").trim();
+}
+function hablar(){
+ if(!voz.nodos[voz.i]){pararVoz();return}
+ var el=voz.nodos[voz.i];
+ [].forEach.call(flujo.querySelectorAll(".leyendo"),function(n){n.classList.remove("leyendo")});
+ el.classList.add("leyendo");
+ var u=new SpeechSynthesisUtterance(limpiaTexto(el.textContent));
+ var v=vozElegida();
+ if(v){u.voice=v;u.lang=v.lang}else{u.lang="es-ES"}
+ u.rate=parseFloat(get("vel","0.85"));
+ u.pitch=1;u.volume=1;
+ u.onend=function(){
+  if(!voz.on)return;
+  voz.i++;
+  var pausa=/[.!?:;]$/.test(el.textContent.trim())?380:200;
+  if(voz.i>=voz.nodos.length){
+   ir(p+1,true);
+   setTimeout(function(){if(voz.on){textoVisible();hablar()}},620);
+  }else setTimeout(function(){if(voz.on)hablar()},pausa);
+ };
+ u.onerror=function(){if(voz.on){voz.i++;setTimeout(hablar,250)}};
+ speechSynthesis.speak(u);
+}
+function pararVoz(){
+ voz.on=false;speechSynthesis.cancel();
+ var b=document.getElementById("bVoz");
+ b.textContent="▶";b.setAttribute("aria-label","Lectura en voz alta");
+ [].forEach.call(flujo.querySelectorAll(".leyendo"),function(n){n.classList.remove("leyendo")});
+}
+document.getElementById("bVoz").onclick=function(){
+ if(!("speechSynthesis" in window)){alert("Su navegador no permite la lectura en voz alta.");return}
+ if(voz.on){pararVoz();return}
+ if(!voz.lista.length)cargarVoces();
+ voz.on=true;this.textContent="■";
+ this.setAttribute("aria-label","Detener la lectura en voz alta");
+ textoVisible();hablar();
+};
+
+var cop=document.getElementById("bCopiar");
+cop.onclick=function(){
+ var n=document.getElementById("numCuenta").textContent.trim();
+ var ok=function(){cop.textContent="Copiado ✓";
+  setTimeout(function(){cop.textContent="Copiar número"},2200)};
+ if(navigator.clipboard)navigator.clipboard.writeText(n).then(ok,ok);
+ else{var t=document.createElement("textarea");t.value=n;document.body.appendChild(t);
+  t.select();try{document.execCommand("copy")}catch(e){}t.remove();ok()}
+};
+
+function estadoActual(){
+ var sec=null;
+ for(var i=0;i<secs.length;i++){var r=secs[i].getBoundingClientRect();
+  if(modo==="continuo"){if(r.top<innerHeight*0.5)sec=secs[i]}
+  else if(r.left<innerWidth*0.9&&r.right>0)sec=secs[i]}
+ var h2=sec?sec.querySelector("h2"):null,ro=sec?sec.querySelector(".rotulo"):null;
+ var pct;
+ if(modo==="continuo"){var alto=zona.scrollHeight-zona.clientHeight;
+  pct=alto>0?zona.scrollTop/alto*100:0}
+ else pct=total>1?p/(total-1)*100:0;
+ return {sec:sec?sec.id:"",cap:(ro?ro.textContent:"")+(h2&&h2.textContent?" · "+h2.textContent:""),
+  pct:Math.round(pct),frac:total>1?p/(total-1):0,pag:p,modo:modo,ts:Date.now()};
+}
+function guardar(){
+ var e=estadoActual();
+ set("frac",e.frac);set("pag",e.pag);set("pct",e.pct);
+ set("sec",e.sec);set("cap",e.cap);set("ts",e.ts);
+ if(modo==="continuo")set("scroll",zona.scrollTop);
+}
+addEventListener("visibilitychange",function(){if(document.visibilityState==="hidden")guardar()});
+addEventListener("pagehide",guardar);
+addEventListener("blur",guardar);
+addEventListener("beforeunload",guardar);
+setInterval(function(){if(document.visibilityState==="visible")guardar()},4000);
+
+function haceCuanto(ts){
+ var d=Date.now()-ts,m=Math.round(d/60000);
+ if(m<2)return "hace un momento";
+ if(m<60)return "hace "+m+" minutos";
+ var h=Math.round(m/60);
+ if(h<24)return "hace "+h+" horas";
+ var dd=Math.round(h/24);
+ return "hace "+dd+" días";
+}
+function mostrarReanudar(){
+ var pct=parseFloat(get("pct","0")),ts=parseFloat(get("ts","0")),cap=get("cap","");
+ if(!(pct>1&&ts))return false;
+ document.getElementById("rCap").textContent=cap||"—";
+ document.getElementById("rMeta").textContent=pct+"% · "+haceCuanto(ts);
+ document.getElementById("reanudar").classList.add("on");
+ return true;
+}
+document.getElementById("bSeguir").onclick=function(){
+ document.getElementById("reanudar").classList.remove("on");
+ var sid=get("sec",""),f=parseFloat(get("frac","0"));
+ if(modo==="continuo"){var y=parseFloat(get("scroll","0"));if(y)zona.scrollTop=y;pintar();return}
+ medir();
+ if(sid&&document.getElementById(sid))aSeccion(sid);
+ else ir(Math.round(f*(total-1)),false);
+};
+document.getElementById("bDesdeCero").onclick=function(){
+ document.getElementById("reanudar").classList.remove("on");
+ if(modo==="continuo")zona.scrollTop=0; else ir(0,false);
+ guardar();
+};
+
+}catch(errVoz){if(window.console)console.warn("Lectura en voz alta no disponible:",errVoz)}
+
+try{
+function marcas(){try{return JSON.parse(get("marcas","[]"))}catch(e){return[]}}
+function pintarMarcas(){
+ var L=marcas(),z=document.getElementById("zonaMarcas");
+ if(!L.length){z.innerHTML="";return}
+ var h='<h4>Sus marcadores</h4>';
+ L.forEach(function(mk,i){
+  h+='<div class="marca"><a href="#'+mk.sec+'" data-f="'+mk.frac+'">'+
+     (mk.cap||"—")+'</a><span class="pc">'+mk.pct+'%</span>'+
+     '<button data-del="'+i+'" aria-label="Borrar marcador">✕</button></div>'});
+ z.innerHTML=h;
+ [].forEach.call(z.querySelectorAll("[data-del]"),function(b){
+  b.onclick=function(ev){ev.preventDefault();ev.stopPropagation();
+   var L2=marcas();L2.splice(parseInt(b.dataset.del,10),1);
+   set("marcas",JSON.stringify(L2));pintarMarcas()}});
+}
+document.getElementById("bMarca").onclick=function(){
+ var e=estadoActual(),L=marcas();
+ L.unshift({sec:e.sec,cap:e.cap,pct:e.pct,frac:e.frac,ts:e.ts});
+ if(L.length>20)L.pop();
+ set("marcas",JSON.stringify(L));pintarMarcas();
+ var b=this,t0=b.textContent;b.textContent="✓";
+ setTimeout(function(){b.textContent=t0},1300);
+};
+pintarMarcas();
+
+var URL_PUBLICA="https://libros-para-pensar.netlify.app/fabricantes-de-sed.html";
+function enlace(){
+ if(URL_PUBLICA)return URL_PUBLICA;
+ return location.href.split("#")[0];
+}
+var compartir=document.getElementById("compartir");
+document.getElementById("bComp").onclick=function(){
+ var u=enlace();
+ document.getElementById("urlTxt").textContent=u;
+ var esNoche=H.dataset.tema==="noche"||H.dataset.tema==="contraste";
+ try{
+  document.getElementById("qrCaja").innerHTML=QR.svg(u,220,"#111111","#ffffff");
+ }catch(err){
+  document.getElementById("qrCaja").textContent="—";
+ }
+ abrir(compartir);
+};
+document.getElementById("bCerrarComp").onclick=cerrar;
+document.getElementById("bEnviar").onclick=function(){
+ var d={title:document.title,text:"Le comparto este libro. Es gratis y se lee completo:",url:enlace()};
+ if(navigator.share)navigator.share(d).catch(function(){});
+ else{var b=this;navigator.clipboard&&navigator.clipboard.writeText(enlace());
+  b.textContent="Copiado ✓";setTimeout(function(){b.textContent="Compartir…"},2000)}
+};
+document.getElementById("bCopiarUrl").onclick=function(){
+ var b=this,u=enlace();
+ var ok=function(){b.textContent="Copiado ✓";
+  setTimeout(function(){b.textContent="Copiar enlace"},2000)};
+ if(navigator.clipboard)navigator.clipboard.writeText(u).then(ok,ok);
+ else{var x=document.createElement("textarea");x.value=u;document.body.appendChild(x);
+  x.select();try{document.execCommand("copy")}catch(e){}x.remove();ok()}
+};
+document.getElementById("bWa").onclick=function(){
+ location.href="https://wa.me/?text="+encodeURIComponent("Le comparto este libro. Es gratis y se lee completo: "+enlace())};
+document.getElementById("bDescargaQR").onclick=function(){
+ var svg=document.querySelector("#qrCaja svg");if(!svg)return;
+ var blob=new Blob([svg.outerHTML],{type:"image/svg+xml"});
+ var a=document.createElement("a");a.href=URL.createObjectURL(blob);
+ a.download="qr.svg";a.click();setTimeout(function(){URL.revokeObjectURL(a.href)},2000)};
+
+}catch(errOpc){if(window.console)console.warn("Funciones opcionales no disponibles:",errOpc)}
+
+var rt;addEventListener("resize",function(){clearTimeout(rt);
+ rt=setTimeout(function(){recalcular(true)},220)});
+
+aplicar();
+ponerModo(get("modo","paginas"));
+setTimeout(function(){
+ medir();
+ var reanudo=false;
+ try{reanudo=mostrarReanudar()}catch(e){reanudo=false}
+ if(!reanudo){
+  var f=parseFloat(get("frac","0"));
+  ir(f>0?Math.round(f*(total-1)):0,false);
+ }
+},80);
+addEventListener("load",function(){setTimeout(function(){recalcular(true)},200)});
+})();
+</script>
+</body>
+</html>

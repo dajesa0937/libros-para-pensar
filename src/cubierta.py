@@ -1,0 +1,69 @@
+# -*- coding: utf-8 -*-
+"""Cubierta del libro en SVG puro (sin imágenes externas)."""
+
+CUBIERTA = '''<svg viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cubierta del libro Fabricantes de sed: una balanza inclinada sobre fondo oscuro">
+<defs>
+  <linearGradient id="fondo" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#241f18"/>
+    <stop offset="0.55" stop-color="#181410"/>
+    <stop offset="1" stop-color="#0e0c09"/>
+  </linearGradient>
+  <radialGradient id="halo" cx="0.5" cy="0.36" r="0.55">
+    <stop offset="0" stop-color="#c9975a" stop-opacity="0.20"/>
+    <stop offset="1" stop-color="#c9975a" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="400" height="600" fill="url(#fondo)"/>
+<rect width="400" height="600" fill="url(#halo)"/>
+<rect x="0" y="0" width="7" height="600" fill="#000" opacity="0.35"/>
+
+<g stroke="#c9975a" fill="none" stroke-linecap="round">
+  <line x1="200" y1="96" x2="200" y2="150" stroke-width="1.4"/>
+  <g transform="rotate(-9 200 150)">
+    <line x1="104" y1="150" x2="296" y2="150" stroke-width="1.8"/>
+    <line x1="104" y1="150" x2="104" y2="196" stroke-width="1"/>
+    <line x1="296" y1="150" x2="296" y2="196" stroke-width="1"/>
+    <path d="M74 196 Q104 232 134 196" stroke-width="1.6"/>
+    <path d="M266 196 Q296 226 326 196" stroke-width="1.6"/>
+  </g>
+  <circle cx="200" cy="92" r="4.5" stroke-width="1.4"/>
+</g>
+
+<g fill="#f2e9da" font-family="Georgia, 'Times New Roman', serif" text-anchor="middle">
+  <text x="200" y="330" font-size="46" letter-spacing="1">FABRICANTES</text>
+  <text x="200" y="372" font-size="26" letter-spacing="10" opacity="0.75">DE</text>
+  <text x="200" y="424" font-size="52" letter-spacing="4">SED</text>
+</g>
+
+<line x1="140" y1="462" x2="260" y2="462" stroke="#c9975a" stroke-width="0.8" opacity="0.8"/>
+
+<g fill="#a99b86" font-family="Georgia, serif" text-anchor="middle">
+  <text x="200" y="500" font-size="13.5" font-style="italic">Una novela sobre la persuasión,</text>
+  <text x="200" y="520" font-size="13.5" font-style="italic">la verdad y el precio de las palabras</text>
+</g>
+
+<text x="200" y="562" fill="#a99b86" font-family="Georgia, serif"
+      font-size="15" letter-spacing="2.6" text-anchor="middle">DAWIN SALAZAR</text>
+</svg>'''
+
+CUBIERTA_EN = (CUBIERTA
+  .replace("FABRICANTES", "THIRST")
+  .replace('font-size="26" letter-spacing="10" opacity="0.75">DE<',
+           'font-size="26" letter-spacing="10" opacity="0.75">THE<')
+  .replace(">SED<", ">MAKERS<")
+  .replace("Una novela sobre la persuasión,", "A novel about persuasion,")
+  .replace("la verdad y el precio de las palabras", "truth, and the price of words")
+  .replace('font-size="46" letter-spacing="1">THIRST',
+           'font-size="46" letter-spacing="1">THIRST')
+  .replace("Cubierta del libro Fabricantes de sed: una balanza inclinada sobre fondo oscuro",
+           "Cover of the book Thirst Makers: a tilted balance scale on a dark background"))
+
+# el orden real en ingles es THE / THIRST / MAKERS
+CUBIERTA_EN = (CUBIERTA_EN
+  .replace('<text x="200" y="330" font-size="46" letter-spacing="1">THIRST</text>',
+           '<text x="200" y="326" font-size="26" letter-spacing="10" opacity="0.75">THE</text>')
+  .replace('<text x="200" y="372" font-size="26" letter-spacing="10" opacity="0.75">THE</text>',
+           '<text x="200" y="376" font-size="50" letter-spacing="2">THIRST</text>')
+  .replace('<text x="200" y="424" font-size="52" letter-spacing="4">MAKERS</text>',
+           '<text x="200" y="428" font-size="42" letter-spacing="3">MAKERS</text>'))

@@ -1,0 +1,18 @@
+{
+  "name": "libros-para-pensar",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sitio de lectura. Libros completos y gratuitos con lector propio.",
+  "scripts": {
+    "generar": "python3 src/gen_web3.py",
+    "test:elementos": "node tests/chequeo_ids.js web/fabricantes-de-sed.html web/thirst-makers.html web/index.html web/index-en.html",
+    "test:lector": "node tests/prueba2.js web/fabricantes-de-sed.html && node tests/prueba2.js web/thirst-makers.html",
+    "test:sitio": "node tests/preflight.js",
+    "test": "npm run test:elementos && npm run test:lector && npm run test:sitio",
+    "test:qr": "node tests/verifica_qr.js",
+    "servir": "python3 -m http.server 8000 --directory web"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4"
+  }
+}
