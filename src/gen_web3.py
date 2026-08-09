@@ -1023,7 +1023,7 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
   <span>
    <span class="tit">Fabricantes de sed</span>
    <span class="des">El hombre que enseñó al mundo a desear recibe su propio cuaderno de juventud de vuelta — y descubre que la única persuasión que nunca ha probado es la verdad.</span>
-   <span class="meta">Novela · Edición anónima · Leer ahora</span>
+   <span class="meta">Novela · Dawin Salazar · Leer ahora</span>
   </span>
  </a>
 
@@ -1215,7 +1215,7 @@ IDX_EN = {
  "El libro entero pesa lo que una foto. Una vez abierto, se lee sin señal en todo el trayecto.":"The whole book weighs what a photo does. Once open, it reads with no signal at all.",
  "Catálogo":"Catalogue",
  "El hombre que enseñó al mundo a desear recibe su propio cuaderno de juventud de vuelta — y descubre que la única persuasión que nunca ha probado es la verdad.":"The man who taught the world to want gets his own youthful notebook back — and discovers that the one form of persuasion he has never tried is the truth.",
- "Novela · Edición anónima · Leer ahora":"A novel · Dawin Salazar · Read now",
+ "Novela · Dawin Salazar · Leer ahora":"A novel · Dawin Salazar · Read now",
  "Próximo título":"Next title",
  "En preparación. Reemplace este bloque cuando esté listo.":"In preparation.",
  "Aportes":"Contributions",
