@@ -315,7 +315,7 @@ select{width:100%;min-height:44px;font-family:system-ui,sans-serif;font-size:.9r
 
 <div class="velo" id="velo"></div>
 
-<div class="panel" id="panel" role="dialog" aria-modal="true" aria-label="Ajustes de lectura">
+<div class="panel" id="panel" role="dialog" aria-modal="true" aria-label="__TXT_AJU__">
  <div class="cabpanel"><strong>__TXT_AJU__</strong>
   <button id="bCerrarPanel" aria-label="✕">✕</button></div>
 
@@ -680,10 +680,11 @@ document.getElementById("bVoz").onclick=function(){
 };
 
 var cop=document.getElementById("bCopiar");
+var etiquetaCopiar=cop.textContent;
 cop.onclick=function(){
  var n=document.getElementById("numCuenta").textContent.trim();
- var ok=function(){cop.textContent="Copiado ✓";
-  setTimeout(function(){cop.textContent="Copiar número"},2200)};
+ var ok=function(){cop.textContent="__TXT_COPIADO__";
+  setTimeout(function(){cop.textContent=etiquetaCopiar},2200)};
  if(navigator.clipboard)navigator.clipboard.writeText(n).then(ok,ok);
  else{var t=document.createElement("textarea");t.value=n;document.body.appendChild(t);
   t.select();try{document.execCommand("copy")}catch(e){}t.remove();ok()}
@@ -1108,10 +1109,11 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
   localStorage.setItem(K+"tema",n);
   document.querySelector('meta[name=theme-color]').content=n==="noche"?"#14120f":"#faf8f4"};
  var c=document.getElementById("bCopiar");
+  var etiquetaC=c.textContent;
  c.onclick=function(){
   var n=document.getElementById("numCuenta").textContent.trim();
   var ok=function(){c.textContent="Copiado ✓";
-   setTimeout(function(){c.textContent="Copiar número"},2200)};
+   setTimeout(function(){c.textContent=etiquetaC},2200)};
   if(navigator.clipboard)navigator.clipboard.writeText(n).then(ok,ok);
   else{var x=document.createElement("textarea");x.value=n;document.body.appendChild(x);
    x.select();try{document.execCommand("copy")}catch(e){}x.remove();ok()}};
@@ -1192,6 +1194,20 @@ UI_EN = dict(TXT_BIB="Library", TXT_VOZ="Read aloud", TXT_IDX="Contents",
   T_PAG="Page", T_DE="of", T_LEIDO="read", TXT_VASAQUI="you are here")
 
 IDX_EN = {
+ "c.textContent=\"Copiado ✓\"":"c.textContent=\"Copied ✓\"",
+ "aria-label=\"Compartir\">":"aria-label=\"Share\">",
+ "b.textContent=\"Copiar enlace\"":"b.textContent=\"Copy link\"",
+ "b.textContent=\"Copiado ✓\"":"b.textContent=\"Copied ✓\"",
+ "this.textContent=\"Copiado ✓\"":"this.textContent=\"Copied ✓\"",
+ ">Copiar enlace<":">Copy link<",
+ ">Compartir…<":">Share…<",
+ "Enséñele este código a alguien: con la cámara del teléfono abre la biblioteca. O envíe el enlace.":"Show this code to someone: their phone camera opens the library. Or send the link.",
+ "aria-label=\"Cerrar\">✕":"aria-label=\"Close\">✕",
+ "<strong>Compartir</strong>":"<strong>Share</strong>",
+ "aria-label=\"Cambiar entre modo claro y oscuro\"":"aria-label=\"Switch between light and dark mode\"",
+ "aria-label=\"Compartir este sitio\"":"aria-label=\"Share this site\"",
+ "class=\"etxt\">Tema":"class=\"etxt\">Theme",
+ "class=\"etxt\">Compartir":"class=\"etxt\">Share",
  "Sin fecha. Cuando esté terminado, no antes.":"No date. When it's finished, not before.",
  "El segundo libro aparecerá aquí":"The second book will appear here",
  "Si quiere enterarse del siguiente, lo más simple es guardar esta página en sus marcadores. No hay lista de correo. Si algún día la hay, será para avisar de un libro nuevo y para nada más.":"If you want to know when the next one appears, the simplest thing is to bookmark this page. There is no mailing list. If there ever is one, it will be to announce a new book and nothing else.",

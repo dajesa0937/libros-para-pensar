@@ -8,9 +8,10 @@
     "test:elementos": "node tests/chequeo_ids.js web/fabricantes-de-sed.html web/thirst-makers.html web/index.html web/index-en.html",
     "test:lector": "node tests/prueba2.js web/fabricantes-de-sed.html && node tests/prueba2.js web/thirst-makers.html",
     "test:sitio": "node tests/preflight.js",
-    "test": "npm run test:elementos && npm run test:lector && npm run test:sitio",
+    "test": "npm run test:elementos && npm run test:lector && npm run test:idioma && npm run test:sitio",
     "test:qr": "node tests/verifica_qr.js",
-    "servir": "python3 -m http.server 8000 --directory web"
+    "servir": "python3 -m http.server 8000 --directory web",
+    "test:idioma": "node tests/idioma.js"
   },
   "devDependencies": {
     "qrcode": "^1.5.4"

@@ -166,8 +166,8 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
 
 <div class="barra"><div class="in">
  <a class="logo" href="index.html">Books to think with</a>
- <button id="bCompIdx" aria-label="Compartir este sitio">↗<span class="etxt">Compartir</span></button>
- <a class="idioma" href="index.html" hreflang="es" lang="es">Español</a><button id="bTema" aria-label="Switch between light and dark mode">◐<span class="etxt">Tema</span></button>
+ <button id="bCompIdx" aria-label="Share this site">↗<span class="etxt">Share</span></button>
+ <a class="idioma" href="index.html" hreflang="es" lang="es">Español</a><button id="bTema" aria-label="Switch between light and dark mode">◐<span class="etxt">Theme</span></button>
 </div></div>
 
 <main id="principal">
@@ -348,14 +348,14 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
 </main>
 
 <div class="velo" id="velo"></div>
-<div class="hoja" id="hojaComp" role="dialog" aria-modal="true" aria-label="Compartir">
- <div class="cabpanel"><strong>Compartir</strong><button id="bCerrarHoja" aria-label="Cerrar">✕</button></div>
- <p class="notaComp">Enséñele este código a alguien: con la cámara del teléfono abre la biblioteca. O envíe el enlace.</p>
+<div class="hoja" id="hojaComp" role="dialog" aria-modal="true" aria-label="Share">
+ <div class="cabpanel"><strong>Share</strong><button id="bCerrarHoja" aria-label="Close">✕</button></div>
+ <p class="notaComp">Show this code to someone: their phone camera opens the library. Or send the link.</p>
  <div id="qrCaja" class="qrCaja"></div>
  <p class="urlTxt" id="urlTxt"></p>
  <div class="filaB">
-  <button id="bEnviar">Compartir…</button>
-  <button id="bCopiarUrl">Copiar enlace</button>
+  <button id="bEnviar">Share…</button>
+  <button id="bCopiarUrl">Copy link</button>
   <button id="bWa">WhatsApp</button>
  </div>
 </div>
@@ -574,10 +574,10 @@ if(typeof module!=="undefined")module.exports=QR;
   var d={title:document.title,url:u()};
   if(navigator.share)navigator.share(d).catch(function(){});
   else{navigator.clipboard&&navigator.clipboard.writeText(u());
-   this.textContent="Copiado ✓"}};
+   this.textContent="Copied ✓"}};
  document.getElementById("bCopiarUrl").onclick=function(){
-  var b=this;var ok=function(){b.textContent="Copiado ✓";
-   setTimeout(function(){b.textContent="Copiar enlace"},2000)};
+  var b=this;var ok=function(){b.textContent="Copied ✓";
+   setTimeout(function(){b.textContent="Copy link"},2000)};
   if(navigator.clipboard)navigator.clipboard.writeText(u()).then(ok,ok);else ok()};
  document.getElementById("bWa").onclick=function(){
   location.href="https://wa.me/?text="+encodeURIComponent(u())};
@@ -587,10 +587,11 @@ if(typeof module!=="undefined")module.exports=QR;
   localStorage.setItem(K+"tema",n);
   document.querySelector('meta[name=theme-color]').content=n==="noche"?"#14120f":"#faf8f4"};
  var c=document.getElementById("bCopiar");
+  var etiquetaC=c.textContent;
  c.onclick=function(){
   var n=document.getElementById("numCuenta").textContent.trim();
-  var ok=function(){c.textContent="Copiado ✓";
-   setTimeout(function(){c.textContent="Copiar número"},2200)};
+  var ok=function(){c.textContent="Copied ✓";
+   setTimeout(function(){c.textContent=etiquetaC},2200)};
   if(navigator.clipboard)navigator.clipboard.writeText(n).then(ok,ok);
   else{var x=document.createElement("textarea");x.value=n;document.body.appendChild(x);
    x.select();try{document.execCommand("copy")}catch(e){}x.remove();ok()}};

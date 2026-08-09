@@ -587,10 +587,11 @@ if(typeof module!=="undefined")module.exports=QR;
   localStorage.setItem(K+"tema",n);
   document.querySelector('meta[name=theme-color]').content=n==="noche"?"#14120f":"#faf8f4"};
  var c=document.getElementById("bCopiar");
+  var etiquetaC=c.textContent;
  c.onclick=function(){
   var n=document.getElementById("numCuenta").textContent.trim();
   var ok=function(){c.textContent="Copiado ✓";
-   setTimeout(function(){c.textContent="Copiar número"},2200)};
+   setTimeout(function(){c.textContent=etiquetaC},2200)};
   if(navigator.clipboard)navigator.clipboard.writeText(n).then(ok,ok);
   else{var x=document.createElement("textarea");x.value=n;document.body.appendChild(x);
    x.select();try{document.execCommand("copy")}catch(e){}x.remove();ok()}};

@@ -1941,10 +1941,11 @@ document.getElementById("bVoz").onclick=function(){
 };
 
 var cop=document.getElementById("bCopiar");
+var etiquetaCopiar=cop.textContent;
 cop.onclick=function(){
  var n=document.getElementById("numCuenta").textContent.trim();
  var ok=function(){cop.textContent="Copiado ✓";
-  setTimeout(function(){cop.textContent="Copiar número"},2200)};
+  setTimeout(function(){cop.textContent=etiquetaCopiar},2200)};
  if(navigator.clipboard)navigator.clipboard.writeText(n).then(ok,ok);
  else{var t=document.createElement("textarea");t.value=n;document.body.appendChild(t);
   t.select();try{document.execCommand("copy")}catch(e){}t.remove();ok()}
