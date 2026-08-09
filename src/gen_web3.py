@@ -866,7 +866,19 @@ __BASE__
  max-width:60rem;margin:0 auto}
 .idioma{font-family:system-ui,sans-serif;font-size:.82rem;text-decoration:none;color:var(--suave);border:1px solid var(--linea);border-radius:.5rem;padding:.6rem .9rem;margin-right:.4rem;min-height:44px;display:inline-flex;align-items:center}
 .idioma:hover{background:var(--caja)}
-.logo{font-size:1rem;letter-spacing:.02em;margin-right:auto;text-decoration:none}
+.logo{font-size:1rem;letter-spacing:.02em;margin-right:auto;text-decoration:none;
+ white-space:nowrap;flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.barra .in{flex-wrap:nowrap}
+.etxt{margin-left:.35rem}
+@media(max-width:560px){
+ .etxt{display:none}
+ .idioma{padding:.6rem .75rem;margin-right:.3rem}
+ .barra .in{gap:.3rem;padding:.5rem 1rem}
+ .logo{font-size:.94rem}
+}
+@media(max-width:360px){
+ .logo{font-size:.86rem}
+}
 
 .hero{display:grid;gap:2.5rem;padding:3rem 0 3.5rem;align-items:center}
 @media(min-width:780px){.hero{grid-template-columns:minmax(0,15rem) 1fr;gap:4rem;padding:4.5rem 0 5rem}}
@@ -963,8 +975,8 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
 
 <div class="barra"><div class="in">
  <a class="logo" href="index.html">__SITIO__</a>
- <button id="bCompIdx" aria-label="Compartir este sitio">↗ Compartir</button>
- <button id="bTema" aria-label="Cambiar entre modo claro y oscuro">◐ Tema</button>
+ <button id="bCompIdx" aria-label="Compartir este sitio">↗<span class="etxt">Compartir</span></button>
+ <button id="bTema" aria-label="Cambiar entre modo claro y oscuro">◐<span class="etxt">Tema</span></button>
 </div></div>
 
 <main id="principal">
