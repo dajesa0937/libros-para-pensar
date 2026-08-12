@@ -441,35 +441,25 @@ Y si le pareció mentira, ya sabe lo que hay que hacer: comprobarlo.
 
 ## UNA ÚLTIMA COSA
 
-Le voy a pedir dinero.
+Le voy a pedir algo.
 
 Se lo digo en la primera línea porque, después de todo lo anterior, hacerlo de cualquier otra manera sería una broma de mal gusto.
 
-Este libro es gratis y va a seguir siéndolo. No hay curso detrás, ni comunidad, ni lista de correo, ni segundo libro que le venga a vender más caro por haber llegado hasta el final. Nada de lo que ha leído estaba puesto ahí para traerlo hasta esta página.
+No es dinero. Este libro es gratis, va a seguir siéndolo, y no hay ninguna cuenta al final de esta página. No hay curso detrás, ni comunidad, ni lista de correo, ni segundo libro que le venga a vender más caro por haber llegado hasta aquí.
 
-Lo que hay es esto: escribir esto me llevó meses de noches, después del trabajo y de la casa. Si le sirvió y quiere que haya un segundo, puede aportar lo que le parezca. Sirve para lo que parece que sirve: para que pueda seguir escribiendo.
+Lo que le pido es esto: **páseselo a una persona.**
 
-**Llave Bancolombia: @dawin82102**
-**Cuenta de ahorros: 333 279 352 89**
-**A nombre de Dawin Salazar**
+Una sola. La que se le haya venido a la cabeza mientras leía. El que viaja de pie cuarenta minutos cada mañana. La que dice que ya no lee porque no tiene tiempo. El estudiante al que le mandaron un libro que odió y decidió que los libros no eran para él.
 
-Y hay una segunda cosa, que le digo con cuidado porque este libro trata precisamente de cómo se usan estas frases.
+Sé perfectamente que existe una manera de pedir esto que funciona mejor. Contarle que un libro me cambió la vida, que alguien me lo pasó cuando yo lo necesitaba, y que ahora le toca a usted seguir la cadena. Sé escribir esa frase. La escribiría bien.
 
-**El diez por ciento de lo que se recoja va a una fundación para niños de escasos recursos en Colombia**, destinado a que tengan algo en Navidad.
+Pero usted acaba de leer ciento treinta páginas sobre la gente que escribe esas frases profesionalmente, y estrenarle la técnica en la última página sería exactamente lo que Tomás habría hecho.
 
-No le voy a describir a esos niños. No le voy a contar cómo se les pone la cara. Sé hacerlo, y usted acaba de leer ciento treinta páginas sobre la gente que lo hace profesionalmente, así que sería una falta de respeto estrenar la técnica en la última página.
+Así que se lo dejo sin adornos: si le sirvió, compártalo. Si no le sirvió, no lo comparta. Las dos respuestas son buenas y yo no me voy a enterar de ninguna.
 
-Le doy en su lugar lo único que vale algo aquí, y lo doy por escrito:
+Y si es usted profesor, bibliotecario o simplemente alguien con una clase delante: puede imprimirlo, proyectarlo, repartirlo, subirlo al aula virtual y pedirlo como lectura. No hace falta que me escriba para pedir permiso. Está dado, y está dado por escrito en la última página del sitio.
 
-> **En enero publicaré, en el mismo sitio donde encontró este libro, cuánto se recogió en total, cuánto fue ese diez por ciento y el comprobante de la donación.**
-
-Un libro sobre la persuasión honesta que pide plata y no rinde cuentas sería el peor argumento posible contra sí mismo.
-
-No hay recompensa. No hay contenido exclusivo, ni mención con su nombre, ni acceso anticipado a nada. Es exactamente lo que parece.
-
-Y si no aporta, no pasa absolutamente nada, y no quiero que se quede con ninguna sensación rara al cerrar el libro. Llegó usted hasta la última página, que es lo único que de verdad cuesta conseguir y lo único que yo no podía comprar.
-
-Gracias por las dos cosas: por leer, y por lo que decida hacer ahora.
+Gracias por haber llegado hasta aquí. Es lo único que de verdad cuesta conseguir y lo único que yo no podía comprar.
 
 **Dawin Salazar**
 

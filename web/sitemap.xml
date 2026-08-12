@@ -15,4 +15,6 @@
  </url>
  <url><loc>https://libros-para-pensar.netlify.app/index-en.html</loc><priority>0.8</priority></url>
  <url><loc>https://libros-para-pensar.netlify.app/thirst-makers.html</loc><priority>0.8</priority></url>
+  <url><loc>https://libros-para-pensar.netlify.app/cartel.html</loc><priority>0.5</priority></url>
+ <url><loc>https://libros-para-pensar.netlify.app/poster.html</loc><priority>0.4</priority></url>
 </urlset>

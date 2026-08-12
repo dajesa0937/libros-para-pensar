@@ -5,7 +5,7 @@ let fallos=0;
 const chk=(n,ok,extra)=>{console.log((ok?"  OK    ":"  FALLA ")+n+(extra&&!ok?" → "+extra:""));if(!ok)fallos++};
 
 console.log("\nArchivos en la carpeta:", archivos.length);
-const necesarios=["index.html","index-en.html","fabricantes-de-sed.html","thirst-makers.html",
+const necesarios=["index.html","index-en.html","fabricantes-de-sed.html","thirst-makers.html","cartel.html","poster.html",
  "og-es.png","og-en.png","favicon.svg","robots.txt","sitemap.xml","404.html","_headers","_redirects"];
 chk("están los 12 archivos necesarios", necesarios.every(f=>archivos.includes(f)),
     necesarios.filter(f=>!archivos.includes(f)).join(", "));
@@ -18,7 +18,7 @@ for(const f of archivos.filter(f=>f.endsWith(".html"))){
  const rotos=[...new Set(enlaces)].filter(e=>!archivos.includes(e.replace(/^\//,'')));
  chk(f+": enlaces internos válidos", rotos.length===0, rotos.join(", "));
  chk(f+": sin marcadores sin sustituir", !/__[A-Z_]+__/.test(h), (h.match(/__[A-Z_]+__/g)||[])[0]);
- chk(f+": tiene og:image", /og:image/.test(h) || f==="404.html");
+ chk(f+": tiene og:image", /og:image/.test(h) || ["404.html","cartel.html","poster.html"].includes(f));
 }
 const sm=fs.readFileSync(path.join(dir,"sitemap.xml"),'utf8');
 const urls=[...sm.matchAll(/<loc>[^<]*\/([^<\/]+)<\/loc>/g)].map(m=>m[1]);

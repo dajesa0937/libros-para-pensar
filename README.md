@@ -54,5 +54,10 @@ Las cabeceras y redirecciones están en `netlify.toml`. Los archivos `web/_heade
 y `web/_redirects` son equivalentes y sirven de respaldo si algún día se despliega
 por drag-and-drop.
 
-© Dawin Salazar. El texto de los libros es del autor; se permite leer, descargar
-y compartir libremente.
+## Licencia
+
+Textos: **CC BY-NC-ND 4.0**. Libre para leer, imprimir, fotocopiar, proyectar,
+repartir en clase, subir a un aula virtual y catalogar en bibliotecas, sin pedir
+permiso. No se permite venderlo ni publicar versiones modificadas.
+
+Código: MIT. Ver `LICENSE`.

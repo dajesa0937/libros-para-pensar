@@ -973,35 +973,25 @@ And if any of it seemed false, you already know what to do: check it.
 
 ## ONE LAST THING
 
-I am going to ask you for money.
+I am going to ask you for something.
 
 I am telling you in the first line because, after everything above, doing it any other way would be in poor taste.
 
-This book is free and will stay free. There is no course behind it, no community, no mailing list, no second book waiting to be sold to you at a higher price for having reached the end. Nothing you have read was placed there to bring you to this page.
+It isn't money. This book is free and will stay free, and there is no account number at the bottom of this page. There is no course behind it, no community, no mailing list, no second book waiting to be sold to you at a higher price for having got this far.
 
-Here is what there is: writing this took me months of nights, after work and after the house. If it was worth something to you and you would like there to be another, you can contribute whatever seems right. It does what it looks like it does: it lets me keep writing.
+Here is what I am asking: **pass it on to one person.**
 
-**Bancolombia key: @dawin82102**
-**Savings account: 333 279 352 89**
-**Account holder: Dawin Salazar**
+Just one. The one who came into your head while you were reading. The person who stands for forty minutes on the way to work every morning. The one who says they don't read any more because there's no time. The student who was assigned a book they hated and concluded that books weren't for them.
 
-And there is a second thing, which I will put carefully, because this book is precisely about how sentences like the next one get used.
+I know perfectly well that there is a better-performing way to ask this. Tell you that a book changed my life, that somebody passed it to me when I needed it, and that now it's your turn to keep the chain going. I know how to write that sentence. I would write it well.
 
-**Ten per cent of everything raised goes to a foundation for children in need in Colombia**, so that they have something at Christmas.
+But you have just read a hundred and thirty pages about the people who write those sentences professionally, and trying the technique on you on the last page is exactly what Tomás would have done.
 
-I am not going to describe those children to you. I am not going to tell you what their faces do. I know how to do it, and you have just read a hundred and thirty pages about the people who do it professionally, so it would be disrespectful to try the technique on you on the last page.
+So, plainly: if it was worth something to you, share it. If it wasn't, don't. Both answers are fine and I will never know which one you chose.
 
-Instead I will give you the only thing here that is worth anything, and I give it in writing:
+And if you are a teacher, a librarian, or simply somebody with a class in front of you: you may print it, project it, hand it out, upload it to your virtual classroom and set it as reading. You don't need to write to me for permission. It is already given, and it is given in writing on the last page of the site.
 
-> **In January I will publish, in the same place where you found this book, how much was raised in total, how much that ten per cent came to, and the receipt for the donation.**
-
-A book about honest persuasion that asks for money and never accounts for it would be the worst possible argument against itself.
-
-There is no reward. No exclusive content, no mention by name, no early access to anything. It is exactly what it looks like.
-
-And if you contribute nothing, absolutely nothing happens, and I do not want you left with any odd feeling as you close the book. You reached the last page, which is the only thing that is genuinely hard to obtain and the only thing I could not buy.
-
-Thank you for both: for reading, and for whatever you decide to do now.
+Thank you for getting this far. It is the only thing that is genuinely hard to obtain, and the only thing I could not buy.
 
 **Dawin Salazar**
 

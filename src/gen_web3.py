@@ -844,7 +844,7 @@ INDEX = r"""<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>__SITIO__ — Libros gratuitos para leer donde quieras</title>
-<meta name="description" content="Libros completos y gratuitos, pensados para leerse en el celular. Sin registro, sin muro de pago, con lector accesible.">
+<meta name="description" content="Libros completos y gratuitos para leer en el celular, la tablet o el computador. Sin registro, sin publicidad, con lector accesible. Libre uso en colegios y universidades.">
 <meta name="theme-color" content="#faf8f4">
 <meta property="og:title" content="__SITIO__">
 <meta property="og:description" content="Libros completos y gratuitos, pensados para leerse en el celular.">
@@ -858,28 +858,24 @@ INDEX = r"""<!DOCTYPE html>
 <link rel="alternate" hreflang="es" href="__BASEURL__/index.html">
 <link rel="alternate" hreflang="en" href="__BASEURL__/index-en.html">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">__JSONLD__</script>
 <style>
 __BASE__
-.envoltura{max-width:60rem;margin:0 auto;padding:0 1.4rem}
+.envoltura{max-width:62rem;margin:0 auto;padding:0 1.4rem}
 .barra{position:sticky;top:0;z-index:20;background:var(--papel);
  border-bottom:1px solid var(--linea)}
-.barra .in{display:flex;align-items:center;gap:.4rem;padding:.5rem 1.4rem;
- max-width:60rem;margin:0 auto}
-.idioma{font-family:system-ui,sans-serif;font-size:.82rem;text-decoration:none;color:var(--suave);border:1px solid var(--linea);border-radius:.5rem;padding:.6rem .9rem;margin-right:.4rem;min-height:44px;display:inline-flex;align-items:center}
+.barra .in{display:flex;align-items:center;gap:.3rem;padding:.5rem 1.4rem;
+ max-width:62rem;margin:0 auto;flex-wrap:nowrap}
+.idioma{font-family:system-ui,sans-serif;font-size:.82rem;text-decoration:none;
+ color:var(--suave);border:1px solid var(--linea);border-radius:.5rem;
+ padding:.6rem .9rem;margin-right:.3rem;min-height:44px;display:inline-flex;align-items:center}
 .idioma:hover{background:var(--caja)}
 .logo{font-size:1rem;letter-spacing:.02em;margin-right:auto;text-decoration:none;
  white-space:nowrap;flex:0 1 auto;min-width:0;overflow:hidden;text-overflow:ellipsis}
-.barra .in{flex-wrap:nowrap}
 .etxt{margin-left:.35rem}
-@media(max-width:560px){
- .etxt{display:none}
- .idioma{padding:.6rem .75rem;margin-right:.3rem}
- .barra .in{gap:.3rem;padding:.5rem 1rem}
- .logo{font-size:.94rem}
-}
-@media(max-width:360px){
- .logo{font-size:.86rem}
-}
+@media(max-width:560px){.etxt{display:none}.idioma{padding:.6rem .75rem}
+ .barra .in{gap:.3rem;padding:.5rem 1rem}.logo{font-size:.94rem}}
+@media(max-width:360px){.logo{font-size:.86rem}}
 
 .hero{display:grid;gap:2.5rem;padding:3rem 0 3.5rem;align-items:center}
 @media(min-width:780px){.hero{grid-template-columns:minmax(0,15rem) 1fr;gap:4rem;padding:4.5rem 0 5rem}}
@@ -891,34 +887,65 @@ __BASE__
 .tomo:hover .cuerpo{transform:rotateY(-7deg) rotateX(1deg)}
 .tomo svg{display:block;width:100%;height:auto}
 .tomo .lomo{position:absolute;inset:0 auto 0 0;width:11px;
- background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(255,255,255,.06));
- pointer-events:none}
-h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
- letter-spacing:.005em}
+ background:linear-gradient(90deg,rgba(0,0,0,.55),rgba(255,255,255,.06));pointer-events:none}
+h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;letter-spacing:.005em}
 .claim{color:var(--suave);font-size:1.05rem;margin-top:1.1rem;font-style:italic}
 .sinopsis{margin-top:1.6rem;max-width:36rem}
 .sinopsis p{margin-bottom:.9rem;text-align:justify;hyphens:auto}
 .acciones{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1.9rem}
 .principal{background:var(--marca);color:var(--papel);border-color:var(--marca);
- padding:0 1.6rem;font-size:.95rem}
-.principal:hover{opacity:.88;background:var(--marca)}
+ padding:0 1.6rem;font-size:.95rem;text-decoration:none;border-radius:.5rem;
+ min-height:44px;display:inline-flex;align-items:center;border:1px solid var(--marca)}
+.principal:hover{opacity:.88}
 .datos{display:flex;gap:1.6rem;flex-wrap:wrap;margin-top:1.8rem;
  font-family:system-ui,sans-serif;font-size:.8rem;color:var(--suave)}
-.datos b{display:block;font-size:1.35rem;color:var(--tinta);font-weight:400;
- font-family:var(--fam)}
+.datos b{display:block;font-size:1.35rem;color:var(--tinta);font-weight:400;font-family:var(--fam)}
 
 .franja{border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);
- background:var(--caja);padding:2.8rem 0}
+ background:var(--caja);padding:3.2rem 0}
 .rot{font-family:system-ui,sans-serif;font-size:.7rem;letter-spacing:.2em;
  text-transform:uppercase;color:var(--suave);margin-bottom:1.4rem}
+.grande{font-size:clamp(1.4rem,3.6vw,2rem);line-height:1.35;font-weight:400;
+ max-width:42rem;margin-bottom:1.2rem}
+.grande em{font-style:italic;color:var(--acento)}
+.parrafo{max-width:38rem}
+.parrafo p{margin-bottom:.9rem;text-align:justify;hyphens:auto}
 .rejilla{display:grid;gap:1.1rem;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
-.tarjeta{border:1px solid var(--linea);border-radius:.8rem;padding:1.3rem;
- background:var(--papel)}
+.tarjeta{border:1px solid var(--linea);border-radius:.8rem;padding:1.3rem;background:var(--papel)}
 .tarjeta h3{font-weight:400;font-size:1.1rem;margin-bottom:.4rem}
 .tarjeta p{font-size:.92rem;color:var(--suave);line-height:1.6}
 .tarjeta .ico{font-size:1.4rem;display:block;margin-bottom:.6rem;color:var(--acento)}
 
-.catalogo{padding:3rem 0}
+.docentes{padding:3.4rem 0}
+.permiso{border:1px solid var(--acento);border-radius:.8rem;padding:1.5rem;
+ background:var(--caja);max-width:42rem;margin-top:1.2rem}
+.permiso ul{list-style:none;margin:1rem 0}
+.permiso li{padding:.4rem 0 .4rem 1.6rem;position:relative;font-size:.96rem}
+.permiso li:before{content:"✓";position:absolute;left:0;color:var(--acento)}
+.permiso .no{color:var(--suave);font-size:.9rem;margin-top:1rem}
+.licencia{font-family:system-ui,sans-serif;font-size:.78rem;letter-spacing:.1em;
+ text-transform:uppercase;color:var(--acento);margin-top:1.2rem;display:block}
+
+.difundir{border-top:1px solid var(--linea);background:var(--caja);padding:3.4rem 0}
+.kit{display:grid;gap:1.6rem;grid-template-columns:1fr;margin-top:1.6rem}
+@media(min-width:760px){.kit{grid-template-columns:auto 1fr;gap:2.4rem}}
+.qrbox{background:#fff;border:1px solid var(--linea);border-radius:.8rem;
+ padding:1rem;text-align:center;width:min(15rem,100%);margin:0 auto}
+.qrbox svg{display:block;width:100%;height:auto}
+.qrbox .pie{font-family:system-ui,sans-serif;font-size:.7rem;color:#666;margin-top:.6rem}
+.textos{display:grid;gap:.9rem}
+.texto{border:1px solid var(--linea);border-radius:.7rem;background:var(--papel);
+ padding:1rem 1.1rem}
+.texto p{font-size:.95rem;margin-bottom:.7rem;white-space:pre-line}
+.texto .acc{display:flex;gap:.5rem;flex-wrap:wrap}
+.texto button{font-size:.82rem;min-height:40px}
+.enlaces{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:1.4rem}
+.enlaces a{font-family:system-ui,sans-serif;font-size:.85rem;text-decoration:none;
+ border:1px solid var(--linea);border-radius:.5rem;padding:.65rem 1rem;
+ min-height:44px;display:inline-flex;align-items:center;background:var(--papel)}
+.enlaces a:hover{border-color:var(--acento)}
+
+.catalogo{padding:3.4rem 0}
 .libro{display:grid;grid-template-columns:6.5rem 1fr;gap:1.3rem;
  border:1px solid var(--linea);border-radius:.8rem;padding:1.2rem;
  text-decoration:none;background:var(--caja);align-items:start;margin-bottom:1rem}
@@ -943,16 +970,9 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
  text-transform:uppercase;color:var(--suave);font-weight:500;margin-bottom:.9rem}
 .nota p{margin-bottom:.85rem;text-align:justify;hyphens:auto;font-size:.98rem}
 .nota .firma{font-style:italic;color:var(--suave);text-align:left;margin-top:1.2rem}
-
-.caja-cuenta{border:1px solid var(--linea);border-radius:.7rem;padding:1.3rem;
- text-align:center;margin:1.5rem 0;background:var(--caja);max-width:23rem}
-.caja-cuenta .banco{font-family:system-ui,sans-serif;font-size:.7rem;
- letter-spacing:.13em;text-transform:uppercase;color:var(--suave)}
-.caja-cuenta .extra{font-family:system-ui,sans-serif;font-size:.74rem;color:var(--suave);margin-top:.7rem;line-height:1.5}
-.caja-cuenta .num{font-size:1.5rem;letter-spacing:.05em;margin:.45rem 0 .9rem;
- font-variant-numeric:tabular-nums}
 .pie{border-top:1px solid var(--linea);padding:2.4rem 0 3rem;color:var(--suave);
  font-family:system-ui,sans-serif;font-size:.82rem}
+.pie a{color:var(--suave)}
 .velo{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:90;display:none}
 .velo.on{display:block}
 .hoja{position:fixed;left:50%;top:50%;transform:translate(-50%,-50%);z-index:100;
@@ -969,6 +989,7 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
  word-break:break-all;color:var(--suave);text-align:center;margin:.7rem 0 .9rem}
 .filaB{display:flex;gap:.45rem;flex-wrap:wrap}
 .filaB button{flex:1;min-width:6rem}
+@media(min-width:700px){:root{--fs:1.14rem}}
 </style>
 </head>
 <body>
@@ -992,8 +1013,8 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
     <p>Mientras lo hace, alguien empieza a meter bajo su puerta fotocopias de sus propios cuadernos de juventud, subrayadas por una mano que no es la suya.</p>
    </div>
    <div class="acciones">
-    <a href="fabricantes-de-sed.html" class="principal" style="text-decoration:none">Leer ahora, gratis</a>
-    <a href="#aporte" style="text-decoration:none"><button>Apoyar el proyecto</button></a>
+    <a href="fabricantes-de-sed.html" class="principal">Leer ahora, gratis</a>
+    <a href="#difundir" style="text-decoration:none"><button>Difundirlo</button></a>
    </div>
    <div class="datos">
     <span><b>12</b> capítulos</span>
@@ -1006,6 +1027,16 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
 </div>
 
 <div class="franja"><div class="envoltura">
+ <p class="rot">Por qué existe esto</p>
+ <p class="grande">La mayoría de la gente no dejó de leer. Dejó de <em>terminar</em> lo que empieza.</p>
+ <div class="parrafo">
+  <p>Casi nadie abandona un libro porque sea malo. Lo abandona porque lo empezó en el sofá un domingo y no volvió a encontrar ese hueco. Porque en el bus no se puede sostener un tomo con una mano. Porque la letra era pequeña, o el archivo pesaba demasiado, o al reanudar ya no sabía por dónde iba.</p>
+  <p>Nada de eso tiene que ver con las ganas de leer. Tiene que ver con el sitio y el momento en que hoy se lee, que es de pie, en trayectos de veinte minutos, en una pantalla de seis pulgadas.</p>
+  <p>Esta biblioteca está hecha para ese momento. Los libros son completos, gratuitos y están pensados para leerse a pedazos sin perder el hilo.</p>
+ </div>
+</div></div>
+
+<div class="envoltura" style="padding:3.4rem 0">
  <p class="rot">Pensado para leerse en el bus</p>
  <div class="rejilla">
   <div class="tarjeta"><span class="ico" aria-hidden="true">❯</span>
@@ -1022,10 +1053,76 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
    <p>Con la voz que ya trae su teléfono. El libro se convierte en audiolibro y sigue solo al pasar de página.</p></div>
   <div class="tarjeta"><span class="ico" aria-hidden="true">↩</span>
    <h3>Recuerda dónde iba</h3>
-   <p>Cierre cuando quiera. Al volver, abre exactamente en la página donde lo dejó.</p></div>
+   <p>Cierre cuando quiera, aunque entre una llamada. Al volver, abre en el capítulo donde lo dejó.</p></div>
   <div class="tarjeta"><span class="ico" aria-hidden="true">✈</span>
    <h3>Funciona sin datos</h3>
    <p>El libro entero pesa lo que una foto. Una vez abierto, se lee sin señal en todo el trayecto.</p></div>
+ </div>
+</div>
+
+<div class="franja" id="docentes"><div class="envoltura docentes" style="padding-top:0;padding-bottom:0">
+ <p class="rot">Para profesores, colegios y bibliotecas</p>
+ <p class="grande">Sí, puede usarlo en clase. No hace falta que escriba a pedir permiso.</p>
+ <div class="permiso">
+  <p style="font-family:system-ui,sans-serif;font-size:.9rem;color:var(--suave)">Queda autorizado, por adelantado y sin trámite, a:</p>
+  <ul>
+   <li>Imprimirlo y fotocopiarlo, entero o por capítulos</li>
+   <li>Proyectarlo y leerlo en voz alta en el aula</li>
+   <li>Subirlo al aula virtual o a la intranet del colegio</li>
+   <li>Ponerlo como lectura obligatoria u optativa</li>
+   <li>Repartir el enlace y el código QR por donde quiera</li>
+   <li>Guardarlo en el catálogo de la biblioteca</li>
+  </ul>
+  <p class="no">Lo único que no puede hacerse es venderlo ni publicar versiones modificadas. Basta con citar al autor.</p>
+  <span class="licencia">Licencia CC BY-NC-ND 4.0</span>
+ </div>
+ <p style="max-width:38rem;margin-top:1.6rem;color:var(--suave);font-size:.95rem">
+  Sobre el contenido: la novela trata de publicidad, manipulación y honestidad. No contiene violencia explícita ni sexo. Es apropiada de <strong>15 años en adelante</strong>, y funciona especialmente bien en clases de ética, comunicación, filosofía, lengua y medios.</p>
+</div></div>
+
+<div class="difundir" id="difundir"><div class="envoltura">
+ <p class="rot">Difúndalo</p>
+ <p class="grande">Un libro que nadie pasa a nadie es un libro que no existe.</p>
+ <p class="parrafo" style="margin-bottom:1rem">Aquí está todo lo que necesita para repartirlo: el código, los textos y el cartel para imprimir. Tómelo y úselo sin avisar.</p>
+
+ <div class="kit">
+  <div>
+   <div class="qrbox">
+    <div id="qrKit"></div>
+    <div class="pie">Apunte la cámara del celular</div>
+   </div>
+   <div class="enlaces" style="justify-content:center">
+    <a href="#" id="bajarQR" download="qr-libros-para-pensar.svg">Descargar código</a>
+   </div>
+  </div>
+
+  <div class="textos">
+   <div class="texto">
+    <p id="t1">Escribí una novela para leer en el bus.
+
+Un hombre que se ganó la vida convenciendo a otros empieza a recibir de vuelta sus propios cuadernos de juventud, página a página.
+
+Tres horas. Gratis, completa, y funciona sin señal.
+
+__BASEURL__</p>
+    <div class="acc"><button data-copiar="t1">Copiar este texto</button></div>
+   </div>
+   <div class="texto">
+    <p id="t2">Una novela completa y gratis, pensada para leerse en el celular: se pasa página, sube la letra hasta el 200%, se lee en voz alta y funciona sin datos.
+
+Libre para usar en clase.
+
+__BASEURL__</p>
+    <div class="acc"><button data-copiar="t2">Copiar este texto</button></div>
+   </div>
+  </div>
+ </div>
+
+ <div class="enlaces">
+  <a href="cartel.html" target="_blank" rel="noopener">Cartel para imprimir</a>
+  <a href="og-es.png" download>Imagen para redes</a>
+  <a href="cubierta.svg" download>Cubierta del libro</a>
+  <a href="#" id="waKit">Enviar por WhatsApp</a>
  </div>
 </div></div>
 
@@ -1047,6 +1144,7 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
    <span class="des">Sin fecha. Cuando esté terminado, no antes.</span>
   </div>
  </div>
+
  <div class="nota">
   <h3>Sobre esta biblioteca</h3>
   <p>Aquí va a haber más libros. No sé cuántos ni cuándo: escribo de noche, después del trabajo, y el primero me llevó meses. Lo que sí puedo decir es en qué condiciones van a salir, porque eso no depende de la inspiración.</p>
@@ -1054,9 +1152,6 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
   <p>Si quiere enterarse del siguiente, lo más simple es guardar esta página en sus marcadores. No hay lista de correo. Si algún día la hay, será para avisar de un libro nuevo y para nada más.</p>
   <p class="firma">Dawin Salazar</p>
  </div>
-
- <p class="rot" id="aporte" style="margin-top:3rem">Aportes</p>
- __BLOQUE_APORTE__
 </div>
 </main>
 
@@ -1074,13 +1169,20 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
 </div>
 
 <footer class="pie"><div class="envoltura">
- __SITIO__ · Lectura libre · Sin registro, sin publicidad, sin rastreo.
+ __SITIO__ · Lectura libre · Sin registro, sin publicidad, sin rastreo.<br>
+ Textos de Dawin Salazar bajo licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es" rel="license noopener" target="_blank">CC BY-NC-ND 4.0</a>.
 </div></footer>
 
 <script>__QRJS__</script>
 <script>
 (function(){
  var H=document.documentElement,K="lpp:";
+ var t=localStorage.getItem(K+"tema");if(t)H.dataset.tema=t;
+ document.getElementById("bTema").onclick=function(){
+  var n=H.dataset.tema==="noche"?"dia":"noche";H.dataset.tema=n;
+  localStorage.setItem(K+"tema",n);
+  document.querySelector('meta[name=theme-color]').content=n==="noche"?"#14120f":"#faf8f4"};
+
  var velo=document.getElementById("velo"),hoja=document.getElementById("hojaComp");
  function u(){return location.href.split("#")[0]}
  document.getElementById("bCompIdx").onclick=function(){
@@ -1095,28 +1197,35 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
  document.getElementById("bEnviar").onclick=function(){
   var d={title:document.title,url:u()};
   if(navigator.share)navigator.share(d).catch(function(){});
-  else{navigator.clipboard&&navigator.clipboard.writeText(u());
-   this.textContent="Copiado ✓"}};
- document.getElementById("bCopiarUrl").onclick=function(){
-  var b=this;var ok=function(){b.textContent="Copiado ✓";
-   setTimeout(function(){b.textContent="Copiar enlace"},2000)};
+  else{navigator.clipboard&&navigator.clipboard.writeText(u());this.textContent="Copiado ✓"}};
+ var c=document.getElementById("bCopiarUrl");
+ var etiquetaC=c.textContent;
+ c.onclick=function(){
+  var ok=function(){c.textContent="Copiado ✓";
+   setTimeout(function(){c.textContent=etiquetaC},2000)};
   if(navigator.clipboard)navigator.clipboard.writeText(u()).then(ok,ok);else ok()};
  document.getElementById("bWa").onclick=function(){
   location.href="https://wa.me/?text="+encodeURIComponent(u())};
- var t=localStorage.getItem(K+"tema");if(t)H.dataset.tema=t;
- document.getElementById("bTema").onclick=function(){
-  var n=H.dataset.tema==="noche"?"dia":"noche";H.dataset.tema=n;
-  localStorage.setItem(K+"tema",n);
-  document.querySelector('meta[name=theme-color]').content=n==="noche"?"#14120f":"#faf8f4"};
- var c=document.getElementById("bCopiar");
-  var etiquetaC=c.textContent;
- c.onclick=function(){
-  var n=document.getElementById("numCuenta").textContent.trim();
-  var ok=function(){c.textContent="Copiado ✓";
-   setTimeout(function(){c.textContent=etiquetaC},2200)};
-  if(navigator.clipboard)navigator.clipboard.writeText(n).then(ok,ok);
-  else{var x=document.createElement("textarea");x.value=n;document.body.appendChild(x);
-   x.select();try{document.execCommand("copy")}catch(e){}x.remove();ok()}};
+
+ try{
+  var svgKit=QR.svg("__BASEURL__",300,"#111111","#ffffff");
+  document.getElementById("qrKit").innerHTML=svgKit;
+  var b=new Blob([svgKit],{type:"image/svg+xml"});
+  document.getElementById("bajarQR").href=URL.createObjectURL(b);
+ }catch(e){}
+
+ [].forEach.call(document.querySelectorAll("[data-copiar]"),function(b){
+  var et=b.textContent;
+  b.onclick=function(){
+   var txt=document.getElementById(b.dataset.copiar).textContent;
+   var ok=function(){b.textContent="Copiado ✓";
+    setTimeout(function(){b.textContent=et},2000)};
+   if(navigator.clipboard)navigator.clipboard.writeText(txt).then(ok,ok);else ok()}});
+
+ var wa=document.getElementById("waKit");
+ if(wa)wa.onclick=function(e){e.preventDefault();
+  location.href="https://wa.me/?text="+encodeURIComponent(
+   document.getElementById("t1").textContent)};
 })();
 </script>
 </body>
@@ -1125,27 +1234,25 @@ h1{font-size:clamp(2.1rem,6.2vw,3.4rem);font-weight:400;line-height:1.08;
 
 
 
-APORTE_ES = """<p style="text-indent:0">Este libro es gratis y va a seguir siéndolo. No hay curso detrás, ni comunidad, ni lista de correo, ni segundo libro que le venga a vender más caro por haber llegado hasta el final.</p>
-     <p style="text-indent:0">Si le sirvió y quiere que haya un segundo, puede aportar lo que le parezca. Sirve para lo que parece: para que pueda seguir escribiendo.</p>
+APORTE_ES = """<p style="text-indent:0">Este libro es gratis y va a seguir siéndolo. No pido dinero: no hay ninguna cuenta al final de esta página.</p>
+     <p style="text-indent:0"><strong>Lo único que pido es que se lo pase a una persona.</strong> La que se le haya venido a la cabeza mientras leía.</p>
+     <p style="text-indent:0">Y si es usted profesor o bibliotecario: puede imprimirlo, proyectarlo, repartirlo y pedirlo como lectura. El permiso está dado por escrito.</p>
      <div class="caja-cuenta">
-      <div class="banco">Llave Bancolombia</div>
-      <div class="num" id="numCuenta">@dawin82102</div>
-      <button id="bCopiar">Copiar llave</button>
-      <div class="extra">Cuenta de ahorros 333 279 352 89 · Dawin Salazar</div>
-     </div>
-     <p style="text-indent:0"><strong>El 10% de lo que se recoja va a una fundación para niños de escasos recursos en Colombia</strong>, destinado a que tengan algo en Navidad. En enero publicaré aquí la cifra completa y el comprobante de la donación.</p>
-     <p style="text-indent:0;font-size:.92rem;color:var(--suave)">Un libro sobre la persuasión honesta que pide plata y no rinde cuentas sería el peor argumento contra sí mismo.</p>"""
+      <div class="banco">Compartir</div>
+      <div class="num" id="numCuenta">libros-para-pensar.netlify.app</div>
+      <button id="bCopiar">Copiar enlace</button>
+      <div class="extra">Léalo gratis · Compártalo libre · CC BY-NC-ND 4.0</div>
+     </div>"""
 
-APORTE_EN = """<p style="text-indent:0">This book is free and will stay free. There is no course behind it, no community, no mailing list, no second book waiting to be sold to you at a higher price for having reached the end.</p>
-     <p style="text-indent:0">If it was worth something to you and you would like there to be another, you can contribute whatever seems right. It does what it looks like it does: it lets me keep writing.</p>
+APORTE_EN = """<p style="text-indent:0">This book is free and will stay free. I am not asking for money: there is no account number at the bottom of this page.</p>
+     <p style="text-indent:0"><strong>All I ask is that you pass it on to one person.</strong> The one who came into your head while you were reading.</p>
+     <p style="text-indent:0">And if you are a teacher or a librarian: you may print it, project it, hand it out and set it as reading. The permission is already given, in writing.</p>
      <div class="caja-cuenta">
-      <div class="banco">Bancolombia key</div>
-      <div class="num" id="numCuenta">@dawin82102</div>
-      <button id="bCopiar">Copy key</button>
-      <div class="extra">Savings account 333 279 352 89 · Dawin Salazar · Colombia</div>
-     </div>
-     <p style="text-indent:0"><strong>Ten per cent of everything raised goes to a foundation for children in need in Colombia</strong>, so that they have something at Christmas. In January I will publish the full figure and the receipt for the donation on this page.</p>
-     <p style="text-indent:0;font-size:.92rem;color:var(--suave)">A book about honest persuasion that asks for money and never accounts for it would be the worst possible argument against itself.</p>"""
+      <div class="banco">Share</div>
+      <div class="num" id="numCuenta">libros-para-pensar.netlify.app</div>
+      <button id="bCopiar">Copy link</button>
+      <div class="extra">Free to read · Free to share · CC BY-NC-ND 4.0</div>
+     </div>"""
 
 UI_ES = dict(TXT_BIB="Biblioteca", TXT_VOZ="Lectura en voz alta", TXT_IDX="Índice",
   TXT_AJU="Ajustes de lectura", TXT_ANT="Página anterior", TXT_SIG="Página siguiente",
@@ -1194,6 +1301,45 @@ UI_EN = dict(TXT_BIB="Library", TXT_VOZ="Read aloud", TXT_IDX="Contents",
   T_PAG="Page", T_DE="of", T_LEIDO="read", TXT_VASAQUI="you are here")
 
 IDX_EN = {
+ "cartel.html":"poster.html",
+ "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es":"https://creativecommons.org/licenses/by-nc-nd/4.0/",
+ "og-es.png":"og-en.png",
+ "Textos de Dawin Salazar bajo licencia":"Texts by Dawin Salazar under licence",
+ "Libre para usar en clase.":"Free to use in class.",
+ "Una novela completa y gratis, pensada para leerse en el celular: se pasa página, sube la letra hasta el 200%, se lee en voz alta y funciona sin datos.":"A complete, free novel built to be read on a phone: real page turns, text up to 200%, read-aloud, and it works with no data.",
+ "Tres horas. Gratis, completa, y funciona sin señal.":"Three hours. Free, complete, and it works underground.",
+ "Un hombre que se ganó la vida convenciendo a otros empieza a recibir de vuelta sus propios cuadernos de juventud, página a página.":"A man who made his living convincing people starts getting his own old notebooks back, one page at a time.",
+ "Escribí una novela para leer en el bus.":"I wrote a novel to be read on the bus.",
+ "Enviar por WhatsApp":"Send on WhatsApp",
+ "Cubierta del libro":"Book cover",
+ "Imagen para redes":"Image for social",
+ "Cartel para imprimir":"Poster to print",
+ "Copiar este texto":"Copy this text",
+ "Descargar código":"Download the code",
+ "Apunte la cámara del celular":"Point your phone camera",
+ "Aquí está todo lo que necesita para repartirlo: el código, los textos y el cartel para imprimir. Tómelo y úselo sin avisar.":"Here is everything you need to hand it out: the code, the texts and a poster to print. Take it and use it without asking.",
+ "Un libro que nadie pasa a nadie es un libro que no existe.":"A book nobody passes to anybody is a book that doesn't exist.",
+ "Difúndalo":"Spread it",
+ "Sobre el contenido: la novela trata de publicidad, manipulación y honestidad. No contiene violencia explícita ni sexo. Es apropiada de <strong>15 años en adelante</strong>, y funciona especialmente bien en clases de ética, comunicación, filosofía, lengua y medios.":"On content: the novel is about advertising, manipulation and honesty. It contains no explicit violence and no sex. Suitable from <strong>age 15 up</strong>, and it works particularly well in ethics, communication, philosophy, language and media classes.",
+ "Licencia CC BY-NC-ND 4.0":"CC BY-NC-ND 4.0 licence",
+ "Lo único que no puede hacerse es venderlo ni publicar versiones modificadas. Basta con citar al autor.":"The only things you can't do are sell it or publish modified versions. Just credit the author.",
+ "Guardarlo en el catálogo de la biblioteca":"Add it to the library catalogue",
+ "Repartir el enlace y el código QR por donde quiera":"Hand out the link and the QR code anywhere you like",
+ "Ponerlo como lectura obligatoria u optativa":"Set it as required or optional reading",
+ "Subirlo al aula virtual o a la intranet del colegio":"Upload it to your virtual classroom or school intranet",
+ "Proyectarlo y leerlo en voz alta en el aula":"Project it and read it aloud in class",
+ "Imprimirlo y fotocopiarlo, entero o por capítulos":"Print and photocopy it, whole or by chapters",
+ "Queda autorizado, por adelantado y sin trámite, a:":"You are authorised, in advance and with no paperwork, to:",
+ "Sí, puede usarlo en clase. No hace falta que escriba a pedir permiso.":"Yes, you can use it in class. No need to write and ask permission.",
+ "Para profesores, colegios y bibliotecas":"For teachers, schools and libraries",
+ "Cierre cuando quiera, aunque entre una llamada. Al volver, abre en el capítulo donde lo dejó.":"Close it whenever, even if a call comes in. It reopens at the chapter you left.",
+ "Esta biblioteca está hecha para ese momento. Los libros son completos, gratuitos y están pensados para leerse a pedazos sin perder el hilo.":"This library is built for that moment. The books are complete, free, and made to be read in pieces without losing the thread.",
+ "Nada de eso tiene que ver con las ganas de leer. Tiene que ver con el sitio y el momento en que hoy se lee, que es de pie, en trayectos de veinte minutos, en una pantalla de seis pulgadas.":"None of that has anything to do with wanting to read. It has to do with where and when reading actually happens now: standing up, in twenty-minute journeys, on a six-inch screen.",
+ "Casi nadie abandona un libro porque sea malo. Lo abandona porque lo empezó en el sofá un domingo y no volvió a encontrar ese hueco. Porque en el bus no se puede sostener un tomo con una mano. Porque la letra era pequeña, o el archivo pesaba demasiado, o al reanudar ya no sabía por dónde iba.":"Almost nobody abandons a book because it's bad. They abandon it because they started it on the sofa on a Sunday and never found that gap again. Because you can't hold a hardback with one hand on the bus. Because the text was too small, or the file too heavy, or because coming back they'd lost their place.",
+ "La mayoría de la gente no dejó de leer. Dejó de <em>terminar</em> lo que empieza.":"Most people didn't stop reading. They stopped <em>finishing</em> what they start.",
+ "Por qué existe esto":"Why this exists",
+ "Difundirlo":"Share it",
+ "Libros completos y gratuitos para leer en el celular, la tablet o el computador. Sin registro, sin publicidad, con lector accesible. Libre uso en colegios y universidades.":"Complete, free books to read on your phone, tablet or computer. No sign-up, no advertising, accessible reader. Free to use in schools and universities.",
  "c.textContent=\"Copiado ✓\"":"c.textContent=\"Copied ✓\"",
  "aria-label=\"Compartir\">":"aria-label=\"Share\">",
  "b.textContent=\"Copiar enlace\"":"b.textContent=\"Copy link\"",
@@ -1258,6 +1404,107 @@ CAMBIO_IDIOMA = ('<a class="idioma" href="__OTRO__" hreflang="__OTROLANG__" '
 QRJS = open(os.path.join(RAIZ,"src","qr.js"),encoding="utf-8").read()
 
 
+
+def jsonld(es, baseurl):
+    import json
+    libro = {
+        "@context": "https://schema.org",
+        "@type": "Book",
+        "name": "Fabricantes de sed" if es else "Thirst Makers",
+        "author": {"@type": "Person", "name": "Dawin Salazar"},
+        "inLanguage": "es" if es else "en",
+        "bookFormat": "https://schema.org/EBook",
+        "isAccessibleForFree": True,
+        "genre": ["Ficción literaria", "Novela"] if es else ["Literary fiction", "Novel"],
+        "numberOfPages": 130,
+        "url": baseurl + ("/fabricantes-de-sed.html" if es else "/thirst-makers.html"),
+        "image": baseurl + ("/og-es.png" if es else "/og-en.png"),
+        "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+        "description": ("Un publicista recibe de vuelta sus propios cuadernos de juventud "
+                        "y descubre que la única persuasión que nunca ha probado es la verdad."
+                        if es else
+                        "An advertising man gets his own youthful notebooks back and discovers "
+                        "that the one form of persuasion he has never tried is the truth."),
+        "publisher": {"@type": "Organization", "name": "Libros para pensar" if es else "Books to think with",
+                      "url": baseurl},
+        "potentialAction": {"@type": "ReadAction",
+            "target": baseurl + ("/fabricantes-de-sed.html" if es else "/thirst-makers.html")},
+    }
+    return json.dumps(libro, ensure_ascii=False, indent=1)
+
+
+CARTEL = r"""<!DOCTYPE html>
+<html lang="__LANG__">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>__TCARTEL__</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#e9e6e0;font-family:Georgia,"Times New Roman",serif;padding:1.5rem;
+ display:flex;flex-direction:column;align-items:center;gap:1rem}
+.barra{font-family:system-ui,sans-serif;font-size:.85rem;color:#555;text-align:center;
+ max-width:21cm}
+.barra button{font:inherit;padding:.6rem 1.2rem;margin:.4rem;border:1px solid #999;
+ background:#fff;border-radius:.4rem;cursor:pointer}
+.hoja{width:21cm;min-height:29.7cm;background:#15120d;color:#f2e9da;
+ padding:2.4cm 2cm;display:flex;flex-direction:column;align-items:center;
+ text-align:center;box-shadow:0 6px 30px rgba(0,0,0,.3)}
+.hoja .marca{font-family:system-ui,sans-serif;font-size:10pt;letter-spacing:.32em;
+ text-transform:uppercase;color:#a08b68}
+.hoja h1{font-size:52pt;line-height:1.02;font-weight:400;margin:1.1cm 0 .3cm;
+ letter-spacing:.01em}
+.hoja .sub{font-size:14pt;font-style:italic;color:#c9975a;line-height:1.5}
+.hoja .autor{font-size:12pt;letter-spacing:.22em;color:#a99b86;margin-top:.5cm}
+.hoja .linea{width:5cm;height:1px;background:#c9975a;opacity:.7;margin:1cm 0}
+.hoja .gancho{font-size:17pt;line-height:1.5;max-width:15cm;margin-bottom:1cm}
+.hoja .qr{background:#fff;padding:.5cm;border-radius:4px}
+.hoja .qr svg{display:block;width:6.5cm;height:6.5cm}
+.hoja .url{font-family:system-ui,sans-serif;font-size:12pt;letter-spacing:.05em;
+ margin-top:.6cm;color:#f2e9da}
+.hoja .datos{font-family:system-ui,sans-serif;font-size:10.5pt;color:#a99b86;
+ margin-top:.8cm;line-height:1.8}
+.hoja .lic{font-family:system-ui,sans-serif;font-size:8.5pt;color:#7e7362;
+ margin-top:auto;padding-top:1cm;letter-spacing:.08em}
+@media print{
+ body{background:#fff;padding:0;gap:0}
+ .barra{display:none}
+ .hoja{box-shadow:none;width:100%;min-height:100vh;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact}
+ @page{size:A4;margin:0}
+}
+</style>
+</head>
+<body>
+<div class="barra">
+ <p>__AYUDACARTEL__</p>
+ <button onclick="print()">__IMPRIMIR__</button>
+ <button onclick="location.href='__HOME__'">__VOLVER__</button>
+</div>
+
+<div class="hoja">
+ <div class="marca">__SITIO__</div>
+ <h1>__TITULO__</h1>
+ <p class="sub">__SUBT__</p>
+ <p class="autor">DAWIN SALAZAR</p>
+ <div class="linea"></div>
+ <p class="gancho">__GANCHO__</p>
+ <div class="qr" id="qr"></div>
+ <p class="url">__URLCORTA__</p>
+ <p class="datos">__DATOS__</p>
+ <p class="lic">__LIC__</p>
+</div>
+
+<script>__QRJS__</script>
+<script>
+try{document.getElementById("qr").innerHTML=QR.svg("__BASEURL__",400,"#111111","#ffffff")}
+catch(e){document.getElementById("qr").textContent="__BASEURL__"}
+</script>
+</body>
+</html>
+"""
+
+
 def construir(lang):
     es = (lang == "es")
     partes = PARTS if es else ["EN_MANUSCRITO.md", "EN_MANUSCRITO_P2.md", "EN_MANUSCRITO_P3.md", "EN_MANUSCRITO_P4.md"]
@@ -1307,7 +1554,8 @@ def construir(lang):
             'role="img"', 'role="presentation" aria-hidden="true"'))
         otro = ('<a class="idioma" href="index-en.html" hreflang="en" lang="en">English</a>')
 
-    portada = (portada.replace("__QRJS__", QRJS).replace("__LANG__", "es" if es else "en")
+    portada = (portada.replace("__JSONLD__", jsonld(es, BASEURL))
+        .replace("__QRJS__", QRJS).replace("__LANG__", "es" if es else "en")
         .replace("__BASE__", BASECSS)
         .replace("__SITIO__", SITIO if es else "Books to think with")
         .replace("__BANCO__", BANCO).replace("__CUENTA__", CUENTA)
@@ -1318,6 +1566,37 @@ def construir(lang):
         .replace("__ESTE__", "index.html" if es else "index-en.html")
         .replace("__BASEURL__", BASEURL)
         .replace('<button id="bTema"', otro + '<button id="bTema"'))
+
+    C = dict(
+      TCARTEL="Cartel — Fabricantes de sed" if es else "Poster — Thirst Makers",
+      AYUDACARTEL=("Imprima esta página en A4 y péguela donde quiera. Se ve igual en blanco y negro."
+                   if es else
+                   "Print this page on A4 and put it up anywhere. It works in black and white too."),
+      IMPRIMIR="Imprimir" if es else "Print",
+      VOLVER="Volver" if es else "Back",
+      TITULO="Fabricantes de sed" if es else "Thirst Makers",
+      SUBT=("Una novela sobre la persuasión,<br>la verdad y el precio de las palabras"
+            if es else
+            "A novel about persuasion, truth,<br>and the price of words"),
+      GANCHO=("Un hombre que se ganó la vida convenciendo a otros empieza a recibir de vuelta sus propios cuadernos de juventud."
+              if es else
+              "A man who made his living convincing people starts getting his own old notebooks back."),
+      URLCORTA=BASEURL.replace("https://",""),
+      DATOS=("Novela completa · Gratis · Sin registro<br>Tres horas de lectura · Funciona sin señal"
+             if es else
+             "Complete novel · Free · No sign-up<br>Three hours of reading · Works with no signal"),
+      LIC=("Libre para imprimir, repartir y usar en clase · CC BY-NC-ND 4.0"
+           if es else
+           "Free to print, hand out and use in class · CC BY-NC-ND 4.0"),
+      SITIO=SITIO if es else "Books to think with",
+      HOME="index.html" if es else "index-en.html",
+      LANG="es" if es else "en",
+      BASEURL=BASEURL, QRJS=QRJS)
+    cartel = CARTEL
+    for k, v in C.items():
+        cartel = cartel.replace("__" + k + "__", v)
+    open(os.path.join(OUT, "cartel.html" if es else "poster.html"), "w",
+         encoding="utf-8").write(cartel)
 
     nom_lector = "fabricantes-de-sed.html" if es else "thirst-makers.html"
     nom_indice = "index.html" if es else "index-en.html"
