@@ -25,6 +25,22 @@ const urls=[...sm.matchAll(/<loc>[^<]*\/([^<\/]+)<\/loc>/g)].map(m=>m[1]);
 chk("sitemap sólo apunta a páginas existentes", urls.every(u=>archivos.includes(u)),
     urls.filter(u=>!archivos.includes(u)).join(", "));
 
+
+// Las URLs absolutas que apuntan al propio sitio deben corresponder a un archivo real.
+// Existe porque el kit de difusión pasó a usar rutas absolutas: un BASEURL mal
+// puesto rompería el cartel y las descargas sin que nada más fallara.
+const BASE = (fs.readFileSync(path.join(dir,"robots.txt"),'utf8')
+  .match(/Sitemap: (https?:\/\/[^\/]+)/)||[])[1];
+if(BASE){
+  console.log("\n  base declarada en robots.txt: "+BASE);
+  for(const f of archivos.filter(f=>f.endsWith(".html"))){
+    const h=fs.readFileSync(path.join(dir,f),'utf8');
+    const abs=[...new Set([...h.matchAll(new RegExp(BASE.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+"\\/([A-Za-z0-9._-]+\\.(?:html|png|svg|xml|txt))","g"))].map(m=>m[1]))];
+    const rotos=abs.filter(a=>!archivos.includes(a));
+    if(abs.length) chk(f+": URLs absolutas apuntan a archivos reales", rotos.length===0, rotos.join(", "));
+  }
+} else chk("robots.txt declara el sitemap con la URL base", false);
+
 const total=archivos.reduce((s,f)=>s+fs.statSync(path.join(dir,f)).size,0);
 console.log("\n  Peso total del sitio:",(total/1024/1024).toFixed(2),"MB");
 console.log(fallos===0?"\n=== LISTO PARA SUBIR ===\n":`\n=== ${fallos} PROBLEMAS ===\n`);

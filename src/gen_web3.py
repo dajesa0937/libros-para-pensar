@@ -1119,9 +1119,9 @@ __BASEURL__</p>
  </div>
 
  <div class="enlaces">
-  <a href="cartel.html" target="_blank" rel="noopener">Cartel para imprimir</a>
-  <a href="og-es.png" download>Imagen para redes</a>
-  <a href="cubierta.svg" download>Cubierta del libro</a>
+  <a href="__BASEURL__/cartel.html" target="_blank" rel="noopener">Cartel para imprimir</a>
+  <a href="__BASEURL__/og-es.png" download>Imagen para redes</a>
+  <a href="__BASEURL__/cubierta.svg" download>Cubierta del libro</a>
   <a href="#" id="waKit">Enviar por WhatsApp</a>
  </div>
 </div></div>
@@ -1301,6 +1301,9 @@ UI_EN = dict(TXT_BIB="Library", TXT_VOZ="Read aloud", TXT_IDX="Contents",
   T_PAG="Page", T_DE="of", T_LEIDO="read", TXT_VASAQUI="you are here")
 
 IDX_EN = {
+ "__BASEURL__/cubierta.svg":"__BASEURL__/cover-en.svg",
+ "__BASEURL__/og-es.png":"__BASEURL__/og-en.png",
+ "__BASEURL__/cartel.html":"__BASEURL__/poster.html",
  "cartel.html":"poster.html",
  "https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es":"https://creativecommons.org/licenses/by-nc-nd/4.0/",
  "og-es.png":"og-en.png",
